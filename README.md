@@ -1,1 +1,2 @@
-Just testing website comment for now ++
+Reparsing website from notion's ffxivpf.com
+Very very early WIP

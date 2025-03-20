@@ -1,0 +1,465 @@
+@charset "utf-8";
+/* Global Styles */
+body {
+  background-color: black;
+}
+a:hover {
+  color: rgba(255, 255, 255, 1.00);
+}
+/*header*/
+header {
+  border-bottom: 0.1px solid white;
+  background-color: black;
+  height: 80px
+}
+/* Logo placeholder*/
+#logo {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 139px;
+  text-align: center;
+  color: black);
+  background-color: black;
+}
+/* div for Links in header */
+#headerLinks {
+  float: left;
+  width: calc(100% - 139px);
+  text-align: right;
+  padding-top: 10px;
+  color: white;
+  padding-bottom: 10px;
+  background-color: black;
+}
+/* Links in header */
+#headerLinks a {
+  text-decoration: none;
+  color: rgba(146, 146, 146, 1.00);
+  padding-left: 66px;
+  font-size: 14px;
+}
+/* Offer text banner*/
+#offer {
+  font-family: 'Montserrat', sans-serif;
+  clear: both;
+  background-color: rgba(246, 246, 246, 1.00);
+  color: rgba(146, 146, 146, 1.00);
+  padding-left: 115px;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+/* Main content of the site */
+#content {
+  clear: both;
+  overflow: auto;
+  padding-top: 29px;
+}
+/* Sidebar */
+#content .sidebar {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  float: left;
+  width: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  background-color: #111111;
+  padding-top: 0px;
+  height: 100%;
+}
+/* main content of the site */
+#content .mainContent {
+  float: left;
+  width: 70%;
+  text-align: center;
+  padding-left: 4%;
+}
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+  text-align: left;
+  color: rgba(146, 146, 146, 1.00);
+  position: relative;
+  left: 0%;
+}
+/* Search field in sidebar */
+#content .sidebar #search {
+  width: 100%;
+  border-radius: 0px;
+  height: 42px;
+  text-align: center;
+  color: rgba(208, 207, 207, 1.00);
+  font-size: 14px;
+  ;
+  margin-bottom: 21px;
+}
+/* Whole page content */
+#mainWrapper {
+  width: 80%;
+  padding-left: 10%;
+}
+/*menu elements */
+.menu ul li {
+  list-style-type: none;
+  font-size: x-large;
+  position: relative;
+  left: -35px;
+  padding-top: 12px;
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+ 
+  color: rgba(146, 146, 146, 1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+  float: left;
+ 
+  
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(146, 146, 146, 1.00);
+  font-size: 22px;
+  
+  top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+  position: relative;
+ 
+  font-size: 14px;
+  font-family: source-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: rgba(146, 146, 146, 1.00);
+  
+}
+
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+  position: relative;
+  top: -48px;
+  width: 84%;
+  background-color: rgba(208, 207, 207, 0);
+  height: 35px;
+  color: rgba(255, 255, 255, 1.00);
+  border-style: none;
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+/* footer */
+#mainWrapper footer {
+  clear: both;
+  overflow: auto;
+  background-color: black;
+  font-family: source-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.8;
+  padding-top: 22px;
+  padding-left: 22px;
+  text-align: center;
+  padding-bottom: 22px;
+  padding-right: 22px;
+  border-top: 0.1px solid white;
+}
+/*Each footer content */
+#mainWrapper footer div {
+  width: 27%;
+  float: left;
+  padding-left: 4%;
+  padding-right: 2%;
+  color: rgba(255, 255, 255, 1.00);
+  text-align: justify;
+}
+/* Links in footer */
+footer div a {
+  color: rgba(146, 146, 146, 1.00);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+  width: 100%;
+}
+/*Links in sidebar */
+.sidebar #menubar .menu ul li a {
+  color: rgba(146, 146, 146, 1.00);
+  text-decoration: none;
+}
+.sidebar #menubar .menu ul li a:hover {
+  color: rgba(107, 97, 97, 1.00);
+  text-decoration: none;
+}
+/* Menu headings in sidebar */
+#menubar .menu h2 {
+  font-size: 14px;
+}
+/*Links under menus in sidebar */
+#menubar .menu ul li a {
+  font-size: 14px;
+}
+/* Menus in sidebar */
+.sidebar #menubar .menu {
+  margin-bottom: 29px;
+}
+/* Container for links in footer */
+footer .footerlinks {
+  margin-top: -15px;
+}
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+  /* search field in sidebar */
+  #content .sidebar #search {
+    display: none;
+  }
+  /* sidebar */
+  #content .sidebar {
+    float: none;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding-left: 12%;
+    padding-top: 0px;
+  }
+  /* horizontal separators in sidebar */
+  #content .sidebar hr {
+    display: none;
+  }
+  /*The sidebar and maincontent of page */
+  #content {
+    position: relative;
+    top: -22px;
+    width: 100%;
+    overflow: hidden;
+  }
+  /*menu headings in sidebar */
+  #menubar .menu h2 {
+    display: inline;
+    font-size: medium;
+    padding-right: 6%;
+  }
+  /* Unordered List of links */
+  #menubar .menu ul {
+    display: inline;
+  }
+  /*list elements */
+  #menubar .menu ul li {
+    display: inline;
+    font-size: medium;
+    padding-left: 0%;
+    padding-right: 3%;
+  }
+  /*The link to be hidden in tablet view */
+  .sidebar #menubar .menu ul .notimp {
+    display: none;
+  }
+  /* menus in sidebar */
+  .sidebar #menubar .menu {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 16px;
+  }
+  /*menubar in sidebar */
+  #content .sidebar #menubar {
+    position: relative;
+    left: -7%;
+    overflow: hidden;
+    width: 95%;
+    padding-top: 0px;
+  }
+  /* offer banners content */
+  #mainWrapper #offer p {
+    font-size: small;
+  }
+  /* main content region of page */
+  #mainWrapper #content .mainContent {
+    overflow: hidden;
+    width: 95%;
+    margin-top: 40px;
+  }
+  /* Prices of products in catalog view */
+  .productRow .productInfo .price {
+    font-size: 19px;
+  }
+  /* Content holders in catalog view */
+  .productRow .productInfo .productContent {
+    font-size: 16px;
+  }
+  /* Buy buttons in catalog view */
+  .productRow .productInfo .buyButton {
+    font-size: 15px;
+  }
+  /* Container for links in footer */
+  #mainWrapper footer .footerlinks {
+    float: none;
+    width: 100%;
+    position: relative;
+    top: 17px;
+    clear: both;
+    text-align: center;
+    left: 0%;
+    padding-bottom: 19px;
+  }
+  /* Container for each footer divisions */
+  #mainWrapper footer div {
+    width: 44%;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .footer {
+    background-color: black;
+  }
+  /* Links in footer */
+  .footerlinks p a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: inline;
+    padding-right: 35px;
+  }
+  /* Footer region */
+  #mainWrapper footer {
+    padding-left: 16px;
+    overflow: hidden;
+  }
+  /* Links in header */
+  header #headerLinks a {
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+  /* Offer- Text banner */
+  #mainWrapper #offer {
+    padding-left: 22%;
+  }
+  /* Paragraphs in footer */
+  footer .footerlinks p {
+    display: inline;
+  }
+}
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+  /*Container for links in header */
+  #mainWrapper header #headerLinks {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(190, 190, 190, 1.00);
+    padding-bottom: 21px;
+  }
+  /* Logo placeholder*/
+  #mainWrapper header #logo {
+    width: 100%;
+    text-align: center;
+  }
+  /* Links in header */
+  header #headerLinks a {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 0px;
+  }
+  /*Offer - Text Banner */
+  #mainWrapper #offer {
+    padding-left: 0px;
+    text-align: center;
+  }
+  /* Menubar in sidebar */
+  #content .sidebar #menubar {
+    position: relative;
+    left: -8%;
+    text-align: center;
+  }
+  /*Menu headings in sidebar */
+  #menubar .menu h2 {
+    width: 100%;
+    display: block;
+  }
+  /* Each product in catalog view */
+  .mainContent .productRow .productInfo {
+   
+   
+    padding-left: 0px;
+    padding-right: 0px;
+
+    left: -2%;
+  }
+  #mainWrapper footer div {
+    width: 100%;
+    margin-left: -16px;
+    text-align: justify;
+    padding-bottom: 16px;
+    overflow: auto;
+  }
+  /* Unordered list for menu elements */
+  .menu ul {
+    position: relative;
+    padding-left: 24%;
+  }
+  /* Container for links in footer */
+  #mainWrapper footer .footerlinks {
+
+  }
+  /* Main content which excludes the sidebar */
+  #mainwrapper #content .mainContent {
+  
+    text-align: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+.title {
+  color: #10B7A9;
+  text-align: left;
+  font-size: 37px;
+}
+.text {
+  text-align: left;
+  color: grey;
+}
+.textbold {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+.image_container {
+  width: 280px;
+  height: 280px;
+	object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.image_container:hover {
+  transform: scale(0.950);
+  transition: all 0.4s ease;
+}
+.ElementalPIC {
+  background-image: url('../../Assets/Images/Elemental.png'); /* Replace with your image's URL */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.ManaPIC {
+  background-image: url('../../Assets/Images/Mana.png'); /* Replace with your image's URL */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+.JPPIC {
+  background-image: url('../../Assets/Images/JP.png'); /* Replace with your image's URL */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.productRow{
+	display: flex;
+	gap: 26px;
+}
+
