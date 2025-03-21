@@ -2,7 +2,13 @@
 /* Global Styles */
 body {
   background-color: black;
+	padding: 0px;
+	margin: 0px;
 }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 a:hover {
   color: rgba(255, 255, 255, 1.00);
 }
@@ -10,17 +16,27 @@ a:hover {
 header {
   border-bottom: 0.1px solid white;
   background-color: black;
-  height: 80px
+	width: 100%;
+  height: 80px;
+	  padding-left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 /* Logo placeholder*/
 #logo {
-  float: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 139px;
-  text-align: center;
-  color: black);
-  background-color: black;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: black);
+    
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    width: auto;
 }
 /* div for Links in header */
 #headerLinks {
@@ -30,12 +46,12 @@ header {
   padding-top: 10px;
   color: white;
   padding-bottom: 10px;
-  background-color: black;
+
 }
 /* Links in header */
 #headerLinks a {
   text-decoration: none;
-  color: rgba(146, 146, 146, 1.00);
+  color: white;
   padding-left: 66px;
   font-size: 14px;
 }
@@ -60,18 +76,16 @@ header {
   font-family: 'Montserrat', sans-serif;
   color: white;
   float: left;
-  width: 10%;
-  padding-left: 3%;
-  padding-right: 3%;
   text-align: center;
   background-color: #111111;
   padding-top: 0px;
   height: 100%;
+	margin-top: 81px
 }
 /* main content of the site */
 #content .mainContent {
   float: left;
-  width: 70%;
+
   text-align: center;
   padding-left: 4%;
 }
@@ -95,8 +109,7 @@ header {
 }
 /* Whole page content */
 #mainWrapper {
-  width: 80%;
-  padding-left: 10%;
+
 }
 /*menu elements */
 .menu ul li {
@@ -136,20 +149,25 @@ header {
   color: rgba(146, 146, 146, 1.00);
   
 }
+.buyButton{
+	font-size: 1.5rem;
+	margin-bottom: 28px;
+	z-index: 2;
+}
 
 /* Buy button for products in catalog */
 .productRow .productInfo .buyButton {
-  position: relative;
-  top: -48px;
-  width: 84%;
-  background-color: rgba(208, 207, 207, 0);
-  height: 35px;
-  color: rgba(255, 255, 255, 1.00);
-  border-style: none;
-  text-align: left;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 8px;
+    position: relative;
+    top: -77px;
+    width: 90%;
+    background-color: rgba(208, 207, 207, 0);
+    height: 35px;
+    color: rgba(255, 255, 255, 1.00);
+    border-style: none;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 8px;
+   
 }
 /* footer */
 #mainWrapper footer {
@@ -281,7 +299,7 @@ footer .footerlinks {
   /* main content region of page */
   #mainWrapper #content .mainContent {
     overflow: hidden;
-    width: 95%;
+
     margin-top: 40px;
   }
   /* Prices of products in catalog view */
@@ -294,7 +312,7 @@ footer .footerlinks {
   }
   /* Buy buttons in catalog view */
   .productRow .productInfo .buyButton {
-    font-size: 15px;
+
   }
   /* Container for links in footer */
   #mainWrapper footer .footerlinks {
@@ -426,13 +444,25 @@ footer .footerlinks {
   font-weight: bold;
 }
 .image_container {
-  width: 280px;
-  height: 280px;
+  width: 445px;
+  height: 400px;
 	object-fit: cover;
   border-radius: 12px;
   cursor: pointer;
+	position: relative
+	 
 }
-.image_container:hover {
+
+.productInfo .image_container:after{
+	background: linear-gradient(transparent, rgba(0, 0, 0, .7));
+	content: "";
+	left: 0px;
+   height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+ .image_container:hover {
   transform: scale(0.950);
   transition: all 0.4s ease;
 }
@@ -458,8 +488,60 @@ footer .footerlinks {
   background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
+
+.FRUPicGaia {
+  background-image: url('../../Assets/Images/fru.png'); /* Replace with your image's URL */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+.CARPIC {
+  background-image: url('../../Assets/Images/car.png'); /* Replace with your image's URL */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
 .productRow{
 	display: flex;
 	gap: 26px;
 }
+.sidebar{
+	  width: 216px; /* Set the width of the sidebar */
+  height: 100vh; /* Full height */
+  background-color: #f4f4f4; /* Sidebar background color */
+  position: fixed; /* Fix it in place */
+  top: 0;
+  left: 0; /* This positions it on the left */
+  padding: 20px; /* Optional padding for content */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Subtle shadow for effect */
+}
+.mainContent, footer{
+margin-left: 250px;
 
+}
+.productInfo{
+	position: relative;
+}
+.pill_container{
+ position: absolute; /* Set the child div as absolute */
+  top: 0; /* Position at the top of the parent */
+  left: 0; /* Position at the left of the parent */
+margin-left: 26px;
+	margin-top: 15px;
+	z-index: 1;
+
+	pointer-events: none;
+}
+.pill_container button{
+		-webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: hsla(0, 0%, 100%, .1)!important;
+    border-radius: 6px !important;
+   background: 0;
+	border: 0px;
+    padding: 6px 10px !important;
+	color: white;
+	font-size: 16px;
+}
