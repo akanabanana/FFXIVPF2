@@ -15,7 +15,7 @@
     <div id="logo"><img src="Assets/Images/kanapic.png" width="50" height="50" alt=""/> </div>
     <div id="headerLinks"><a href="#" title="Login/Register">Search</a></div>
   </header>
-	<script> function toggleMenu(menuId) {
+  <script> function toggleMenu(menuId) {
   const menu = document.getElementById(menuId);
   if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
     menu.style.maxHeight = menu.scrollHeight + "px"; // Set max-height to content height
@@ -24,19 +24,17 @@
   }
 }</script>
   <div id="content">
-    <section class="sidebar"> 
-     <button class="main-button" onclick="toggleMenu('fru-menu')">FRU </button>
-		
-  <div id="fru-menu" class="sub-menu">
-    <button>Elemental</button>
-    <button>Mana</button>
-    <button>Materia</button>
-  </div>
-
-  <button class="main-button" onclick="toggleMenu('car-menu')">CAR</button>
-  <div id="car-menu" class="sub-menu">
-    <button>JP</button>
-  </div>
+    <section class="sidebar">
+      <button class="main-button" onclick="toggleMenu('fru-menu')">FRU </button>
+      <div id="fru-menu" class="sub-menu">
+        <button>Elemental</button>
+        <button>Mana</button>
+        <button>Materia</button>
+      </div>
+      <button class="main-button" onclick="toggleMenu('car-menu')">CAR</button>
+      <div id="car-menu" class="sub-menu">
+        <button>JP</button>
+      </div>
     </section>
     <section class="mainContent">
       <h1 class="title"> FFXIVPF</h1>
@@ -121,7 +119,7 @@
             <p style="text-align: left; margin-top: 0px"> Cheatsheet revised&nbsp;</p>
           </div>
         </div>
-		   <hr style="width: 100%;">
+        <hr style="width: 100%;">
         <div class="release_content">
           <div class="release_title_date">
             <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Mana strat update</h4>
@@ -131,7 +129,7 @@
             <p style="text-align: left; margin-top: 0px"> Update translations for FRU in Mana</p>
           </div>
         </div>
-		   <hr style="width: 100%;">
+        <hr style="width: 100%;">
         <div class="release_content">
           <div class="release_title_date">
             <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> JP CAR and FRU Mana page published</h4>
@@ -141,7 +139,7 @@
             <p style="text-align: left; margin-top: 0px"> Pages Published</p>
           </div>
         </div>
-		   <hr style="width: 100%;">
+        <hr style="width: 100%;">
         <div class="release_content">
           <div class="release_title_date">
             <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Elem PF strat page + cheatsheets published</h4>
@@ -151,7 +149,6 @@
             <p style="text-align: left; margin-top: 0px"> Mostly blah blah notes</p>
           </div>
         </div>
-		  
       </div>
     </section>
   </div>

@@ -16,7 +16,7 @@ a:hover {
 }
 /*header*/
 header {
-  border-bottom:  solid 0.01px #242424;
+  border-bottom: solid 0.01px #242424;
   background-color: rgba(0, 0, 0, .7);
   width: 100%;
   height: 60px;
@@ -24,10 +24,9 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   margin-left: 0px;
-	position: sticky; /* Makes the header stick to the viewport */
+  position: sticky; /* Makes the header stick to the viewport */
   top: 0; /* The header will stick at the top of the screen */
-  z-index: 1000; /
-	 backdrop-filter: blur(10px); /* Adds the blur effect */
+  z-index: 1000;/ backdrop-filter: blur(10px); /* Adds the blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
 }
 /* Logo placeholder*/
@@ -86,13 +85,12 @@ header {
   padding-top: 0px;
   height: 100%;
   margin-top: 61px;
-	  border-right:  solid 0.01px #242424;
+  border-right: solid 0.01px #242424;
 }
 /* main content of the site */
 #content .mainContent {
-  float: left;
   text-align: center;
-  padding-left: 4%;
+  padding-left: 100px;
 }
 /*menubar's properties for menus in sidebar */
 #content .sidebar #menubar {
@@ -178,7 +176,7 @@ header {
   text-align: center;
   padding-bottom: 22px;
   padding-right: 22px;
-  border-top: 0.1px solid white;
+  border-top: solid 0.01px #242424;;
 }
 /*Each footer content */
 #mainWrapper footer div {
@@ -483,6 +481,8 @@ footer .footerlinks {
 .productRow {
   display: flex;
   gap: 26px;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 .sidebar {
   width: 216px; /* Set the width of the sidebar */
@@ -532,13 +532,14 @@ h4, h3 {
   border: solid 0.01px #242424;
   border-radius: 12px;
   margin-bottom: 100px;
-	 cursor: pointer;
+  margin-right: 50px;
+  cursor: pointer;
 }
 .release_title_date {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-	pointer-events: none;
+  pointer-events: none;
 }
 .release_content {
   padding: 20px;
@@ -546,8 +547,8 @@ h4, h3 {
 .release_content:hover {
   background-color: #1D1D1D;
 }
-.release_comment{
-	pointer-events: none;
+.release_comment {
+  pointer-events: none;
 }
 hr {
   height: 0px;
@@ -555,7 +556,6 @@ hr {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 .main-button {
   width: 100%;
   padding: 10px;
@@ -563,23 +563,21 @@ hr {
   margin-bottom: 5px;
   text-align: left;
   font-size: 18px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 8px;
 }
-.main-button:hover{
-	 background-color: #1D1D1D;
+.main-button:hover {
+  background-color: #1D1D1D;
 }
-
 .sub-menu {
   max-height: 0; /* Hidden by default */
   overflow: hidden; /* Prevent content from spilling out */
   transition: max-height 0.3s ease; /* Smooth expand/collapse animation */
   margin-left: 10px; /* Optional: Indentation for sub-buttons */
 }
-
 .sub-menu button {
   width: calc(100% - 10px);
   padding: 8px;
@@ -587,13 +585,12 @@ hr {
   height: 50px;
   text-align: left;
   font-size: 16px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 8px;
 }
-
-.sub-menu button:hover{
-	 background-color: #1D1D1D;
+.sub-menu button:hover {
+  background-color: #1D1D1D;
 }
