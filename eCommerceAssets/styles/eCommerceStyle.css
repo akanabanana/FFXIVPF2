@@ -657,3 +657,42 @@ hr {
 		padding-left: 10px;
 	}
 }
+
+.car_jp_cheatsheet{
+	background-image: url('../../Assets/Images/JP.png'); /* Replace with your image's URL */
+  background-size: contain; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+	width: auto;
+	height: 700px;
+	
+}
+.fru_elemental_cheatsheet{
+		background-image: url('../../Assets/Images/Elemental.png'); /* Replace with your image's URL */
+  background-size: contain; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+	width: auto;
+	height: 700px;
+}
+.fru_mana_image{
+			background-image: url('../../Assets/Images/Mana.png'); /* Replace with your image's URL */
+  background-size: contain; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image inside the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+	width: auto;
+	height: 700px;
+}
+
+button{
+	background-color: white;
+    border: 0 !important;
+    border-radius: 8px;
+    color: black;
+    display: inline-block;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-decoration: none !important;
+	font-size: 20px;
+	cursor: pointer;
+}

@@ -51,19 +51,25 @@
       <p class="text"> This site is a library for pf resources in XIV.</p>
       <h1 class="title"> Cheatsheets</h1>
       <div class="productRow"><!-- Each product row contains info of 3 elements -->
-        
+        <a href="cheatsheets/fru-elemental.html">
         <div class="productInfo"><!-- Each individual product description -->
           <div class="image_container ElementalPIC"></div>
           <input type="button" name="button" value="Elemental" class="buyButton">
         </div>
+			 </a>
+		  
+		  <a href="cheatsheets/fru-mana.html">
         <div class="productInfo"><!-- Each individual product description -->
           <div  class="image_container ManaPIC"></div>
           <input type="button" name="button" value="Mana" class="buyButton">
         </div>
+		  </a>
+		  <a href="cheatsheets/car-jp.html"> 
         <div class="productInfo"> <!-- Each individual product description -->
           <div  class="image_container JPPIC"></div>
           <input type="button" name="button" value="JP" class="buyButton">
         </div>
+			  </a>
       </div>
       <h1 class="title"> Encounters and Pf Strats</h1>
       <div class="productRow"><!-- Each product row contains info of 3 elements -->
@@ -161,17 +167,17 @@
       </div>
     </section>
   </div>
-  <footer class="footer"> 
-    <!-- This is the footer with default 3 divs -->
-    <div> <em><img src="Assets/Images/kanapic.png" width="50" height="50" alt=""/></em>
-      <p>This is my persona library which i use, feel free to look around!&nbsp;</p>
-    </div>
-    <div> </div>
-    <div class="footerlinks">
-      <p><a href="#" title="Link">Twitch </a></p>
-      <p><a href="#" title="Link">𝕏</a></p>
-    </div>
-  </footer>
+   <script>
+  // Fetch and insert sidebar
+  fetch('../footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer_container').innerHTML = data;
+    });
+</script>
+
+	<div id="footer_container"> </div>
+	
 </div>
 </body>
 </html>
