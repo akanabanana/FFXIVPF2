@@ -568,7 +568,7 @@ hr {
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap'); /* Import a cute font */
 @font-face {
   font-family: 'Moontime';
-  src: url('/Assets/fonts/moontime.ttf') format('truetype');
+  src: url('https://akanabanana.github.io/FFXIVPF2/Assets/fonts/moontime.ttf') format('truetype');
 }
 .site-logo {
   font-family: 'Moontime';
