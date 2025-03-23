@@ -126,3 +126,31 @@ function toggleMenu(menuId) {
      
   }
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements with the class 'copyable_code'
+    const copyableDivs = document.querySelectorAll('.copyable_code');
+    const toast = document.getElementById('toast');
+
+    // Add click event listener to each div
+    copyableDivs.forEach(div => {
+        div.addEventListener('click', function() {
+            // Get the text content of the div
+            const textToCopy = div.textContent;
+
+            // Use the Clipboard API to copy the text
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                // Show the toast notification
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000); // Hide the toast after 3 seconds
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        });
+    });
+});
