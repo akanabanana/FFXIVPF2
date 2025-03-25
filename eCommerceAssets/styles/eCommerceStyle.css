@@ -854,7 +854,7 @@ h1 {
   text-align: left;
   width: 100%
 }
-#fru-menu button, #car-menu button {
+#fru-menu button, #car-menu button, #positions button {
   background-color: rgba(0, 0, 0, 0) !important;
   color: white;
   cursor: pointer;
