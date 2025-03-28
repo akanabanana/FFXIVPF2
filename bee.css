@@ -228,7 +228,6 @@ h1 {
   border-radius: 5px;
   text-transform: uppercase;
   font-size: 35px;
-  
   color: #1E375C;
   width: 350px;
   box-shadow: 0px 7px 0px #1E375C;
@@ -270,10 +269,12 @@ h1 {
   flex-direction: column;
     gap:10px;
 
+
 }
 .strat_image_container {
   padding: 10px;
   margin-top: 10px;
+        border-radius:12px;
   border: 3px dashed #4BAEF4;
   background-color: #121A20;
 }
@@ -358,6 +359,52 @@ h1 {
 .fru-strat22 {
   background-image: url("Assets/Images/fru-strat22.png");
 }
+
+
+.recollection_1 {
+  background-image: url("Assets/Images/Recollection/1. Shock.png");
+}
+.recollection_2 {
+  background-image: url("Assets/Images/Recollection/2. Shock.png");
+}
+
+.recollection_3 {
+  background-image: url("Assets/Images/Recollection/3. Escelon 1.png");
+}
+
+.recollection_4 {
+  background-image: url("Assets/Images/Recollection/4. escelon 2.png");
+}
+
+.recollection_5 {
+  background-image: url("Assets/Images/Recollection/5. Blessing Barricade.png");
+}
+
+.recollection_6 {
+  background-image: url("Assets/Images/Recollection/6. Blessing barricade_cleave.png");
+}
+
+.recollection_7 {
+  background-image: url("Assets/Images/Recollection/7. bloom 3 markers.png");
+}
+
+.recollection_8 {
+  background-image: url("Assets/Images/Recollection/8. Bloom3_DPSrose.png");
+}
+
+.recollection_9 {
+  background-image: url("Assets/Images/Recollection/9. Bloom3_THrose.png");
+}
+.recollection_10 {
+  background-image: url("Assets/Images/Recollection/10. Bloom4.png");
+}
+
+.recollection_11 {
+  background-image: url("Assets/Images/Recollection/11. Bloom4_tether.png");
+}
+
+
+
 
 .footer_container{
 display: flex;
