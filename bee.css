@@ -291,7 +291,9 @@ h1 {
   background-position: center;
   vertical-align: middle;
   background-repeat: no-repeat;
-  max-width: 800px;
+  width:100%;
+  max-width: 1000px;
+  max-height: 800px;
 }
 .fru-strat1 {
   background-image: url("Assets/Images/fru-strat1.png");
