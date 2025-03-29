@@ -41,8 +41,7 @@
   }
   .recollection_14 {
     mask-image: radial-gradient(circle at 17% 38.6%, black 7%, rgba(0, 0, 0, 0.2) 1%), 
-    radial-gradient(circle at 68% 38.6%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
-    radial-gradient(circle at 20% 10.6%, black 8%, rgba(0, 0, 0, 0.2) 9%);
+    radial-gradient(circle at 68% 38.6%, black 9%, rgba(0, 0, 0, 0.2) 9%)
   }
 
 .selected_CLASS{
