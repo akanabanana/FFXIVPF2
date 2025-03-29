@@ -394,12 +394,17 @@ h1 {
   background-image: url("Assets/Images/Recollection/10. Bloom4 Markers.png");
 }
 .recollection_11 {
-  background-image: url("Assets/Images/Recollection/11. Bloom4_tether.png");
+  background-image: url("Assets/Images/Recollection/11. Bloom4_THrose.png");
 }
 .recollection_12 {
-  background-image: url("Assets/Images/Recollection/12. Bloom6_g8.png");
+  background-image: url("Assets/Images/Recollection/12. Bloom4 DPS rose.png");
 }
-
+.recollection_13 {
+  background-image: url("Assets/Images/Recollection/13. Bloom4 tethers.png");
+}
+.recollection_14 {
+  background-image: url("Assets/Images/Recollection/14. Bloom6_g8.png");
+}
 .footer_container {
   display: flex;
   flex-direction: column;
