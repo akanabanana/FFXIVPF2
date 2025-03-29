@@ -1,0 +1,62 @@
+.recollection_1 {
+    mask-image: radial-gradient(circle at 42% 85.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+  .recollection_2 {
+    mask-image: radial-gradient(circle at 25% 74%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+  .recollection_3 {
+    mask-image: radial-gradient(circle at 20% 19%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+  .recollection_4 {
+    mask-image: radial-gradient(circle at 50% 22%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+  .recollection_5 {
+    mask-image: radial-gradient(circle at 33% 47%, black 30%, rgba(0, 0, 0, 0.2) 9%),
+     radial-gradient(circle at 43% 95%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+  .recollection_6 {
+  
+  }
+  .recollection_7 {
+    
+  }
+  .recollection_8 {
+    mask-image: radial-gradient(circle at 26.8% 50.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+  .recollection_9 {
+    mask-image: radial-gradient(circle at 41% 58.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+  .recollection_10 {
+   
+  }
+  .recollection_11 {
+    mask-image: radial-gradient(circle at 55% 39.6%, black 9%, rgba(0, 0, 0, 0.2) 9%),
+     radial-gradient(circle at 71% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+  }
+
+
+.selected_CLASS{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #FFF5B4;
+  border-radius: 12px;
+  border: 4px #A99261 solid;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 100ms ease-out;
+  background-color: #487B39;
+}
+.selected_CLASS:before{
+  content: "H1";
+}
+
+
+.ST, .D1, .D2, .D3, .D4, .MT, .H2{
+    filter: grayscale(1);
+}
