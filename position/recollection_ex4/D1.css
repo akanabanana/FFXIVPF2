@@ -40,7 +40,7 @@
     radial-gradient(circle at 78% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
   }
   .recollection_14 {
-    mmask-image: radial-gradient(circle at 17% 61.6%, black 7%, rgba(0, 0, 0, 0.2) 1%), 
+    mask-image: radial-gradient(circle at 17% 61.6%, black 7%, rgba(0, 0, 0, 0.2) 1%), 
     radial-gradient(circle at 68% 61.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
   }
 
