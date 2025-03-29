@@ -224,7 +224,7 @@ h1 {
   background-color: #4BAEF4;
   font-family: "Caveat Brush", cursive;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
   text-transform: uppercase;
   font-size: 35px;
   color: #1E375C;
@@ -256,12 +256,13 @@ h1 {
   height: 700px;
 }
 .fight_layout {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   gap: 10px;
   margin-top: 26px;
   justify-content: left;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .strat_layout {
   display: flex;
@@ -269,18 +270,28 @@ h1 {
   gap: 10px;
 }
 .strat_image_container {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 15px;
+  margin-top: 15px;
   border-radius: 12px;
   border: 3px dashed #4BAEF4;
   background-color: #121A20;
+  height: 100%;	
+  
 }
 .strat_image {
   background-size: contain;
   background-position: center;
+  vertical-align: middle;
   background-repeat: no-repeat;
-  padding: 10px;
-  height: 220px;
+  height: 300px;
+  
+}
+.strat_image_big{
+  background-size: contain;
+  background-position: center;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  max-width: 800px;
 }
 .fru-strat1 {
   background-image: url("Assets/Images/fru-strat1.png");
@@ -355,7 +366,7 @@ h1 {
   background-image: url("Assets/Images/Recollection/2. Shock.png");
 }
 .recollection_3 {
-  background-image: url("Assets/Images/Recollection/3. Escelon 1.png");
+  background-image: url("Assets/Images/Recollection/3. Escelon13.png");
 }
 .recollection_4 {
   background-image: url("Assets/Images/Recollection/4. escelon 2.png");
@@ -376,11 +387,15 @@ h1 {
   background-image: url("Assets/Images/Recollection/9. Bloom3_THrose.png");
 }
 .recollection_10 {
-  background-image: url("Assets/Images/Recollection/10. Bloom4.png");
+  background-image: url("Assets/Images/Recollection/10. Bloom4 Markers.png");
 }
 .recollection_11 {
   background-image: url("Assets/Images/Recollection/11. Bloom4_tether.png");
 }
+.recollection_12 {
+  background-image: url("Assets/Images/Recollection/12. Bloom6_g8.png");
+}
+
 .footer_container {
   display: flex;
   flex-direction: column;
