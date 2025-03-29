@@ -1,38 +1,48 @@
 .recollection_1 {
-    mask-image: radial-gradient(circle at 61.8% 57%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
-  .recollection_2 {
-    mask-image: radial-gradient(circle at 56% 81%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
-  .recollection_3 {
-    mask-image: radial-gradient(circle at 57% 80%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
-  .recollection_4 {
-    mask-image: radial-gradient(circle at 50% 80%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
-  .recollection_5 {
-    mask-image: radial-gradient(circle at 73% 47%, black 30%, rgba(0, 0, 0, 0.2) 9%),
-   radial-gradient(circle at 60% 95%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
-  .recollection_6 {
+  mask-image: radial-gradient(circle at 70% 55.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_2 {
+  mask-image: radial-gradient(circle at 59% 86.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_3 {
+  mask-image: radial-gradient(circle at 64% 79%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_4 {
+  mask-image: radial-gradient(circle at 52% 82%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_5 {
+  Mask-image: radial-gradient(circle at 75% 44%, black 30%, rgba(0, 0, 0, 0.2) 9%), 
+  radial-gradient(circle at 67% 93%, black 13%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_6 {
+
+}
+.recollection_7 {
   
-  }
-  .recollection_7 {
-    
-  }
-  .recollection_8 {
-    mask-image: radial-gradient(circle at 49.8% 63.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
-  .recollection_9 {
-    mask-image: radial-gradient(circle at 49% 81.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
-  .recollection_10 {
-   
-  }
-  .recollection_11 {
-    mask-image: radial-gradient(circle at 47% 39.6%, black 9%, rgba(0, 0, 0, 0.2) 9%),
-   radial-gradient(circle at 28% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
-  }
+}
+.recollection_8 {
+  mask-image: radial-gradient(circle at 49% 61%, black 10%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_9 {
+  mask-image: radial-gradient(circle at 49% 76%, black 10%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_10 {
+ 
+}
+.recollection_11 {
+  mask-image: radial-gradient(circle at 53% 25%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_12 {
+  mask-image: radial-gradient(circle at 55% 61%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_13 {
+  mask-image: radial-gradient(circle at 55% 54.6%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
+  radial-gradient(circle at 78% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.recollection_14 {
+  mask-image: radial-gradient(circle at 32% 61.6%, black 7%, rgba(0, 0, 0, 0.2) 1%), 
+  radial-gradient(circle at 85% 61.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
 
 
 .selected_CLASS{
