@@ -276,6 +276,7 @@ h1 {
   border: 3px dashed #4BAEF4;
   background-color: #121A20;
   height: 100%;	
+  text-align: center;
   
 }
 .strat_image {
@@ -284,6 +285,7 @@ h1 {
   vertical-align: middle;
   background-repeat: no-repeat;
   height: 300px;
+  text-align: center;
   
 }
 .strat_image_big{
@@ -291,9 +293,9 @@ h1 {
   background-position: center;
   vertical-align: middle;
   background-repeat: no-repeat;
-  width:100%;
-  max-width: 1000px;
-  max-height: 800px;
+  width:800px;
+  height: 600px;
+  text-align: center;
 }
 .fru-strat1 {
   background-image: url("Assets/Images/fru-strat1.png");
