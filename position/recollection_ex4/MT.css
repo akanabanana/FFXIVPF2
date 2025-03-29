@@ -30,20 +30,19 @@
    
   }
   .recollection_11 {
-    mask-image: radial-gradient(circle at 55% 39.6%, black 9%, rgba(0, 0, 0, 0.2) 9%),
-     radial-gradient(circle at 71% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+    mask-image: radial-gradient(circle at 49% 26%, black 21%, rgba(0, 0, 0, 0.2) 9%);
   }
   .recollection_12 {
-    mask-image: radial-gradient(circle at 55% 39.6%, black 9%, rgba(0, 0, 0, 0.2) 9%),
-     radial-gradient(circle at 71% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+    mask-image: radial-gradient(circle at 50% 43%, black 9%, rgba(0, 0, 0, 0.2) 9%);
   }
   .recollection_13 {
-    mask-image: radial-gradient(circle at 55% 39.6%, black 9%, rgba(0, 0, 0, 0.2) 9%),
-     radial-gradient(circle at 71% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+    mask-image: radial-gradient(circle at 45% 58.6%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
+    radial-gradient(circle at 23% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
   }
   .recollection_14 {
-    mask-image: radial-gradient(circle at 55% 39.6%, black 9%, rgba(0, 0, 0, 0.2) 9%),
-     radial-gradient(circle at 71% 49.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+    mask-image: radial-gradient(circle at 17% 38.6%, black 7%, rgba(0, 0, 0, 0.2) 1%), 
+    radial-gradient(circle at 68% 38.6%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
+    radial-gradient(circle at 20% 10.6%, black 8%, rgba(0, 0, 0, 0.2) 9%);
   }
 
 .selected_CLASS{
