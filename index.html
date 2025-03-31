@@ -1,193 +1,195 @@
 <html>
-<head>
-<meta charset="utf-8">
-<title>FFXIVPF</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
 
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--> 
-<script>var __adobewebfontsappname__="dreamweaver"</script><script src="https://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
-<link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
-<link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
-<link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
-<link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"  />
-<link rel="stylesheet"href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css" />
-<link  rel="stylesheet"   href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css" />
-<link  rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
-<link   rel="stylesheet"   href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
-    
+<head>
+    <meta charset="utf-8">
+    <title>FFXIVPF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+    var __adobewebfontsappname__ = "dreamweaver"
+    </script>
+    <script src="https://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+    <link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
+    <link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
-    
-    
-    
-<div id="mainWrapper"> 
-  <script>
-  // Fetch and insert sidebar
+    <div id="mainWrapper">
+        <script>
+            // Fetch and insert sidebar
   fetch('header.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('header_container').innerHTML = data;
     });
 </script>
-  <div id="header_container"> </div>
-  <script> function toggleMenu(menuId) {
+        <div id="header_container"> </div>
+        <script> function toggleMenu(menuId) {
   const menu = document.getElementById(menuId);
   const arrow = button.querySelector('.arrow');
   if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
     menu.style.maxHeight = menu.scrollHeight + "px"; // Set max-height to content height
-	   arrow.style.transform = "rotate(90deg)";
+     arrow.style.transform = "rotate(90deg)";
   } else {
     menu.style.maxHeight = "0px"; // Collapse the menu
-	   arrow.style.transform = "rotate(0deg)";
+     arrow.style.transform = "rotate(0deg)";
   }
 }</script>
-  <div id="content"> 
-    <!--   this is where sidebar is--> 
-    
-    <script>
-  // Fetch and insert sidebar
+        <div id="content">
+            <!--   this is where sidebar is-->
+            <script>
+                // Fetch and insert sidebar
   fetch('sidebar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('sidebar-container').innerHTML = data;
     });
 </script>
-    <div id="sidebar-container"></div>
-    <section class="mainContent">
-      <h1 class="title"> FFXIVPF</h1>
-      <p class="textbold"> PF Resources by Kanabin</p>
-      <p class="text"> This site is a library for pf resources in XIV.</p>
-      <h1 class="title"> Cheatsheets</h1>
-      <div class="productRow"><!-- Each product row contains info of 3 elements --> 
-        <a href="cheatsheets/fru-elemental.html">
-        <div class="productInfo"><!-- Each individual product description -->
-          <div class="image_container ElementalPIC"></div>
-          <input type="button" name="button" value="Elemental" class="buyButton">
+            <div id="sidebar-container"></div>
+            <section class="mainContent">
+                <h1 class="title"> FFXIVPF</h1>
+                <p class="textbold"> PF Resources by Kanabin</p>
+                <p class="text"> This site is a library for pf resources in XIV.</p>
+                <h1 class="title"> Cheatsheets</h1>
+                <div class="productRow">
+                    <!-- Each product row contains info of 3 elements -->
+                    <a href="cheatsheets/fru-elemental.html">
+                        <div class="productInfo">
+                            <!-- Each individual product description -->
+                            <div class="image_container ElementalPIC"></div>
+                            <input type="button" name="button" value="Elemental" class="buyButton">
+                        </div>
+                    </a> <a href="cheatsheets/fru-mana.html">
+                        <div class="productInfo">
+                            <!-- Each individual product description -->
+                            <div class="image_container ManaPIC"></div>
+                            <input type="button" name="button" value="Mana" class="buyButton">
+                        </div>
+                    </a> <a href="cheatsheets/car-jp.html">
+                        <div class="productInfo">
+                            <!-- Each individual product description -->
+                            <div class="image_container JPPIC"></div>
+                            <input type="button" name="button" value="JP" class="buyButton">
+                        </div>
+                    </a> </div>
+                <h1 class="title"> Encounters and Pf Strats</h1>
+                <div class="productRow">
+                    <!-- Each product row contains info of 3 elements -->
+                    <a href="fru-elemental.html">
+                        <div class="productInfo">
+                            <div class="pill_container">
+                                <button>FRU </button>
+                                <button>ULTIMATE </button>
+                            </div>
+                            <!-- Each individual product description -->
+                            <div class="image_container FRUPicGaia"></div>
+                            <input type="button" name="button" value="Elemental" class="buyButton">
+                        </div>
+                    </a>
+                    <div class="productInfo">
+                        <div class="pill_container">
+                            <button>FRU </button>
+                            <button>ULTIMATE </button>
+                        </div>
+                        <!-- Each individual product description -->
+                        <div class="image_container FRUPicGaia"></div>
+                        <input type="button" name="button" value="Mana" class="buyButton">
+                    </div>
+                    <div class="productInfo">
+                        <div class="pill_container">
+                            <button>CAR </button>
+                            <button>CHAOTIC </button>
+                            <button>SAVAGE </button>
+                        </div>
+                        <!-- Each individual product description -->
+                        <div class="image_container CARPIC"></div>
+                        <input type="button" name="button" value="JP" class="buyButton">
+                    </div>
+                    <div class="productInfo">
+                        <div class="pill_container">
+                            <button>FRU </button>
+                            <button>ULTIMATE </button>
+                        </div>
+                        <!-- Each individual product description -->
+                        <div class="image_container FRUPicGaia"></div>
+                        <input type="button" name="button" value="OCE" class="buyButton">
+                    </div>
+                </div>
+                <H1 class="title"> Releases</H1>
+                <h3> Editor Notes</h3>
+                <div class="Releases_Box">
+                    <div class="release_content">
+                        <div class="release_title_date">
+                            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU OCE strat published&nbsp;</h4>
+                            <p> Febraury 20, 2025</p>
+                        </div>
+                        <div class="release_comment">
+                            <p style="text-align: left; margin-top: 0px"> Added a page for navigating OCE strat</p>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="release_content">
+                        <div class="release_title_date">
+                            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Mana cheatsheet adjusted&nbsp;</h4>
+                            <p> January 21, 2025</p>
+                        </div>
+                        <div class="release_comment">
+                            <p style="text-align: left; margin-top: 0px"> Cheatsheet revised&nbsp;</p>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="release_content">
+                        <div class="release_title_date">
+                            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Mana strat update</h4>
+                            <p> January 20, 2025</p>
+                        </div>
+                        <div class="release_comment">
+                            <p style="text-align: left; margin-top: 0px"> Update translations for FRU in Mana</p>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="release_content">
+                        <div class="release_title_date">
+                            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> JP CAR and FRU Mana page published</h4>
+                            <p> January 18 2025&nbsp;</p>
+                        </div>
+                        <div class="release_comment">
+                            <p style="text-align: left; margin-top: 0px"> Pages Published</p>
+                        </div>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="release_content">
+                        <div class="release_title_date">
+                            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Elem PF strat page + cheatsheets published</h4>
+                            <p> January 14, 2025</p>
+                        </div>
+                        <div class="release_comment">
+                            <p style="text-align: left; margin-top: 0px"> Mostly blah blah notes</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        </a> <a href="cheatsheets/fru-mana.html">
-        <div class="productInfo"><!-- Each individual product description -->
-          <div  class="image_container ManaPIC"></div>
-          <input type="button" name="button" value="Mana" class="buyButton">
-        </div>
-        </a> <a href="cheatsheets/car-jp.html">
-        <div class="productInfo"> <!-- Each individual product description -->
-          <div  class="image_container JPPIC"></div>
-          <input type="button" name="button" value="JP" class="buyButton">
-        </div>
-        </a> </div>
-      <h1 class="title"> Encounters and Pf Strats</h1>
-      <div class="productRow"><!-- Each product row contains info of 3 elements -->
-        <a href="fru-elemental.html"> 
-        <div class="productInfo">
-          <div class="pill_container">
-            <button>FRU </button>
-            <button>ULTIMATE </button>
-          </div>
-          <!-- Each individual product description -->
-          <div class="image_container FRUPicGaia"></div>
-          <input type="button" name="button" value="Elemental" class="buyButton">
-        </div>
-            </a>
-        <div class="productInfo">
-          <div class="pill_container">
-            <button>FRU </button>
-            <button>ULTIMATE </button>
-          </div>
-          <!-- Each individual product description -->
-          <div  class="image_container FRUPicGaia"></div>
-          <input type="button" name="button" value="Mana" class="buyButton">
-        </div>
-        <div class="productInfo">
-          <div class="pill_container">
-            <button>CAR </button>
-            <button>CHAOTIC </button>
-            <button>SAVAGE </button>
-          </div>
-          <!-- Each individual product description -->
-          <div  class="image_container CARPIC"></div>
-          <input type="button" name="button" value="JP" class="buyButton">
-        </div>
-        <div class="productInfo">
-          <div class="pill_container">
-            <button>FRU </button>
-            <button>ULTIMATE </button>
-          </div>
-          <!-- Each individual product description -->
-          <div  class="image_container FRUPicGaia"></div>
-          <input type="button" name="button" value="OCE" class="buyButton">
-        </div>
-      </div>
-      <H1 class="title"> Releases</H1>
-      <h3> Editor Notes</h3>
-      <div class="Releases_Box">
-        <div class="release_content">
-          <div class="release_title_date">
-            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU OCE strat published&nbsp;</h4>
-            <p> Febraury 20, 2025</p>
-          </div>
-          <div class="release_comment">
-            <p style="text-align: left; margin-top: 0px"> Added a page for navigating OCE strat</p>
-          </div>
-        </div>
-        <hr style="width: 100%;">
-        <div class="release_content">
-          <div class="release_title_date">
-            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Mana cheatsheet adjusted&nbsp;</h4>
-            <p> January 21, 2025</p>
-          </div>
-          <div class="release_comment">
-            <p style="text-align: left; margin-top: 0px"> Cheatsheet revised&nbsp;</p>
-          </div>
-        </div>
-        <hr style="width: 100%;">
-        <div class="release_content">
-          <div class="release_title_date">
-            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Mana strat update</h4>
-            <p> January 20, 2025</p>
-          </div>
-          <div class="release_comment">
-            <p style="text-align: left; margin-top: 0px"> Update translations for FRU in Mana</p>
-          </div>
-        </div>
-        <hr style="width: 100%;">
-        <div class="release_content">
-          <div class="release_title_date">
-            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> JP CAR and FRU Mana page published</h4>
-            <p> January 18 2025&nbsp;</p>
-          </div>
-          <div class="release_comment">
-            <p style="text-align: left; margin-top: 0px"> Pages Published</p>
-          </div>
-        </div>
-        <hr style="width: 100%;">
-        <div class="release_content">
-          <div class="release_title_date">
-            <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> FRU Elem PF strat page + cheatsheets published</h4>
-            <p> January 14, 2025</p>
-          </div>
-          <div class="release_comment">
-            <p style="text-align: left; margin-top: 0px"> Mostly blah blah notes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
-  // Fetch and insert sidebar
-  fetch('https://akanabanana.github.io/FFXIVPF2/footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer_container').innerHTML = data;
-    });
-</script>
-  <div id="footer_container"> </div>
-</div>
-    
-    <script>  </script>
+        <script>
+        // Fetch and insert sidebar
+        fetch('https://akanabanana.github.io/FFXIVPF2/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer_container').innerHTML = data;
+            });
+        </script>
+        <div id="footer_container"> </div>
+    </div>
+    <script> </script>
 </body>
 <script src="script.js"></script>
+
 </html>

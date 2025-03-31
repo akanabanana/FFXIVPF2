@@ -1,492 +1,717 @@
 @charset "utf-8";
+
 /* CSS Document */
 body {}
-p, h2, h3, h4 {
-  color: black !important;
+
+p,
+h2,
+h3,
+h4 {
+    color: black !important;
 }
+
 .lilita-one-regular {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .caveat-brush-regular {
-  font-family: "Caveat Brush", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
+
 h1 {
-  font-family: "Lilita One", sans-serif;
-  text-shadow: 0px 7px 0px black;
-  color: white;
-  font-size: 70px;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: 0px 7px 0px black;
+    color: white;
+    font-size: 70px;
 }
+
 .top_button {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  border: solid black 1px;
-  box-shadow: 0px 5px 0px black;
-  border-radius: 0px 0px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    border: solid black 1px;
+    box-shadow: 0px 5px 0px black;
+    border-radius: 0px 0px 5px 5px;
 }
+
 .caveat {
-  font-family: "Caveat Brush", cursive;
+    font-family: "Caveat Brush", cursive;
 }
+
 .fight {
-  background-color: #FFF5B4;
-  padding: 10px;
-  box-shadow: 0px 3px 0px black;
-  border-radius: 0px 0px 5px 5px;
-  width: 100%;
-  font-family: "Caveat Brush", cursive;
-  font-size: 26px;
+    background-color: #FFF5B4;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    font-family: "Caveat Brush", cursive;
+    font-size: 26px;
 }
+
 .yellow_button {
-  background-color: #FFF5B4;
-  padding: 10px;
-  box-shadow: 0px 3px 0px black;
-  border-radius: 0px 0px 5px 5px;
-  width: 100%;
-  border: solid black 1px;
-  font-family: "Caveat Brush", cursive;
-  font-size: 26px;
-  text-transform: uppercase;
+    background-color: #FFF5B4;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    border: solid black 1px;
+    font-family: "Caveat Brush", cursive;
+    font-size: 26px;
+    text-transform: uppercase;
 }
+
 .choose_div {
-  background-color: #FFF5B4;
-  padding: 10px;
-  box-shadow: 0px 3px 0px black;
-  border-radius: 0px 0px 5px 5px;
-  width: 100%;
-  border: solid black 1px;
-  font-family: "Caveat Brush", cursive;
-  font-size: 26px;
-  margin-top: 10px;
-  text-transform: uppercase;
+    background-color: #FFF5B4;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    border: solid black 1px;
+    font-family: "Caveat Brush", cursive;
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
 }
+
 .dynamic_bee_button {
-  background-color: #FFF5B4;
-  padding: 10px;
-  box-shadow: 0px 3px 0px black;
-  border-radius: 0px 0px 5px 5px;
-  border: solid black 1px;
-  font-family: "Caveat Brush", cursive;
-  font-size: 26px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  transition: all 100ms ease-out;
+    background-color: #FFF5B4;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 0px 0px 5px 5px;
+    border: solid black 1px;
+    font-family: "Caveat Brush", cursive;
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transition: all 100ms ease-out;
 }
+
 .choose_buttons {
-  background-color: transparent;
-  width: 100%;
-  font-family: "Caveat Brush", cursive;
-  text-align: left;
+    background-color: transparent;
+    width: 100%;
+    font-family: "Caveat Brush", cursive;
+    text-align: left;
 }
+
 .choose_buttons:hover {
-  background-color: #bcbd3d;
+    background-color: #bcbd3d;
 }
+
 .fight option {
-  background-color: #FFF5B4;
-  padding: 10px;
-  font-family: "Caveat Brush", cursive;
+    background-color: #FFF5B4;
+    padding: 10px;
+    font-family: "Caveat Brush", cursive;
 }
+
 .intro_container {
-  display: flex;
-  flex-direction: row;
-  margin-left: 100px;
-  gap: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    gap: 50px;
 }
+
 .text_intro_container {
-  max-width: 400px;
+    max-width: 400px;
 }
+
 .big_bee_laptop {
-  background-image: url(Assets/Images/bee_laptop.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 700px;
-  height: 550px;
+    background-image: url(Assets/Images/bee_laptop.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 550px;
 }
+
 #mainWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #FDBD04 !important;
-}
-.top_button {
-  background-color: #FDBD04 !important;
-}
-.big_p {
-  font-size: 22px;
-}
-.bottom_container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: left;
-  text-align: left;
-  margin-left: 100px;
-  max-width: 1150px;
-}
-.bottom_container h1 {
-  text-align: left;
-}
-.bottom_container p {
-  text-align: left;
-}
-#fru_positions_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.choose_class {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: left;
-  max-width: 300px;
-}
-.whiteText {
-  color: white !important;
-}
-.tank, .dps, .support {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  color: #FFF5B4;
-  border-radius: 12px;
-  border: 4px #A99261 solid;
-  font-size: 26px;
-  font-weight: 500;
-  cursor: pointer;
-  user-select: none;
-  transition: all 100ms ease-out;
-}
-.tank {
-  background-color: #3F54B9;
-}
-.dps {
-  background-color: #803B3C;
-}
-.support {
-  background-color: #487B39;
-}
-.tank:hover, .support:hover, .dps:hover {
-  transform: scale(1.1);
-}
-.cheatsheet_position_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 50px;
-}
-.cheatsheet_position_image {
-  background-image: url("Assets/Images/Elemental.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 300px;
-  cursor: pointer;
-}
-.blue_title {
-  background-color: #4BAEF4;
-  font-family: "Lilita One", sans-serif;
-  padding: 10px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 60px;
-  color: #1E375C;
-  /*  box-shadow: 0px 7px 0px #1E375C;*/
-  align-self: center;
-}
-.blue_button {
-  background-color: #4BAEF4;
-  font-family: "Caveat Brush", cursive;
-  padding: 10px;
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-size: 35px;
-  color: #1E375C;
-  width: 350px;
-  box-shadow: 0px 7px 0px #1E375C;
-  align-self: center;
-}
-.red_button {
-  background-color: #CC0707;
-  font-family: "Caveat Brush", cursive;
-  padding: 10px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 35px;
-  color: white;
-  width: 350px;
-  margin-top: -27px;
-  box-shadow: 0px 3px 0px black;
-  align-self: center;
-}
-.blue_button_number {
-  font-family: "Lilita One", sans-serif;
-}
-.cheatsheet_image {
-  background-image: url("Assets/Images/Elemental.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 700px;
-}
-.fight_layout {
-  display: inline-flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-top: 26px;
-  justify-content: left;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.strat_layout {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.strat_image_container {
-  padding: 15px;
-  margin-top: 15px;
-  border-radius: 12px;
-  border: 3px dashed #4BAEF4;
-  background-color: #121A20;
-  height: 100%;
-  text-align: center;
-}
-.strat_image {
-  background-size: contain;
-  background-position: center;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  height: 300px;
-  text-align: center;
-}
-.strat_image_big {
-  background-size: contain;
-  background-position: center;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 600px;
-  text-align: center;
-}
-.fru-strat1 {
-  background-image: url("Assets/Images/fru-strat1.png");
-}
-.fru-strat2 {
-  background-image: url("Assets/Images/fru-strat2.png");
-}
-.fru-strat3 {
-  background-image: url("Assets/Images/fru-strat3.png");
-}
-.fru-strat4 {
-  background-image: url("Assets/Images/fru-strat4.png");
-}
-.fru-strat5 {
-  background-image: url("Assets/Images/fru-strat5.png");
-}
-.fru-strat6 {
-  background-image: url("Assets/Images/fru-strat6.png");
-}
-.fru-strat7 {
-  background-image: url("Assets/Images/fru-strat7.png");
-}
-.fru-strat8 {
-  background-image: url("Assets/Images/fru-strat8.png");
-}
-.fru-strat9 {
-  background-image: url("Assets/Images/fru-strat9.png");
-}
-.fru-strat10 {
-  background-image: url("Assets/Images/fru-strat10.png");
-}
-.fru-strat11 {
-  background-image: url("Assets/Images/fru-strat11.png");
-}
-.fru-strat12 {
-  background-image: url("Assets/Images/fru-strat12.png");
-}
-.fru-strat13 {
-  background-image: url("Assets/Images/fru-strat13.png");
-}
-.fru-strat14 {
-  background-image: url("Assets/Images/fru-strat14.png");
-}
-.fru-strat15 {
-  background-image: url("Assets/Images/fru-strat11.png");
-}
-.fru-strat16 {
-  background-image: url("Assets/Images/fru-strat16.png");
-}
-.fru-strat17 {
-  background-image: url("Assets/Images/fru-strat11.png");
-}
-.fru-strat18 {
-  background-image: url("Assets/Images/fru-strat18.png");
-}
-.fru-strat19 {
-  background-image: url("Assets/Images/fru-strat19.png");
-}
-.fru-strat20 {
-  background-image: url("Assets/Images/fru-strat20.png");
-}
-.fru-strat21 {
-  background-image: url("Assets/Images/fru-strat21.png");
-}
-.fru-strat22 {
-  background-image: url("Assets/Images/fru-strat22.png");
-}
-.recollection_1 {
-  background-image: url("Assets/Images/Recollection/1. Shock.png");
-}
-.recollection_2 {
-  background-image: url("Assets/Images/Recollection/2. Shock.png");
-}
-.recollection_3 {
-  background-image: url("Assets/Images/Recollection/3. Escelon13.png");
-}
-.recollection_4 {
-  background-image: url("Assets/Images/Recollection/4. escelon 2.png");
-}
-.recollection_5 {
-  background-image: url("Assets/Images/Recollection/5. Blessing Barricade.png");
-}
-.recollection_6 {
-  background-image: url("Assets/Images/Recollection/6. Blessing barricade_cleave.png");
-}
-.recollection_7 {
-  background-image: url("Assets/Images/Recollection/7. bloom 3 markers.png");
-}
-.recollection_8 {
-  background-image: url("Assets/Images/Recollection/8. Bloom3_DPSrose.png");
-}
-.recollection_9 {
-  background-image: url("Assets/Images/Recollection/9. Bloom3_THrose.png");
-}
-.recollection_10 {
-  background-image: url("Assets/Images/Recollection/10. Bloom4 Markers.png");
-}
-.recollection_11 {
-  background-image: url("Assets/Images/Recollection/11. Bloom4_THrose.png");
-}
-.recollection_12 {
-  background-image: url("Assets/Images/Recollection/12. Bloom4 DPS rose.png");
-}
-.recollection_13 {
-  background-image: url("Assets/Images/Recollection/13. Bloom4 tethers.png");
-}
-.recollection_14 {
-  background-image: url("Assets/Images/Recollection/14. Bloom6_g8.png");
-}
-.footer_container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  background-color: #FDBD04;
-  border-radius: 50px 50px 0px 0px;
-  align-content: center;
-  align-items: center;
-  padding-bottom: 189px;
-}
-.bee_footer {
-  padding: 10px;
-}
-footer {
-  margin-left: 0px;
-  width: 100%;
-  position: relative;
-}
-.bee_footer_image {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(Assets/Images/bees_footer.png);
-  width: 100%;
-  height: 290px;
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* top: 253px; */
-  left: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.footer_buttons {
-  height: 170px;
-}
-.footer_buttons button {
-  background-color: #FFF5B4;
-  box-shadow: 0px 3px 0px black;
-  border-radius: 0px 0px 5px 5px;
-  border: solid black 1px !important;
-  font-family: "Caveat Brush", cursive;
-  font-size: 26px;
-  margin-top: 10px;
-  z-index: 9999;
-  position: relative;
-  text-transform: uppercase;
-}
-.footer_button_1 {
-  background-color: #10B7A9 !important;
-  margin-right: 30px;
-}
-@media only screen and (max-width: 767px) {
-  .intro_container {
+    display: flex;
     flex-direction: column;
-  }
-  .dynamic_bee_button {
-    width: 90%;
-  }
-  footer {
-    width: 118vw;
-  }
-  .bee_footer_image {
-    top: 477px;
-  }
-  .cheatsheet_image {
-    height: 300px;
-  }
-  .intro_container {
-    margin-left: 0px;
-  }
-  .cheatsheet_position_image {
-    width: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.top_button {
+    background-color: #FDBD04 !important;
+}
+
+.big_p {
+    font-size: 22px;
+}
+
+.bottom_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: left;
+    text-align: left;
+    margin-left: 100px;
+    max-width: 1150px;
+}
+
+.bottom_container h1 {
+    text-align: left;
+}
+
+.bottom_container p {
+    text-align: left;
+}
+
+#fru_positions_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.choose_class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: left;
+    max-width: 300px;
+}
+
+.whiteText {
+    color: white !important;
+}
+
+.tank,
+.dps,
+.support {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #FFF5B4;
+    border-radius: 12px;
+    border: 4px #A99261 solid;
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 100ms ease-out;
+}
+
+.tank {
+    background-color: #3F54B9;
+}
+
+.dps {
+    background-color: #803B3C;
+}
+
+.support {
+    background-color: #487B39;
+}
+
+.tank:hover,
+.support:hover,
+.dps:hover {
+    transform: scale(1.1);
+}
+
+.cheatsheet_position_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.cheatsheet_position_image {
+    background-image: url("Assets/Images/Elemental.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
     height: 300px;
     cursor: pointer;
-  }
-  .bottom_container {
+}
+
+.blue_title {
+    background-color: #4BAEF4;
+    font-family: "Lilita One", sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #1E375C;
+    /*  box-shadow: 0px 7px 0px #1E375C;*/
+    align-self: center;
+}
+
+.blue_button {
+    background-color: #4BAEF4;
+    font-family: "Caveat Brush", cursive;
+    padding: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #1E375C;
+    width: 350px;
+    box-shadow: 0px 7px 0px #1E375C;
+    align-self: center;
+}
+
+.red_button {
+    background-color: #CC0707;
+    font-family: "Caveat Brush", cursive;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+    width: 350px;
+    margin-top: -27px;
+    box-shadow: 0px 3px 0px black;
+    align-self: center;
+}
+
+.blue_button_number {
+    font-family: "Lilita One", sans-serif;
+}
+
+.cheatsheet_image {
+    background-image: url("Assets/Images/Elemental.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.fight_layout {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 26px;
+    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.strat_layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.strat_image_container {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 3px dashed #4BAEF4;
+    background-color: #121A20;
+    height: 100%;
+    text-align: center;
+}
+
+.strat_image {
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    height: 300px;
+    text-align: center;
+}
+
+.strat_image_big {
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+}
+
+.fru-strat1 {
+    background-image: url("Assets/Images/fru-strat1.png");
+}
+
+.fru-strat2 {
+    background-image: url("Assets/Images/fru-strat2.png");
+}
+
+.fru-strat3 {
+    background-image: url("Assets/Images/fru-strat3.png");
+}
+
+.fru-strat4 {
+    background-image: url("Assets/Images/fru-strat4.png");
+}
+
+.fru-strat5 {
+    background-image: url("Assets/Images/fru-strat5.png");
+}
+
+.fru-strat6 {
+    background-image: url("Assets/Images/fru-strat6.png");
+}
+
+.fru-strat7 {
+    background-image: url("Assets/Images/fru-strat7.png");
+}
+
+.fru-strat8 {
+    background-image: url("Assets/Images/fru-strat8.png");
+}
+
+.fru-strat9 {
+    background-image: url("Assets/Images/fru-strat9.png");
+}
+
+.fru-strat10 {
+    background-image: url("Assets/Images/fru-strat10.png");
+}
+
+.fru-strat11 {
+    background-image: url("Assets/Images/fru-strat11.png");
+}
+
+.fru-strat12 {
+    background-image: url("Assets/Images/fru-strat12.png");
+}
+
+.fru-strat13 {
+    background-image: url("Assets/Images/fru-strat13.png");
+}
+
+.fru-strat14 {
+    background-image: url("Assets/Images/fru-strat14.png");
+}
+
+.fru-strat15 {
+    background-image: url("Assets/Images/fru-strat11.png");
+}
+
+.fru-strat16 {
+    background-image: url("Assets/Images/fru-strat16.png");
+}
+
+.fru-strat17 {
+    background-image: url("Assets/Images/fru-strat11.png");
+}
+
+.fru-strat18 {
+    background-image: url("Assets/Images/fru-strat18.png");
+}
+
+.fru-strat19 {
+    background-image: url("Assets/Images/fru-strat19.png");
+}
+
+.fru-strat20 {
+    background-image: url("Assets/Images/fru-strat20.png");
+}
+
+.fru-strat21 {
+    background-image: url("Assets/Images/fru-strat21.png");
+}
+
+.fru-strat22 {
+    background-image: url("Assets/Images/fru-strat22.png");
+}
+
+.recollection_1 {
+    background-image: url("Assets/Images/Recollection/1. Shock.png");
+}
+
+.recollection_2 {
+    background-image: url("Assets/Images/Recollection/2. Shock.png");
+}
+
+.recollection_3 {
+    background-image: url("Assets/Images/Recollection/3. Escelon13.png");
+}
+
+.recollection_4 {
+    background-image: url("Assets/Images/Recollection/4. escelon 2.png");
+}
+
+.recollection_5 {
+    background-image: url("Assets/Images/Recollection/5. Blessing Barricade.png");
+}
+
+.recollection_6 {
+    background-image: url("Assets/Images/Recollection/6. Blessing barricade_cleave.png");
+}
+
+.recollection_7 {
+    background-image: url("Assets/Images/Recollection/7. bloom 3 markers.png");
+}
+
+.recollection_8 {
+    background-image: url("Assets/Images/Recollection/8. Bloom3_DPSrose.png");
+}
+
+.recollection_9 {
+    background-image: url("Assets/Images/Recollection/9. Bloom3_THrose.png");
+}
+
+.recollection_10 {
+    background-image: url("Assets/Images/Recollection/10. Bloom4 Markers.png");
+}
+
+.recollection_11 {
+    background-image: url("Assets/Images/Recollection/11. Bloom4_THrose.png");
+}
+
+.recollection_12 {
+    background-image: url("Assets/Images/Recollection/12. Bloom4 DPS rose.png");
+}
+
+.recollection_13 {
+    background-image: url("Assets/Images/Recollection/13. Bloom4 tethers.png");
+}
+
+.recollection_14 {
+    background-image: url("Assets/Images/Recollection/14. Bloom6_g8.png");
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    background-color: #FDBD04;
+    border-radius: 50px 50px 0px 0px;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 75px;
+    margin-top: 50px;
+}
+
+.bee_footer {
+    padding: 10px;
+}
+
+footer {
     margin-left: 0px;
-  }
+    width: 100%;
+    position: relative;
 }
+
+.bee_footer_image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(Assets/Images/bees_footer.png);
+    width: 100%;
+    height: 290px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* top: 253px; */
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer_buttons button {
+    background-color: #FFF5B4;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 0px 0px 5px 5px;
+    border: solid black 1px !important;
+    font-family: "Caveat Brush", cursive;
+    font-size: 26px;
+    margin-top: 10px;
+    z-index: 9999;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer_button_1 {
+    background-color: #10B7A9 !important;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .intro_container {
+        flex-direction: column;
+    }
+
+    .dynamic_bee_button {
+        width: 90%;
+    }
+
+    footer {
+        width: 118vw;
+    }
+
+    .bee_footer_image {
+        top: 477px;
+    }
+
+    .cheatsheet_image {
+        height: 300px;
+    }
+
+    .intro_container {
+        margin-left: 0px;
+    }
+
+    .cheatsheet_position_image {
+        width: auto;
+        height: 300px;
+        cursor: pointer;
+    }
+
+    .bottom_container {
+        margin-left: 0px;
+    }
+}
+
 @media only screen and (max-width: 320px) {
-  footer {
-    width: 143vw;
-  }
+    footer {
+        width: 143vw;
+    }
 }
-.cheatsheet_image, .cheatsheet_title {
-  display: none;
+
+.cheatsheet_image,
+.cheatsheet_title {
+    display: none;
 }
-.cheatsheet_image.visible, .cheatsheet_title.visible {
-  display: block;
+
+.cheatsheet_image.visible,
+.cheatsheet_title.visible {
+    display: block;
 }
+
+.kofi_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #FFF5B4;
+    padding: 5px 7px 4px 5px;
+    box-shadow: 0px 5px 0px black;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 100ms ease-out;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+.kofi_bee_kana {
+    background-image: url("Assets/Images/kana_bee.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 90px;
+    transition: all 100ms ease-out;
+}
+
+.kofi_bee_maro {
+    background-image: url("Assets/Images/maro_bee.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 90px;
+    transition: all 100ms ease-out;
+}
+
+
+.kofi_kana:hover .kofi_bee_kana {
+    background-image: url("Assets/Images/kana_bee_hovered.png");
+    transform: scale(1.2);
+}
+
+.kofi_kana:hover {
+    background-color: unset !important;
+    border: dashed black 2px !important;
+    box-shadow: none;
+}
+
+.kofi_maro:hover .kofi_bee_maro{
+    background-image: url("Assets/Images/maro_bee_hovered.png");
+    transform: scale(1.2);
+}
+
+.kofi_maro:hover {
+    background-color: unset !important;
+    border: dashed black 2px !important;
+    box-shadow: none;
+}
+
+
+
+
+
+.kofi_dev h1 {
+    color: black !important;
+    text-shadow: none;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.kofi_dev p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+
+}
+
+
+footer a:hover,
+footer a:visited,
+footer a:link,
+footer a:active {
+    text-decoration: none;
+}
+
+.kofi_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #FDBD04;
+    transition: all 100ms ease-out;
+    border-radius: 50%;
+    padding: 3px;
+   
+}
+
