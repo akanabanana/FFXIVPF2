@@ -195,42 +195,16 @@ gtag('config', 'G-11QMT7H70Z');
         </div>
     </div>
     <footer>
-        <div class="footer_container">
-            <div>
-                <h1 style="margin-bottom: 0px;"> LIKE THIS CONTENT?</h1>
-            </div>
-            <p style="margin-top: 0px; margin-bottom: 26px;">SUPPORT THE LIVING CONDITIONS OF WORKING BEES THAT ARE PUTTING THEIR BLOOD SWEAT AND TEARS FOR THE MAKING OF THIS PROJECT. </p>
-            <div class="footer_buttons">
-                <!--      <a href="https://www.buymeacoffee.com/bgBv4dr3RZ" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-      <div class="bee_footer_image"> </div> -->
-                <!-- Main button Flex row -->
-                <a href="https://www.buymeacoffee.com/bgBv4dr3RZ" target="_blank">
-                    <div class="kofi_button kofi_kana">
-                        <div class="kofi_bee_container">
-                            <div class="kofi_circle">
-                                <div class="kofi_bee_kana"></div>
-                            </div>
-                        </div>
-                        <div class="kofi_dev">
-                            <h1>Kana </h1>
-                            <p>I made this pretty </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://paypal.me/MaroBotic" target="_blank">
-                    <div class="kofi_button kofi_maro">
-                        <div class="kofi_bee_container">
-                            <div class="kofi_circle">
-                                <div class="kofi_bee_maro"></div>
-                            </div>
-                        </div>
-                        <div class="kofi_dev">
-                            <h1>Maro </h1>
-                            <p>I made this work </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <script>
+        // Fetch and insert sidebar
+        fetch('/FFXIVPF2/bee_footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer_container').innerHTML = data;
+            });
+        </script>
+        <div class="footer_container" id="footer_container">
+        </div>
     </footer>
     <style>
     body {
