@@ -9,13 +9,14 @@ h4 {
     color: black !important;
 }
 
-h3{
+h3 {
     font-family: "Caveat Brush", sans-serif;
     color: white;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 400;
 }
+
 .lilita-one-regular {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
@@ -237,8 +238,12 @@ h1 {
 .cheatsheet_position_container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-self: center;
     margin-top: 50px;
+    max-width: 400px;
+    margin-left: 81px;
+    margin-bottom: 25px;
 }
 
 .cheatsheet_position_image {
@@ -310,6 +315,8 @@ h1 {
     justify-content: left;
     flex-wrap: wrap;
     justify-content: center;
+    max-width:1200px;
+    margin-left: 81px;
 }
 
 .strat_layout {
@@ -491,6 +498,44 @@ h1 {
     background-image: url("Assets/Images/Recollection/14. Bloom6_g8.png");
 }
 
+
+
+.m5s_1 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/1. Flip AB side.png");
+}
+
+.m5s_2 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/2. Arcady Night Fever.png");
+}
+
+.m5s_3 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/3. Burn Baby Burn.png");
+}
+
+.m5s_4 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/4. Lets Dance.png");
+}
+
+.m5s_5 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/5. Ride the waves(Spread).png");
+}
+
+.m5s_6 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/6. Ride the Waves(Pairs).png");
+}
+
+.m5s_7 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/7. Frogtourage1.png");
+}
+
+.m5s_8 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/8. Back Up Dance 1.png");
+}
+
+.m5s_9 {
+    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/9. Back Up Dance 2.png");
+}
+
 .footer_container {
     display: flex;
     flex-direction: column;
@@ -669,7 +714,7 @@ footer {
     box-shadow: none;
 }
 
-.kofi_maro:hover .kofi_bee_maro{
+.kofi_maro:hover .kofi_bee_maro {
     background-image: url("Assets/Images/maro_bee_hovered.png");
     transform: scale(1.2);
 }
@@ -718,6 +763,14 @@ footer a:active {
     transition: all 100ms ease-out;
     border-radius: 50%;
     padding: 3px;
-   
+
 }
 
+.strats_container{
+    display: flex;
+    flex-direction: row;
+}
+.white_text{
+    color: white !important;
+    text-align: left;
+}
