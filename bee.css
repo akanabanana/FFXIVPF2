@@ -276,6 +276,16 @@ h1 {
     align-self: center;
 }
 
+.cruiserweight_mechname{
+	background-color: #4BAEF4;
+	color: #ffffff;
+	padding: 20px;
+	margin-bottom: 30px;
+	width: 100%;
+	border-radius: 1px;	
+	font-size: 40px;
+}
+
 .red_button {
     background-color: #CC0707;
     font-family: "Caveat Brush", cursive;
@@ -328,6 +338,9 @@ h1 {
     text-align: center;
 }
 
+.cruiserweight{
+	border: 3px solid #fff;
+}
 .strat_image {
     background-size: contain;
     background-position: center;
