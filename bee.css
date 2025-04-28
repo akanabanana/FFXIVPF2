@@ -613,7 +613,7 @@ footer {
     }
 
     .dynamic_bee_button {
-        width: 95%;
+        width: 95% !important;
     }
 
 
@@ -869,24 +869,25 @@ footer a:active {
 
 
     .small {
-        min-width: 100px !important;
-        max-width: 100px !important;
+        min-width: 90% !important;
+        width: 90%;
 
     }
 
     .medium {
-        min-width: 200px !important;
-        max-width: 200px !important;
+        min-width: 90% !important;
+        width: 90%;
+
     }
 
     .large {
-        min-width: 350px !important;
-        max-width: 350px !important;
+        min-width: 80% !important;
+        width: 85%;
     }
 
     .xlrage {
-        min-width: 350px !important;
-        max-width: 350px !important;
+        min-width: 90% !important;
+        width: 75%;
     }
 
     .fight_layout {
@@ -938,7 +939,7 @@ footer a:active {
         position: fixed;
         bottom: -245;
         left: 5;
-   
+        z-index: 1;
         max-width: 100%;
         display: flex;
         flex-direction: row;
@@ -958,7 +959,7 @@ footer a:active {
         bottom: 0;
         left: 5;
         border-bottom: 1px solid black;
-     
+
         width: 500px;
 
 
@@ -968,4 +969,7 @@ footer a:active {
         display: none;
     }
 
+    footer {
+        z-index: 100;
+    }
 }
