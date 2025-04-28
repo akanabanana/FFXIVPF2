@@ -242,7 +242,7 @@ h1 {
     align-self: center;
     margin-top: 50px;
     max-width: 400px;
-    margin-left: 81px;
+
     margin-bottom: 25px;
 }
 
@@ -322,17 +322,18 @@ h1 {
     flex-direction: row;
     gap: 10px;
     margin-top: 26px;
-    justify-content: left;
+    justify-content: left !important;
     flex-wrap: wrap;
     justify-content: center;
-    max-width:1200px;
-    margin-left: 81px;
+    max-width: 1400px;
+
 }
 
 .strat_layout {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .strat_image_container {
@@ -343,18 +344,23 @@ h1 {
     background-color: #121A20;
     height: 100%;
     text-align: center;
+    min-width: fit-content;
+
 }
 
 .cruiserweight{
 	border: 3px solid #fff;
 }
 .strat_image {
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center;
-    vertical-align: middle;
+    /* Centers the image nicely */
     background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    width: 100%;
+    /* Or whatever width you want */
     height: 300px;
-    text-align: center;
+    /* Or whatever height you want */
 }
 
 .strat_image_big {
@@ -620,12 +626,10 @@ footer {
     }
 
     .dynamic_bee_button {
-        width: 90%;
+        width: 95%;
     }
 
-    footer {
-        width: 118vw;
-    }
+
 
     .bee_footer_image {
         top: 477px;
@@ -650,11 +654,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 320px) {
-    footer {
-        width: 143vw;
-    }
-}
+@media only screen and (max-width: 320px) {}
 
 .cheatsheet_image,
 .cheatsheet_title {
@@ -779,11 +779,198 @@ footer a:active {
 
 }
 
-.strats_container{
+.strats_container {
     display: flex;
     flex-direction: row;
 }
-.white_text{
+
+.white_text {
     color: white !important;
     text-align: left;
+}
+
+
+.small {
+    min-width: 150px !important;
+    max-width: 150px !important;
+
+}
+
+.medium {
+    min-width: 300px !important;
+    max-width: 300px !important;
+}
+
+.large {
+    min-width: 600px !important;
+    max-width: 600px !important;
+}
+
+.xlrage {
+    min-width: 900px !important;
+    max-width: 900px !important;
+}
+
+.image_of_strat {
+    width: 100%;
+    height: auto;
+    /* Keeps the image’s aspect ratio */
+    display: block;
+    /* Removes extra space below the image */
+}
+
+.purple_border {
+    border: 3px solid #a156a2;
+    border-radius: 12px;
+}
+
+.blue_border {
+    border: 3px solid #5655a5;
+    border-radius: 12px;
+}
+
+.brown_border {
+    border: 3px solid #aa4e35;
+    border-radius: 12px;
+}
+
+.yellow-green_border {
+    border: 3px solid #b9b53b;
+    border-radius: 12px;
+}
+
+.green_border {
+    border: 3px solid #478842;
+    border-radius: 12px;
+}
+
+/*responsive phone and tablet design*/
+@media only screen and (max-width:1000px) {
+    .strats_container {
+        flex-direction: column;
+    }
+
+    .intro_container {
+        position: unset !important;
+    }
+
+    .footer_buttons {
+        flex-direction: column;
+        justify-content: left;
+
+
+    }
+
+    .footer_container {
+        display: block;
+
+
+    }
+
+    #fru_positions_wrapper {
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .main_container_m5s {
+        margin-left: 25px !important;
+        max-width: 100%;
+    }
+
+
+    .small {
+        min-width: 100px !important;
+        max-width: 100px !important;
+
+    }
+
+    .medium {
+        min-width: 200px !important;
+        max-width: 200px !important;
+    }
+
+    .large {
+        min-width: 350px !important;
+        max-width: 350px !important;
+    }
+
+    .xlrage {
+        min-width: 350px !important;
+        max-width: 350px !important;
+    }
+
+    .fight_layout {
+        max-width: 400px;
+    }
+
+    .footer_text {
+        margin-left: 10px;
+        margin-top: 10px !important;
+    }
+
+    .footer_h1 {
+        margin-left: 10px;
+    }
+
+    .explaination {
+        margin-top: 35px;
+    }
+
+    .whiteText {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .KYP_title {
+        font-size: 34px !important;
+    }
+
+}
+
+
+@media only screen and (max-width:1828px) {
+    .strats_container {
+        flex-direction: column;
+    }
+
+    .intro_container {
+        position: unset !important;
+    }
+
+    .choose_class {
+        background-color: #FFF5B4;
+        padding: 10px;
+        box-shadow: unset;
+        border-radius: unset;
+        width: 100%;
+        border: unset;
+    
+
+    }
+
+    .dynamic_bee_button {
+        background-color: #FFF5B4;
+        padding: 10px;
+        box-shadow: 0px 5px 0px #1E375C;
+        border-radius: 0px 0px 5px 5px;
+        border: solid #1E375C 2px;
+        position: fixed;
+        bottom: 5;
+        left: 5;
+
+        z-index: 9999;
+        width: 500px;
+
+
+    }
+
+    .choose_class {
+        position: fixed;
+        bottom: -245;
+        left: 5;
+        z-index: 9999;
+    }
 }
