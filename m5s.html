@@ -249,8 +249,10 @@ function togglePositions() {
 
         // Determine current state and toggle positions
         const isDefaultPosition = dynamicBeeButton.style.bottom === '' || dynamicBeeButton.style.bottom === '0px';
-        dynamicBeeButton.style.bottom = isDefaultPosition ? '245px' : '0px';
-        chooseClass.style.bottom = isDefaultPosition ? '0px' : '-250px';
+        dynamicBeeButton.style.bottom = isDefaultPosition ? '165px' : '0px';
+        chooseClass.style.height = isDefaultPosition ? '150px' : '50px'; // Toggle height
+
+        chooseClass.style.bottom = isDefaultPosition ? '0px' : '0px';
 
         // Re-enable input after animation ends
         setTimeout(() => {
