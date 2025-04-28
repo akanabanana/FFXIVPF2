@@ -934,30 +934,38 @@ footer a:active {
         border-radius: unset;
         width: 100%;
         border: unset;
-    
-
+        height: 223px;
+        position: fixed;
+        bottom: -245;
+        left: 5;
+   
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .dynamic_bee_button {
         background-color: #FFF5B4;
         padding: 10px;
-        box-shadow: 0px 5px 0px #1E375C;
+        box-shadow: unset;
         border-radius: 0px 0px 5px 5px;
-        border: solid #1E375C 2px;
+        border: unset;
         position: fixed;
-        bottom: 5;
+        bottom: 0;
         left: 5;
-
-        z-index: 9999;
+        border-bottom: 1px solid black;
+     
         width: 500px;
 
 
     }
 
-    .choose_class {
-        position: fixed;
-        bottom: -245;
-        left: 5;
-        z-index: 9999;
+    #remove-all {
+        display: none;
     }
+
 }
