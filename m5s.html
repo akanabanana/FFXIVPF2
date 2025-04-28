@@ -73,7 +73,7 @@ gtag('config', 'G-11QMT7H70Z');
                         <div class="support H2 style-button" data-stylesheet="position/recollection_ex4/H2.css">H2 </div>
                         <div class="dps D2 style-button" data-stylesheet="position/recollection_ex4/D2.css">D2 </div>
                         <div class="dps D4 style-button" data-stylesheet="position/recollection_ex4/D4.css">D4 </div>
-                        <button class="style-button" id="remove-all"> Reset</button>
+                        <!-- <button class="style-button" id="remove-all"> Reset</button> -->
                     </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@ function togglePositions() {
         // Determine current state and toggle positions
         const isDefaultPosition = dynamicBeeButton.style.bottom === '' || dynamicBeeButton.style.bottom === '0px';
         dynamicBeeButton.style.bottom = isDefaultPosition ? '245px' : '0px';
-        chooseClass.style.bottom = isDefaultPosition ? '10px' : '-250px';
+        chooseClass.style.bottom = isDefaultPosition ? '0px' : '-250px';
 
         // Re-enable input after animation ends
         setTimeout(() => {
@@ -262,5 +262,8 @@ function togglePositions() {
 // Add click event listener
 dynamicBeeButton.addEventListener('click', togglePositions);
 </script>
+
+
+
 
 </html>
