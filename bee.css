@@ -461,7 +461,7 @@ h1 {
     background-image: url("Assets/Images/fru-strat22.png");
 }
 
-.recollection_1 {
+/*.recollection_1 {
     background-image: url("Assets/Images/Recollection/1. Shock.png");
 }
 
@@ -515,7 +515,7 @@ h1 {
 
 .recollection_14 {
     background-image: url("Assets/Images/Recollection/14. Bloom6_g8.png");
-}
+}*/
 
 
 
@@ -819,6 +819,16 @@ footer a:active {
     /* Removes extra space below the image */
 }
 
+.rose_border {
+    border: 3px solid #F88379;
+    border-radius: 12px;
+}
+
+.white_border {
+    border: 3px solid white;
+    border-radius: 12px;
+}
+
 .purple_border {
     border: 3px solid #a156a2;
     border-radius: 12px;
@@ -846,6 +856,30 @@ footer a:active {
 
 /*responsive phone and tablet design*/
 @media only screen and (max-width:1000px) {
+
+
+    /*Positions responsive*/
+
+    .intro_container {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .big_bee_laptop {
+        width: 100%;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    .yellow_button {
+        width: 90%;
+    }
+
+    .choose_div {
+        width: 90%;
+    }
+
+    /*Strat page responsive*/
     .strats_container {
         flex-direction: column;
     }
@@ -942,15 +976,15 @@ footer a:active {
     }
 
     .choose_class {
-        background-color: #FFF5B4;
+        background-color: #e8dcaa;
         padding: 10px;
         box-shadow: unset;
         border-radius: unset;
         width: 100%;
         border: unset;
-        height: 223px;
+        height: 50px;
         position: fixed;
-        bottom: -245;
+        bottom: 0;
         left: 5;
         z-index: 1;
         max-width: 100%;
@@ -960,6 +994,7 @@ footer a:active {
         align-content: center;
         align-items: center;
         justify-content: flex-start;
+        overflow: hidden;
     }
 
     .dynamic_bee_button {
@@ -971,11 +1006,17 @@ footer a:active {
         position: fixed;
         bottom: 0;
         left: 5;
-        border-bottom: 1px solid black;
+        z-index: 100;
+        height: 50px;
+        width: 100%;
+        cursor: pointer;
+        user-select: none;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
 
-        width: 500px;
+    }
 
-
+    .selected_CLASS {
+        margin-right: 50px;
     }
 
     #remove-all {
