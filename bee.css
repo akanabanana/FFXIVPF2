@@ -1026,4 +1026,6 @@ footer a:active {
     footer {
         z-index: 100;
     }
-}
+}  .explaination {
+        margin-top: 35px;
+    }
