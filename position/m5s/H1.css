@@ -1,8 +1,10 @@
 /* Empty CSS Code */
 .m5s_1 {
+    mask-image: radial-gradient(circle at 47% 14.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
 }
 
 .m5s_2 {
+    mask-image: radial-gradient(circle at 12% 31.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
 }
 
 .m5s_3 {
