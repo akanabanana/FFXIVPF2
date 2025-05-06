@@ -281,14 +281,14 @@ h1 {
     align-self: center;
 }
 
-.cruiserweight_mechname{
-	background-color: #4BAEF4;
-	color: #ffffff;
-	padding: 20px;
-	margin-bottom: 30px;
-	width: 100%;
-	border-radius: 1px;	
-	font-size: 40px;
+.cruiserweight_mechname {
+    background-color: #4BAEF4;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 1px;
+    font-size: 40px;
 }
 
 .red_button {
@@ -334,6 +334,8 @@ h1 {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    max-height: fit-content;
+    height: fit-content;
 }
 
 .strat_image_container {
@@ -348,9 +350,10 @@ h1 {
 
 }
 
-.cruiserweight{
-	border: 3px solid #fff;
+.cruiserweight {
+    border: 3px solid #fff;
 }
+
 .strat_image {
     background-size: 100% 100%;
     background-position: center;
@@ -790,26 +793,10 @@ footer a:active {
 }
 
 
-.small {
-    min-width: 150px !important;
-    max-width: 150px !important;
-
-}
-
-.medium {
-    min-width: 300px !important;
-    max-width: 300px !important;
-}
-
-.large {
-    min-width: 600px !important;
-    max-width: 600px !important;
-}
-
-.xlrage {
-    min-width: 900px !important;
-    max-width: 900px !important;
-}
+.small  { width: 225px; }
+.medium { width: 460px; }
+.large  { width: 695px; }
+.xlarge { width: 1400px; }
 
 .image_of_strat {
     width: 100%;
@@ -1026,6 +1013,8 @@ footer a:active {
     footer {
         z-index: 100;
     }
-}  .explaination {
-        margin-top: 35px;
-    }
+}
+
+.explaination {
+    margin-top: 35px;
+}
