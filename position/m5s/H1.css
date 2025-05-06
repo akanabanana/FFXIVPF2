@@ -8,6 +8,8 @@
 }
 
 .m5s_3 {
+    Mask-image: radial-gradient(circle at 12% 26.6%, black 4%, rgba(0, 0, 0, 0.2) 5%), 
+    radial-gradient(circle at 63% 75%, black 6%, rgba(0, 0, 0, 0.2) 5%);
 }
 
 .m5s_4 {
