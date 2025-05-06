@@ -793,10 +793,10 @@ footer a:active {
 }
 
 
-.small  { width: 208.33px; }
-.medium { width: 426.66px; }
-.large  { width: 645px; }
-.xlarge { width: 1300px; }
+.small  { width: 225px; }
+.medium { width: 460px; }
+.large  { width: 695px; }
+.xlarge { width: 1400px; }
 
 .image_of_strat {
     width: 100%;
