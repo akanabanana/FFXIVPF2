@@ -334,8 +334,7 @@ h1 {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
- 
-    height: fit-content;
+
 }
 
 .strat_image_container {
