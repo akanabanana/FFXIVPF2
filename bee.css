@@ -793,10 +793,26 @@ footer a:active {
 }
 
 
-.small  { width: 225px; }
-.medium { width: 460px; }
-.large  { width: 695px; }
-.xlarge { width: 1400px; }
+.small {
+    min-width: 150px !important;
+    max-width: 150px !important;
+
+}
+
+.medium {
+    min-width: 300px !important;
+    max-width: 300px !important;
+}
+
+.large {
+    min-width: 600px !important;
+    max-width: 600px !important;
+}
+
+.xlrage {
+    min-width: 900px !important;
+    max-width: 900px !important;
+}
 
 .image_of_strat {
     width: 100%;
