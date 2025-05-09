@@ -23,6 +23,16 @@ h3 {
     font-style: normal;
 }
 
+.DMSANS{
+    font-family: "DMSANS", sans-serif;
+
+}
+
+@font-face {
+    font-family: 'DMSans';
+    src: url('/FFXIVPF2/Assets/fonts/DMSANS.ttf') format('truetype');
+}
+
 .caveat-brush-regular {
     font-family: "Caveat Brush", cursive;
     font-weight: 400;
@@ -238,14 +248,12 @@ h1 {
 .cheatsheet_position_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    justify-content: left;
+    align-self: flex-start;
     margin-top: 50px;
     max-width: 400px;
-
     margin-bottom: 25px;
 }
-
 .cheatsheet_position_image {
     background-image: url("Assets/Images/Elemental.png");
     background-size: contain;
@@ -325,7 +333,7 @@ h1 {
     justify-content: left !important;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1400px;
+    max-width: 98%;
 
 }
 
@@ -463,99 +471,6 @@ h1 {
     background-image: url("Assets/Images/fru-strat22.png");
 }
 
-/*.recollection_1 {
-    background-image: url("Assets/Images/Recollection/1. Shock.png");
-}
-
-.recollection_2 {
-    background-image: url("Assets/Images/Recollection/2. Shock.png");
-}
-
-.recollection_3 {
-    background-image: url("Assets/Images/Recollection/3. Escelon13.png");
-}
-
-.recollection_4 {
-    background-image: url("Assets/Images/Recollection/4. escelon 2.png");
-}
-
-.recollection_5 {
-    background-image: url("Assets/Images/Recollection/5. Blessing Barricade.png");
-}
-
-.recollection_6 {
-    background-image: url("Assets/Images/Recollection/6. Blessing barricade_cleave.png");
-}
-
-.recollection_7 {
-    background-image: url("Assets/Images/Recollection/7. bloom 3 markers.png");
-}
-
-.recollection_8 {
-    background-image: url("Assets/Images/Recollection/8. Bloom3_DPSrose.png");
-}
-
-.recollection_9 {
-    background-image: url("Assets/Images/Recollection/9. Bloom3_THrose.png");
-}
-
-.recollection_10 {
-    background-image: url("Assets/Images/Recollection/10. Bloom4 Markers.png");
-}
-
-.recollection_11 {
-    background-image: url("Assets/Images/Recollection/11. Bloom4_THrose.png");
-}
-
-.recollection_12 {
-    background-image: url("Assets/Images/Recollection/12. Bloom4 DPS rose.png");
-}
-
-.recollection_13 {
-    background-image: url("Assets/Images/Recollection/13. Bloom4 tethers.png");
-}
-
-.recollection_14 {
-    background-image: url("Assets/Images/Recollection/14. Bloom6_g8.png");
-}*/
-
-
-/*
-.m5s_1 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/1. Flip AB side.png");
-}
-
-.m5s_2 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/2. Arcady Night Fever.png");
-}
-
-.m5s_3 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/3. Burn Baby Burn.png");
-}
-
-.m5s_4 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/4. Lets Dance.png");
-}
-
-.m5s_5 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/5. Ride the waves(Spread).png");
-}
-
-.m5s_6 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/6. Ride the Waves(Pairs).png");
-}
-
-.m5s_7 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/7. Frogtourage1.png");
-}
-
-.m5s_8 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/8. Back Up Dance 1.png");
-}
-
-.m5s_9 {
-    background-image: url("Assets/Images/AAC_Cruserweight/M5S/game8/9. Back Up Dance 2.png");
-}*/
 
 .footer_container {
     display: flex;
@@ -813,6 +728,17 @@ footer a:active {
     max-width: 900px !important;
 }
 
+.customsizeM6s{
+    min-width: 990px;
+    max-width: 990px;
+}
+@media (max-width: 1120px) {
+    .customsizeM6s {
+        min-width: 95%;
+        max-width: 95%;
+    }
+}
+
 .image_of_strat {
     width: 100%;
     height: auto;
@@ -1000,6 +926,8 @@ footer a:active {
     }
 
     .dynamic_bee_button {
+        min-width: 400px;
+        width:  400px;
         background-color: #FFF5B4;
         padding: 10px;
         box-shadow: unset;
@@ -1031,5 +959,9 @@ footer a:active {
 }
 
 .explaination {
-    margin-top: 35px;
+    margin-top: 35px; 
+      font-family: 'DMSans';
+
+      font-size :  20px;
 }
+
