@@ -33,6 +33,12 @@ h3 {
     src: url('/FFXIVPF2/Assets/fonts/DMSANS.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'zingrust';
+    src: url('/FFXIVPF2/Assets/fonts/zingrust.otf') format('truetype');
+}
+
+
 .caveat-brush-regular {
     font-family: "Caveat Brush", cursive;
     font-weight: 400;
@@ -960,7 +966,7 @@ footer a:active {
 
 .explaination {
     margin-top: 35px; 
-      font-family: 'DMSans';
+     font-family: 'zingrust';
 
       font-size :  20px;
 }
