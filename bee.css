@@ -23,7 +23,7 @@ h3 {
     font-style: normal;
 }
 
-.DMSANS{
+.DMSANS {
     font-family: "DMSANS", sans-serif;
 
 }
@@ -260,6 +260,7 @@ h1 {
     max-width: 400px;
     margin-bottom: 25px;
 }
+
 .cheatsheet_position_image {
     background-image: url("Assets/Images/Elemental.png");
     background-size: contain;
@@ -734,10 +735,11 @@ footer a:active {
     max-width: 900px !important;
 }
 
-.customsizeM6s{
+.customsizeM6s {
     min-width: 990px;
     max-width: 990px;
 }
+
 @media (max-width: 1120px) {
     .customsizeM6s {
         min-width: 95%;
@@ -753,7 +755,7 @@ footer a:active {
     /* Removes extra space below the image */
 }
 
-.rose_border {
+/* .rose_border {
     border: 3px solid #F88379;
     border-radius: 12px;
 }
@@ -786,7 +788,7 @@ footer a:active {
 .green_border {
     border: 3px solid #478842;
     border-radius: 12px;
-}
+} */
 
 /*responsive phone and tablet design*/
 @media only screen and (max-width:1000px) {
@@ -933,7 +935,7 @@ footer a:active {
 
     .dynamic_bee_button {
         min-width: 400px;
-        width:  400px;
+        width: 400px;
         background-color: #FFF5B4;
         padding: 10px;
         box-shadow: unset;
@@ -965,9 +967,38 @@ footer a:active {
 }
 
 .explaination {
-    margin-top: 35px; 
-     font-family: 'zingrust';
+    margin-top: 35px;
+    font-family: 'zingrust';
 
-      font-size :  20px;
+    font-size: 20px;
 }
 
+
+
+.phase_2 {
+    display: flex;
+    background-color: #FDBD04 !important;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin-top: 36px;
+    border: solid black 1px;
+    min-width: 400px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.phase_2>p {
+    font-size: 21px;
+}
+
+.strat_image_container {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 3px solid white !important;
+    background-color: #121A20;
+    height: 100%;
+    text-align: center;
+    min-width: fit-content;
