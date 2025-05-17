@@ -36,3 +36,29 @@
     mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
     radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
 }
+
+.selected_CLASS{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #FFF5B4;
+  border-radius: 12px;
+  border: 4px #A99261 solid;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 100ms ease-out;
+  background-color: #803B3C;
+}
+.selected_CLASS:before{
+  content: "D3";
+}
+
+
+.ST, .D1, .D2, .MT, .D4, .H1, .H2{
+    filter: grayscale(1);
+}

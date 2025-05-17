@@ -1,0 +1,103 @@
+/* Empty CSS Code */
+.m6s_1 {
+    mask-image: radial-gradient(circle at 46.8% 15%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_2 {
+    mask-image: radial-gradient(circle at 12% 31.6%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_3 {
+        mask-image: radial-gradient(circle at 12.8% 30%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
+        radial-gradient(circle at 63.8% 74%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_4 {
+}
+
+.m6s_5 {
+    mask-image: radial-gradient(circle at 9.8% 64%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_6 {
+    mask-image: radial-gradient(circle at 9.8% 73%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_7 {
+    mask-image: radial-gradient(circle at 34.8% 24%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
+    radial-gradient(circle at 22.8% 9%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_8 {
+    mask-image: radial-gradient(circle at 34.8% 72%, black 27%, rgba(0, 0, 0, 0.2) 42%);
+}
+
+.m6s_9 {
+    mask-image: radial-gradient(circle at 29.8% 62%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 33.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.m6s_10 {
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_11 {
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_12 {
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+
+.m6s_13 {
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_14 {
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_15{
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_16{
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.m6s_17 {
+    mask-image: radial-gradient(circle at 29.8% 24%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.selected_CLASS{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #FFF5B4;
+  border-radius: 12px;
+  border: 4px #A99261 solid;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 100ms ease-out;
+  background-color: #487B39;
+}
+.selected_CLASS:before{
+  content: "H1";
+}
+
+
+.ST, .D1, .D2, .D3, .D4, .MT, .H2{
+    filter: grayscale(1);
+}
