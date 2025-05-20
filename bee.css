@@ -107,7 +107,7 @@ h1 {
     background-color: #FFDE59;
     padding: 10px;
     box-shadow: 0px 3px 0px black;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
     border: solid black 1px;
     font-family: 'zingrust';
     font-size: 26px;
@@ -121,6 +121,43 @@ h1 {
     transition: all 100ms ease-out;
 }
 
+.choose_strat_button {
+    background-color: #FFF5B4;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 5px 5px 5px 5px;
+    border: solid black 1px;
+    font-family: 'zingrust';
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transition: all 100ms ease-out;
+	text-align: center;
+}
+
+.choose_strat_button_active {
+    background-color: #15DFCE;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 5px 5px 5px 5px;
+    border: solid black 1px;
+    font-family: 'zingrust';
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transition: all 100ms ease-out;
+	text-align: center;
+}
 .choose_buttons {
     background-color: transparent;
     width: 100%;
@@ -987,6 +1024,7 @@ footer a:active {
     border: solid black 1px;
     min-width: 400px;
     border-radius: 0px 0px 5px 5px;
+	font-family: 'zingrust';
 }
 
 .phase_2>p {
