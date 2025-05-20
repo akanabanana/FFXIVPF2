@@ -27,66 +27,6 @@
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-11QMT7H70Z"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-
-gtag('config', 'G-11QMT7H70Z');
-	
-	const game8 = document.getElementById('game8');
-    const game8quad = document.getElementById('game8quad');
-    const targetBox = document.getElementById('targetBox');
-
-    const game8HTML = `
-      <div class="fight_layout">
-        <div class="strat_layout">
-          <div class="strat_image_container medium white_border">
-            <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight First cleave </div>
-            <p class="white_text explaination"> </p>
-            <img class="image_of_strat M8S_17" src="Assets/Images/AAC_Cruserweight/M8S/game8/7. Beckon Moonlight _first cleave.png" />
-          </div>
-        </div>
-        <div class="strat_layout">
-          <div class="strat_image_container medium white_border">
-            <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight fourth cleave </div>
-            <p class="white_text explaination"> </p>
-            <img class="image_of_strat M8S_18" src="Assets/Images/AAC_Cruserweight/M8S/game8/7.b Beckon Moonlight _fourth cleave.png" />
-          </div>
-        </div>
-      </div>`;
-
-    const game8QuadHTML = `
-      <div class="strat_layout">
-        <div class="strat_image_container medium white_border">
-          <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight quad position </div>
-          <p class="white_text explaination"> </p>
-          <img class="image_of_strat M8S_19" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8. Beckon Moonlight _quad position.png" />
-        </div>
-      </div>
-      <div class="strat_layout">
-        <div class="strat_image_container medium white_border">
-          <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight with cleave </div>
-          <p class="white_text explaination"> </p>
-          <img class="image_of_strat M8S_20" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8.b Beckon Moonlight _with cleave.png" />
-        </div>
-      </div>`;
-
-    game8.addEventListener('click', () => {
-      targetBox.innerHTML = game8HTML;
-      game8.classList.add('choose_strat_button_active');
-      game8quad.classList.remove('choose_strat_button_active');
-    });
-
-    game8quad.addEventListener('click', () => {
-      targetBox.innerHTML = game8QuadHTML;
-      game8quad.classList.add('choose_strat_button_active');
-      game8.classList.remove('choose_strat_button_active');
-    });
-
-    targetBox.innerHTML = game8HTML;
-</script>
 
 <body>
     <div id="fru_positions_wrapper">
@@ -127,11 +67,10 @@ gtag('config', 'G-11QMT7H70Z');
                         <div class="dps D4 style-button" data-stylesheet="position/m8s/D4.css">D4 </div>
                         <!-- <button class="style-button" id="remove-all"> Reset</button> -->
                     </div>
-					<div class="button-group">
-					<div id="game8" class="choose_strat_button choose_strat_button_active">GAME8</div>
-					<div id="game8quad" class="choose_strat_button">GAME8 + 1QUAD</div>
-				  </div>
-  
+                    <div class="button-group">
+                        <div id="game8" class="choose_strat_button game8_button choose_strat_button_active">GAME8</div>
+                        <div id="game8quad" class="choose_strat_button onequad_button">GAME8 + 1QUAD</div>
+                    </div>
                 </div>
             </div>
             <div class="main_container_m5s" style="margin-left: 81px;">
@@ -221,14 +160,18 @@ gtag('config', 'G-11QMT7H70Z');
                             <p class="white_text explaination"> </p>
                             <img class="image_of_strat M8S_10" src="Assets/Images/AAC_Cruserweight/M8S/game8/4.d Millenial Decay-TH.png" />
                         </div>
-					</div>
+                    </div>
                     <div class="strat_layout">
                         <div class="strat_image_container large white_border">
                             <div class="blue_button"> <span class="blue_button_number"> </span> Tactical Pack.</div>
-							<div class="2col">
-							<div> <p class="white_text explaination"> </p><img class="image_of_strat M8S_12" src="Assets/Images/AAC_Cruserweight/M8S/game8/5. Tactical Packpng.png" /></div>
-							<div>  <p class="white_text explaination"> </p><img class="image_of_strat M8S_11" src="Assets/Images/AAC_Cruserweight/M8S/game8/5. Tactical Pack order.png" /></div>
-							</div>
+                            <div class="strats_two">
+                                <div>
+                                    <p class="white_text explaination"> </p><img class="image_of_strat M8S_12" src="Assets/Images/AAC_Cruserweight/M8S/game8/5. Tactical Packpng.png" />
+                                </div>
+                                <div>
+                                    <p class="white_text explaination"> </p><img class="image_of_strat M8S_11" src="Assets/Images/AAC_Cruserweight/M8S/game8/5. Tactical Pack order.png" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,195 +207,140 @@ gtag('config', 'G-11QMT7H70Z');
                         </div>
                     </div>
                 </div>
-				 <div id="targetBox" class="box"><br>
-				<script>
-					const game8 = document.getElementById('game8');
-					const game8quad = document.getElementById('game8quad');
-					const targetBox = document.getElementById('targetBox');
-
-					const game8HTML = `
-					  <div class="fight_layout">
-						<div class="strat_layout">
-						  <div class="strat_image_container medium white_border">
-							<div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight First cleave </div>
-							<p class="white_text explaination"> </p>
-							<img class="image_of_strat M8S_17" src="Assets/Images/AAC_Cruserweight/M8S/game8/7. Beckon Moonlight _first cleave.png" />
-						  </div>
-						</div>
-						<div class="strat_layout">
-						  <div class="strat_image_container medium white_border">
-							<div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight fourth cleave </div>
-							<p class="white_text explaination"> </p>
-							<img class="image_of_strat M8S_18" src="Assets/Images/AAC_Cruserweight/M8S/game8/7.b Beckon Moonlight _fourth cleave.png" />
-						  </div>
-						</div>
-					  </div>`;
-
-					const game8QuadHTML = `
-					  <div class="strat_layout">
-						<div class="strat_image_container medium white_border">
-						  <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight quad position </div>
-						  <p class="white_text explaination"> </p>
-						  <img class="image_of_strat M8S_19" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8. Beckon Moonlight _quad position.png" />
-						</div>
-					  </div>
-					  <div class="strat_layout">
-						<div class="strat_image_container medium white_border">
-						  <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight with cleave </div>
-						  <p class="white_text explaination"> </p>
-						  <img class="image_of_strat M8S_20" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8.b Beckon Moonlight _with cleave.png" />
-						</div>
-					  </div>`;
-
-					game8.addEventListener('click', () => {
-					  targetBox.innerHTML = game8HTML;
-					  game8.classList.add('choose_strat_button_active');
-					  game8quad.classList.remove('choose_strat_button_active');
-					});
-
-					game8quad.addEventListener('click', () => {
-					  targetBox.innerHTML = game8QuadHTML;
-					  game8quad.classList.add('choose_strat_button_active');
-					  game8.classList.remove('choose_strat_button_active');
-					});
-
-					targetBox.innerHTML = game8HTML;
-				  </script>
-  				</div>
-                <!-- <div class="fight_layout">
-                    <div class="strat_layout">
+                <div class="fight_layout ">
+                    <div class="strat_layout halfroom_moonlight">
                         <div class="strat_image_container medium white_border">
                             <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight First cleave </div>
                             <p class="white_text explaination"> </p>
                             <img class="image_of_strat M8S_17" src="Assets/Images/AAC_Cruserweight/M8S/game8/7. Beckon Moonlight _first cleave.png" />
                         </div>
                     </div>
-                    <div class="strat_layout">
+                    <div class="strat_layout halfroom_moonlight">
                         <div class="strat_image_container medium white_border">
                             <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight fourth cleave </div>
                             <p class="white_text explaination"> </p>
                             <img class="image_of_strat M8S_18" src="Assets/Images/AAC_Cruserweight/M8S/game8/7.b Beckon Moonlight _fourth cleave.png" />
                         </div>
-                    </div> -->
-    <!--                 <div class="strat_layout">
+                    </div>
+                    <div class="strat_layout quad_moonlight">
                         <div class="strat_image_container medium white_border">
                             <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight quad position </div>
                             <p class="white_text explaination"> </p>
                             <img class="image_of_strat M8S_19" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8. Beckon Moonlight _quad position.png" />
-                            </p>
                         </div>
                     </div>
-                    <div class="strat_layout">
+                    <div class="strat_layout quad_moonlight">
                         <div class="strat_image_container medium white_border">
                             <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight with cleave </div>
                             <p class="white_text explaination"> </p>
                             <img class="image_of_strat M8S_20" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8.b Beckon Moonlight _with cleave.png" />
-                            </p>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- phase 2  -->
-                <div class="phase_2">
-                    <p>PHASE 2</p>
-                </div>
-                <div class="fight_layout">
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Quake III</div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_21" src="Assets/Images/AAC_Cruserweight/M8S/game8/9. Quake III.png" />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> UV Ray</div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_22" src="Assets/Images/AAC_Cruserweight/M8S/game8/10. UV Ray.png" />
-                        </div>
-                    </div>
-                    <div class="strat_layout ">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Elemental Purge</div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_23" src="Assets/Images/AAC_Cruserweight/M8S/game8/11. Elemental Purge.png" />
-                        </div>
-                    </div>
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Prowling Gale</div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_24" src="Assets/Images/AAC_Cruserweight/M8S/game8/12. Prowling Gale.png" />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest start</div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_25" src="Assets/Images/AAC_Cruserweight/M8S/game8/13. Two-fold tempest_start.png" />
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="fight_layout">
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest order </div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_26" src="Assets/Images/AAC_Cruserweight/M8S/game8/13.b Two-fold tempest_order.png" />
-                        </div>
-                    </div>
-                    <div class="strat_layout ">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest mtfirst </div>
-                            <p class="white_text explaination"></p>
-                            <img class="image_of_strat M8S_27" src="Assets/Images/AAC_Cruserweight/M8S/game8/13.c Two-fold tempest_mtfirst.png" />
-                        </div>
-                    </div>
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest st first</div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_28" src="Assets/Images/AAC_Cruserweight/M8S/game8/13.d Two-fold tempest_stfirst.png" />
-                            </p>
-                        </div>
-                    </div>
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Lone Wolfs Lament start</div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_29" src="Assets/Images/AAC_Cruserweight/M8S/game8/14. Lone Wolfs Lament_start.png" />
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="fight_layout">
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Lone Wolfs Lament pattern 1 </div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_30" src="Assets/Images/AAC_Cruserweight/M8S/game8/14.b Lone Wolfs Lament_pattern1.png" />
-                        </div>
-                    </div>
-                    <div class="strat_layout ">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Lone Wolfs Lament pattern 2 </div>
-                            <p class="white_text explaination"></p>
-                            <img class="image_of_strat M8S_31" src="Assets/Images/AAC_Cruserweight/M8S/game8/14.c Lone Wolfs Lament_pattern2.png" />
-                        </div>
-                    </div>
-                    <div class="strat_layout">
-                        <div class="strat_image_container medium white_border">
-                            <div class="blue_button"> <span class="blue_button_number"> </span> Howling Eight </div>
-                            <p class="white_text explaination"> </p>
-                            <img class="image_of_strat M8S_32" src="Assets/Images/AAC_Cruserweight/M8S/game8/15. Howling Eight.png" />
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- phase 2  -->
+        <div class="phase_2">
+            <p>PHASE 2</p>
+        </div>
+        <div class="fight_layout">
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Quake III</div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_21" src="Assets/Images/AAC_Cruserweight/M8S/game8/9. Quake III.png" />
+                    </p>
+                </div>
+            </div>
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> UV Ray</div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_22" src="Assets/Images/AAC_Cruserweight/M8S/game8/10. UV Ray.png" />
+                </div>
+            </div>
+            <div class="strat_layout ">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Elemental Purge</div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_23" src="Assets/Images/AAC_Cruserweight/M8S/game8/11. Elemental Purge.png" />
+                </div>
+            </div>
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Prowling Gale</div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_24" src="Assets/Images/AAC_Cruserweight/M8S/game8/12. Prowling Gale.png" />
+                    </p>
+                </div>
+            </div>
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest start</div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_25" src="Assets/Images/AAC_Cruserweight/M8S/game8/13. Two-fold tempest_start.png" />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fight_layout">
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest order </div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_26" src="Assets/Images/AAC_Cruserweight/M8S/game8/13.b Two-fold tempest_order.png" />
+                </div>
+            </div>
+            <div class="strat_layout ">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest mtfirst </div>
+                    <p class="white_text explaination"></p>
+                    <img class="image_of_strat M8S_27" src="Assets/Images/AAC_Cruserweight/M8S/game8/13.c Two-fold tempest_mtfirst.png" />
+                </div>
+            </div>
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Two-fold tempest st first</div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_28" src="Assets/Images/AAC_Cruserweight/M8S/game8/13.d Two-fold tempest_stfirst.png" />
+                    </p>
+                </div>
+            </div>
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Lone Wolfs Lament start</div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_29" src="Assets/Images/AAC_Cruserweight/M8S/game8/14. Lone Wolfs Lament_start.png" />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="fight_layout">
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Lone Wolfs Lament pattern 1 </div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_30" src="Assets/Images/AAC_Cruserweight/M8S/game8/14.b Lone Wolfs Lament_pattern1.png" />
+                </div>
+            </div>
+            <div class="strat_layout ">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Lone Wolfs Lament pattern 2 </div>
+                    <p class="white_text explaination"></p>
+                    <img class="image_of_strat M8S_31" src="Assets/Images/AAC_Cruserweight/M8S/game8/14.c Lone Wolfs Lament_pattern2.png" />
+                </div>
+            </div>
+            <div class="strat_layout">
+                <div class="strat_image_container medium white_border">
+                    <div class="blue_button"> <span class="blue_button_number"> </span> Howling Eight </div>
+                    <p class="white_text explaination"> </p>
+                    <img class="image_of_strat M8S_32" src="Assets/Images/AAC_Cruserweight/M8S/game8/15. Howling Eight.png" />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
     <div class="bottom_container" style="margin-top: 100px; margin-bottom: 100px;">
         <!-- <div class="blue_title cheatsheet_title">Cheatsheet </div> -->
@@ -545,6 +433,32 @@ gtag('config', 'G-11QMT7H70Z');
         </div>
     </footer>
 </body>
+<script>
+$(document).ready(function() {
+    $('.quad_moonlight').hide();
+    $('.halfroom_moonlight').show();
+
+    $('.game8_button').click(function() {
+        $('.quad_moonlight').hide();
+        $('.halfroom_moonlight').show();
+    });
+
+    $('.onequad_button').click(function() {
+        $('.halfroom_moonlight').hide();
+        $('.quad_moonlight').show();
+    });
+
+    // When either game8 or game8quad button is clicked
+    $("#game8, #game8quad").click(function() {
+        // Remove active class from both buttons first
+        $("#game8, #game8quad").removeClass("choose_strat_button_active");
+
+        // Add active class to the clicked button
+        $(this).addClass("choose_strat_button_active");
+    });
+
+});
+</script>
 <script src="script.js"></script>
 <script>
 // Select elements

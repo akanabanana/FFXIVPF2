@@ -991,7 +991,7 @@ footer a:active {
 
 .phase_2>p {
     font-size: 21px;
-	font-family: 'zingrust';
+    font-family: 'zingrust';
 }
 
 .strat_image_container {
@@ -1006,64 +1006,74 @@ footer a:active {
 }
 
 .2col {
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-  .choose_strat_button {
-      background-color: #FFF5B4;
-      padding: 10px;
-      box-shadow: 0px 3px 0px black;
-      border-radius: 5px;
-      border: solid black 1px;
-      font-family: 'zingrust';
-      font-size: 26px;
-      margin-top: 10px;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-content: center;
-      align-items: center;
-      transition: all 100ms ease-out;
-      text-align: center;
-    }
-    .choose_strat_button:hover {
-      transform: scale(1.02);
-      box-shadow: 0px 4px 2px black;
-    }
-    .choose_strat_button_active {
-      background-color: #15DFCE;
-      padding: 10px;
-      box-shadow: 0px 3px 0px black;
-      border-radius: 5px;
-      border: solid black 1px;
-      font-family: 'zingrust';
-      font-size: 26px;
-      margin-top: 10px;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-content: center;
-      align-items: center;
-      transition: all 100ms ease-out;
-      text-align: center;
-    }
-    .choose_strat_button_active:hover {
-      transform: scale(1.02);
-      box-shadow: 0px 4px 2px black;
-    }
-     .box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-      padding: 1rem;
-    }
-    .hidden {
-      display: none;
-    }
+.choose_strat_button {
+    background-color: #FFF5B4;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 5px;
+    border: solid black 1px;
+    font-family: 'zingrust';
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transition: all 100ms ease-out;
+    text-align: center;
+}
+
+.choose_strat_button:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 2px black;
+}
+
+.choose_strat_button_active {
+    background-color: #15DFCE;
+    padding: 10px;
+    box-shadow: 0px 3px 0px black;
+    border-radius: 5px;
+    border: solid black 1px;
+    font-family: 'zingrust';
+    font-size: 26px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    transition: all 100ms ease-out;
+    text-align: center;
+}
+
+.choose_strat_button_active:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 2px black;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.strats_two {
+    display: flex;
+    flex-direction: row;
+}
