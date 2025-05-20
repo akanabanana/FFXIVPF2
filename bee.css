@@ -1057,7 +1057,10 @@ footer a:active {
       transform: scale(1.02);
       box-shadow: 0px 4px 2px black;
     }
-    .box {
+     .box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
       margin-top: 1rem;
       padding: 1rem;
     }
