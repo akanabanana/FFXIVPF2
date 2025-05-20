@@ -128,11 +128,10 @@ gtag('config', 'G-11QMT7H70Z');
                         <!-- <button class="style-button" id="remove-all"> Reset</button> -->
                     </div>
 					<div class="button-group">
-    <div id="game8" class="choose_strat_button choose_strat_button_active">GAME8</div>
-    <div id="game8quad" class="choose_strat_button">GAME8 + 1QUAD</div>
-  </div>
-  <div id="targetBox" class="box">
-					</div>
+					<div id="game8" class="choose_strat_button choose_strat_button_active">GAME8</div>
+					<div id="game8quad" class="choose_strat_button">GAME8 + 1QUAD</div>
+				  </div>
+  
                 </div>
             </div>
             <div class="main_container_m5s" style="margin-left: 81px;">
@@ -265,7 +264,62 @@ gtag('config', 'G-11QMT7H70Z');
                         </div>
                     </div>
                 </div>
-                <div class="fight_layout">
+				 <div id="targetBox" class="box"><br>
+				<script>
+					const game8 = document.getElementById('game8');
+					const game8quad = document.getElementById('game8quad');
+					const targetBox = document.getElementById('targetBox');
+
+					const game8HTML = `
+					  <div class="fight_layout">
+						<div class="strat_layout">
+						  <div class="strat_image_container medium white_border">
+							<div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight First cleave </div>
+							<p class="white_text explaination"> </p>
+							<img class="image_of_strat M8S_17" src="Assets/Images/AAC_Cruserweight/M8S/game8/7. Beckon Moonlight _first cleave.png" />
+						  </div>
+						</div>
+						<div class="strat_layout">
+						  <div class="strat_image_container medium white_border">
+							<div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight fourth cleave </div>
+							<p class="white_text explaination"> </p>
+							<img class="image_of_strat M8S_18" src="Assets/Images/AAC_Cruserweight/M8S/game8/7.b Beckon Moonlight _fourth cleave.png" />
+						  </div>
+						</div>
+					  </div>`;
+
+					const game8QuadHTML = `
+					  <div class="strat_layout">
+						<div class="strat_image_container medium white_border">
+						  <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight quad position </div>
+						  <p class="white_text explaination"> </p>
+						  <img class="image_of_strat M8S_19" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8. Beckon Moonlight _quad position.png" />
+						</div>
+					  </div>
+					  <div class="strat_layout">
+						<div class="strat_image_container medium white_border">
+						  <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight with cleave </div>
+						  <p class="white_text explaination"> </p>
+						  <img class="image_of_strat M8S_20" src="Assets/Images/AAC_Cruserweight/M8S/game8 + 1 quad/8.b Beckon Moonlight _with cleave.png" />
+						</div>
+					  </div>`;
+
+					game8.addEventListener('click', () => {
+					  targetBox.innerHTML = game8HTML;
+					  game8.classList.add('choose_strat_button_active');
+					  game8quad.classList.remove('choose_strat_button_active');
+					});
+
+					game8quad.addEventListener('click', () => {
+					  targetBox.innerHTML = game8QuadHTML;
+					  game8quad.classList.add('choose_strat_button_active');
+					  game8.classList.remove('choose_strat_button_active');
+					});
+
+					targetBox.innerHTML = game8HTML;
+				  </script>
+  				</div>
+                <!-- <div class="fight_layout">
                     <div class="strat_layout">
                         <div class="strat_image_container medium white_border">
                             <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight First cleave </div>
@@ -279,7 +333,7 @@ gtag('config', 'G-11QMT7H70Z');
                             <p class="white_text explaination"> </p>
                             <img class="image_of_strat M8S_18" src="Assets/Images/AAC_Cruserweight/M8S/game8/7.b Beckon Moonlight _fourth cleave.png" />
                         </div>
-                    </div>
+                    </div> -->
     <!--                 <div class="strat_layout">
                         <div class="strat_image_container medium white_border">
                             <div class="blue_button"> <span class="blue_button_number"> </span> Beckon Moonlight quad position </div>

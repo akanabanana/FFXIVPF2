@@ -1060,8 +1060,6 @@ footer a:active {
     .box {
       margin-top: 1rem;
       padding: 1rem;
-      background: #f0f0f0;
-      border: 1px solid #ccc;
     }
     .hidden {
       display: none;
