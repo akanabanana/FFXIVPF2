@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+
+
 </head>
 
 <body>
@@ -92,26 +96,30 @@
                                                     <div class="fru_elemental_cheatsheet" style="min-height: 300px; width:auto" alt="fru-image"> </div>
                                                 </div>
                                             </div>
-                                          <div class="copyable_code">
-  <a>
-    <p class="color">https://ffxivpf.com/cheatsheets/fru-cheatsheet-elemental</p>
-  </a>
-  <button class="copy-btn">
-    <i class="fa-regular fa-copy"></i> <span>Copy</span>
-  </button>
-</div>
+                                            <div class="copyable_code">
+                                                <p class="color">https://ffxivpf.com/cheatsheets/fru-cheatsheet-elemental</p>
+                                                <button class="copy-btn">
+                                                    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="code_container darkgreen">
                                             <p class="code_baby_title"> Mitigation used: FRU MIT but good</p>
-                                            <div class="copyable_code"> <a>
-                                                    <p class="color">https://tinyurl.com/frumitbutgood </p>
-                                                </a></div>
+                                            <div class="copyable_code">
+                                                <p class="color">https://tinyurl.com/frumitbutgood</p>
+                                                <button class="copy-btn">
+                                                    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="code_container darkpurple">
                                             <p class="code_baby_title"> Pastebin</p>
-                                            <div class="copyable_code"> <a>
-                                                    <p class="color">https://pastebin.com/4UtwvXQu </p>
-                                                </a></div>
+                                            <div class="copyable_code">
+                                                <p class="color">https://pastebin.com/4UtwvXQu</p>
+                                                <button class="copy-btn">
+                                                    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -129,10 +137,23 @@
                                                     <li> Bound of Faith: Role Stacks with MT/D1 adjust
                                                 </ul>
                                                 </li>
-                                                <div class="copyable_code">
-                                                    <p class="color">Adjust: MT > ST > H1 > H2 :Stay</p>
-                                                    <p class="color">Adjust: D1 > D2 > D3 > D4 :Stay</p>
-                                                </div>
+
+
+
+<div class="no-wrap copyable_code">
+  <pre class="language-javascript color" tabindex="0">
+    <code class="language-javascript">
+Adjust: MT > ST > H1 > H2 :Stay
+Adjust: D1 > D2 > D3 > D4 :Stay
+    </code>
+  </pre>
+  <button class="copy-btn">
+    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+  </button>
+</div>
+
+
+                                           
                                                 <ul>
                                                     <li> North South Fall on Faith HTD line up </li>
                                                     <li>Final towers follow the following FIXED/FLEX prio </li>
@@ -402,23 +423,6 @@ const observer = new MutationObserver(renderTitleList);
 observer.observe(contentDivs, { childList: true });
 </script>
 <script>
-  document.querySelectorAll('.copy-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const textToCopy = button.closest('.copyable_code').querySelector('.color').textContent;
-
-      navigator.clipboard.writeText(textToCopy).then(() => {
-        const span = button.querySelector('span');
-        const originalText = span.textContent;
-        span.textContent = 'Copied!';
-
-        setTimeout(() => {
-          span.textContent = originalText;
-        }, 2000);
-      }).catch(err => {
-        console.error('Clipboard copy failed:', err);
-        alert('Clipboard copy failed. Try running this on localhost or HTTPS.');
-      });
-    });
-  });
 </script>
+
 </html>

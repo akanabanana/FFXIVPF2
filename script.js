@@ -128,30 +128,7 @@ function toggleMenu(menuId) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Get all elements with the class 'copyable_code'
-  const copyableDivs = document.querySelectorAll('.copyable_code');
-  const toast = document.getElementById('toast');
 
-  // Add click event listener to each div
-  copyableDivs.forEach(div => {
-    div.addEventListener('click', function () {
-      // Get the text content of the div
-      const textToCopy = div.textContent;
-
-      // Use the Clipboard API to copy the text
-      navigator.clipboard.writeText(textToCopy).then(() => {
-        // Show the toast notification
-        toast.classList.add('show');
-        setTimeout(() => {
-          toast.classList.remove('show');
-        }, 3000); // Hide the toast after 3 seconds
-      }).catch(err => {
-        console.error('Failed to copy text: ', err);
-      });
-    });
-  });
-});
 
 document.addEventListener('DOMContentLoaded', function () {
   console.log('DOM fully loaded and parsed');
@@ -248,3 +225,52 @@ function fn(e) {
     tooltip[i].style.top = e.pageY + 'px';
   }
 }
+
+
+document.querySelectorAll('.copy-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const container = button.closest('.copyable_code');
+    const paragraph = container.querySelector('p.color');
+    const textToCopy = paragraph?.innerText?.trim(); // Safe access + trim
+
+    if (textToCopy) {
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const span = button.querySelector('span');
+        const originalText = span.textContent;
+        span.textContent = 'Copied!';
+
+        setTimeout(() => {
+          span.textContent = originalText;
+        }, 2000);
+      }).catch(err => {
+        console.error('Clipboard copy failed:', err);
+        alert('Clipboard copy failed. Try running this on localhost or HTTPS.');
+      });
+    }
+  });
+});
+
+
+document.querySelectorAll('.copy-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const container = button.closest('.copyable_code');
+    const pre = container.querySelector('pre');
+
+    if (pre) {
+      const textToCopy = pre.innerText.trim();
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const span = button.querySelector('span');
+        const originalText = span.textContent;
+        span.textContent = 'Copied!';
+
+        setTimeout(() => {
+          span.textContent = originalText;
+        }, 2000);
+      }).catch(err => {
+        console.error('Clipboard copy failed:', err);
+        alert('Clipboard copy failed. Try running this on localhost or HTTPS.');
+      });
+    }
+  });
+});
