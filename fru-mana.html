@@ -29,13 +29,30 @@
       document.getElementById('header_container').innerHTML = data;
     });
 </script> 
-  <script>
-  // Fetch and insert sidebar
-  fetch('sidebar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('sidebar-container').innerHTML = data;
-    });
+   <script>
+            fetch('sidebar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('sidebar-container').innerHTML = data;
+    initializeSidebar(); // Call this after insertion
+  });
+
+function initializeSidebar() {
+  console.log('Initializing sidebar functionality...');
+
+  // Independent toggle for each menu button
+  document.addEventListener('click', function(e) {
+    const button = e.target.closest('.menu-button');
+    if (button) {
+      button.classList.toggle('collapsed');
+      const submenu = button.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+    }
+  });
+}
+
 </script>
   <div id="header_container"> </div>
   <div id="content"> 

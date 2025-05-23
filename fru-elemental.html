@@ -1,171 +1,201 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>FFXIVPF - FRU Elemental</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--> 
-<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
-<link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
-<link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
-<link rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"  />
-<link rel="stylesheet"href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css" />
-<link  rel="stylesheet"   href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css" />
-<link  rel="stylesheet"  href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
-<link   rel="stylesheet"   href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="utf-8">
+    <title>FFXIVPF - FRU Elemental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+    var __adobewebfontsappname__ = "dreamweaver"
+    </script>
+    <script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+    <link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
-<div id="mainWrapper"> 
-  <script>
-  // Fetch and insert sidebar
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header_container').innerHTML = data;
-    });
-</script> 
-  <script>
-  // Fetch and insert sidebar
-  fetch('sidebar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('sidebar-container').innerHTML = data;
-    });
-</script>
-  <div id="header_container"> </div>
-  <div id="content"> 
-    <!--   this is where sidebar is-->
-    
-    <div id="sidebar-container"></div>
-    <section class="mainContent">
-      <div>
-        <div class="guide_container">
-          <div class="content">
-            <div title="FRU resources Elemental">
-              <h1 class="title" style="margin-top: 0px;" > FRU resources Elemental</h1>
-            </div>
-            <div class="container">
-              <div title="Your Copy pasta">
+    <div id="mainWrapper">
+        <script>
+        // Fetch and insert sidebar
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header_container').innerHTML = data;
+            });
+        </script>
+        <script>
+        fetch('sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                initializeSidebar(); // Call this after insertion
+            });
+
+        function initializeSidebar() {
+            console.log('Initializing sidebar functionality...');
+
+            // Independent toggle for each menu button
+            document.addEventListener('click', function(e) {
+                const button = e.target.closest('.menu-button');
+                if (button) {
+                    button.classList.toggle('collapsed');
+                    const submenu = button.nextElementSibling;
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                    }
+                }
+            });
+        }
+        </script>
+        <div id="header_container"> </div>
+        <div id="content">
+            <!--   this is where sidebar is-->
+            <div id="sidebar-container"></div>
+            <section class="mainContent">
                 <div>
-                  <p class="left"> Copy pastas for your sharing convenience</p>
-                  <div class="code_container darkblue">
-                    <p class="code_baby_title"> Cheatsheet</p>
-                    <!--
+                    <div class="guide_container">
+                        <div class="content">
+                            <div title="FRU resources Elemental">
+                                <h1 class="title" style="margin-top: 0px;"> FRU resources Elemental</h1>
+                            </div>
+                            <div class="container">
+                                <div title="Your Copy pasta">
+                                    <div>
+                                        <p class="left"> Copy pastas for your sharing convenience</p>
+                                        <div class="code_container darkblue">
+                                            <p class="code_baby_title"> Cheatsheet</p>
+                                            <!--
                     <button class="main-button" style="display: flex; flex-direction: row; gap: 10px;">
                     <div class="arrow" > <span   style="font-size: 30px;">‣ </span> </div>
                     <div style="margin-top: 7px;"> FRU Elemental Cheatsheet </div>
-						
-					<div id="elemental-cheatsheet" class="sub-menu">
+            
+          <div id="elemental-cheatsheet" class="sub-menu">
                       <div class="fru_elemental_cheatsheet" style="height: 300px;"> </div>
                     </div>
                     </button>
 
 -->
-                    <div class="main-button left">
-                      <button class="toggle-button">
-                      <div class="arrow" > <span   style="font-size: 30px;"> ‣ </span> </div>
-                      FRU Cheatsheet - Elemental</button>
-                      <div class="sub-menu">
-                        <div class="fru_elemental_cheatsheet" style="min-height: 300px; width:auto" alt="fru-image"> </div>
-                      </div>
-                    </div>
-                    <div class="copyable_code"> <a>
-                      <p  class="color">https://ffxivpf.com/cheatsheets/fru-cheatsheet-elemental </p>
-                      </a></div>
-                  </div>
-                  <div class="code_container darkgreen">
-                    <p class="code_baby_title"> Mitigation used: FRU MIT but good</p>
-                    <div class="copyable_code"> <a>
-                      <p  class="color">https://tinyurl.com/frumitbutgood </p>
-                      </a></div>
-                  </div>
-                  <div class="code_container darkpurple">
-                    <p class="code_baby_title"> Pastebin</p>
-                    <div class="copyable_code"> <a>
-                      <p  class="color">https://pastebin.com/4UtwvXQu </p>
-                      </a></div>
-                  </div>
-                </div>
-              </div>
-              <div title="⚠️ Points of Differences">
-                <h1 class="bottom_border left" style="font-size: 35px;">⚠️ Points of Differences </h1>
-                <p class="left"> List of mechanic variation for each phase</p>
-                <div class="mechanic_variations_list">
-                  <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P1 Fatebreaker</button>
-                    <div class="sub-menu">
-                      <ul>
-                        <li> Bound of Faith: Role Stacks with MT/D1 adjust
-                      </ul>
-                      </li>
-                      <div class="copyable_code">
-                        <p  class="color">Adjust: MT > ST > H1 > H2 :Stay</p>
-                        <p  class="color">Adjust: D1 > D2 > D3 > D4 :Stay</p>
-                      </div>
-                      <ul>
-                        <li> North South Fall on Faith HTD line up </li>
-                        <li>Final towers follow the following FIXED/FLEX prio </li>
-                      </ul>
-                      <div class="copyable_code">
-                        <p  class="color">&nbsp;&nbsp;FIXED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FLEX</p>
-                        <p  class="color">&nbsp;&nbsp;&nbsp;&nbsp;H1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D1</p>
-                        <p  class="color">&nbsp;&nbsp;&nbsp;&nbsp;D4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D3</p>
-                        <p  class="color">&nbsp;&nbsp;&nbsp;&nbsp;H2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D2</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P2 Usurper of Frost</button>
-                    <div class="sub-menu">
-                      <ul>
-                        <li>Coloured DD</li>
-                        <li>Mirror Mirror position</li>
-                        <li>Light Rampant is D1234 with East West Puddle bait</li>
-                      </ul>
-                      <div class="Light_rampant_image"> </div>
-                    </div>
-                  </div>
-                  <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P4 Enter the dragon</button>
-                    <div class="sub-menu">
-                      <ul>
-                        <li>CT prio follows the HTD prio</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P5 Pandora</button>
-                    <div class="sub-menu">
-                      <ul>
-                        <li>Paradise Regained: Fixed tower position</li>
-                      </ul>
-                      <p>←Range&nbsp;&nbsp;&nbsp;&nbsp;Melee→ </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div title="Strats">
-                <h1 class="bottom_border left" style="font-size: 35px;">Strats </h1>
-                <div class="main-button left">
-                  <button class="toggle-button">
-                  <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                  &nbsp;Toggle to view the strats</button>
-                  <div class="sub-menu">
-                    <div class="copyable_code" style="padding-top: 10px !important; padding-bottom: 10px !important;"> 
-                      <!-- HTML generated using hilite.me -->
-                      <div style=" overflow:auto;width:auto;">
-                        <pre style="margin: 0; line-height: 125%">P1 Yesf3 
+                                            <div class="main-button left">
+                                                <button class="toggle-button">
+                                                    <div class="arrow"> <span style="font-size: 30px;"> ‣ </span> </div>
+                                                    FRU Cheatsheet - Elemental
+                                                </button>
+                                                <div class="sub-menu">
+                                                    <div class="fru_elemental_cheatsheet" style="min-height: 300px; width:auto" alt="fru-image"> </div>
+                                                </div>
+                                            </div>
+                                          <div class="copyable_code">
+  <a>
+    <p class="color">https://ffxivpf.com/cheatsheets/fru-cheatsheet-elemental</p>
+  </a>
+  <button class="copy-btn">
+    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+  </button>
+</div>
+                                        </div>
+                                        <div class="code_container darkgreen">
+                                            <p class="code_baby_title"> Mitigation used: FRU MIT but good</p>
+                                            <div class="copyable_code"> <a>
+                                                    <p class="color">https://tinyurl.com/frumitbutgood </p>
+                                                </a></div>
+                                        </div>
+                                        <div class="code_container darkpurple">
+                                            <p class="code_baby_title"> Pastebin</p>
+                                            <div class="copyable_code"> <a>
+                                                    <p class="color">https://pastebin.com/4UtwvXQu </p>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div title="⚠️ Points of Differences">
+                                    <h1 class="bottom_border left" style="font-size: 35px;">⚠️ Points of Differences </h1>
+                                    <p class="left"> List of mechanic variation for each phase</p>
+                                    <div class="mechanic_variations_list">
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P1 Fatebreaker
+                                            </button>
+                                            <div class="sub-menu">
+                                                <ul>
+                                                    <li> Bound of Faith: Role Stacks with MT/D1 adjust
+                                                </ul>
+                                                </li>
+                                                <div class="copyable_code">
+                                                    <p class="color">Adjust: MT > ST > H1 > H2 :Stay</p>
+                                                    <p class="color">Adjust: D1 > D2 > D3 > D4 :Stay</p>
+                                                </div>
+                                                <ul>
+                                                    <li> North South Fall on Faith HTD line up </li>
+                                                    <li>Final towers follow the following FIXED/FLEX prio </li>
+                                                </ul>
+                                                <div class="copyable_code">
+                                                    <p class="color">&nbsp;&nbsp;FIXED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FLEX</p>
+                                                    <p class="color">&nbsp;&nbsp;&nbsp;&nbsp;H1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D1</p>
+                                                    <p class="color">&nbsp;&nbsp;&nbsp;&nbsp;D4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D3</p>
+                                                    <p class="color">&nbsp;&nbsp;&nbsp;&nbsp;H2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P2 Usurper of Frost
+                                            </button>
+                                            <div class="sub-menu">
+                                                <ul>
+                                                    <li>Coloured DD</li>
+                                                    <li>Mirror Mirror position</li>
+                                                    <li>Light Rampant is D1234 with East West Puddle bait</li>
+                                                </ul>
+                                                <div class="Light_rampant_image"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P4 Enter the dragon
+                                            </button>
+                                            <div class="sub-menu">
+                                                <ul>
+                                                    <li>CT prio follows the HTD prio</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P5 Pandora
+                                            </button>
+                                            <div class="sub-menu">
+                                                <ul>
+                                                    <li>Paradise Regained: Fixed tower position</li>
+                                                </ul>
+                                                <p>←Range&nbsp;&nbsp;&nbsp;&nbsp;Melee→ </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div title="Strats">
+                                    <h1 class="bottom_border left" style="font-size: 35px;">Strats </h1>
+                                    <div class="main-button left">
+                                        <button class="toggle-button">
+                                            <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                            &nbsp;Toggle to view the strats
+                                        </button>
+                                        <div class="sub-menu">
+                                            <div class="copyable_code" style="padding-top: 10px !important; padding-bottom: 10px !important;">
+                                                <!-- HTML generated using hilite.me -->
+                                                <div style=" overflow:auto;width:auto;">
+                                                    <pre style="margin: 0; line-height: 125%">P1 Yesf3 
 + ROLE STACKS tethers (Support N, DPS S - MT/D1 adjust)
  
 P2 Evansith 
@@ -212,169 +242,132 @@ Polarising Strikes
    TMRH
 &lt;-LP1 LP2-&gt;
 </pre>
-                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div title="Google Doc References">
+                                    <h1 class="bottom_border left" style="font-size: 35px;">Google Doc References </h1>
+                                    <div class="code_container grey">
+                                        <p class="code_baby_title" style="max-width: 587px;"> GDOC references are general guides for how the mechanics are tackled, specific notes about the PF strat has been provided</p>
+                                    </div>
+                                    <div class="mechanic_variations_list">
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P1 YesF3
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <p>⚠️ The PF strat follows a role stack tethers during Bound of Faith instead of what’s indicated in this raid plan. </p>
+                                                <a target="_blank" href="https://raidplan.io/plan/yesF3_Lbcf3Gj-hB"> https://raidplan.io/plan/yesF3_Lbcf3Gj-hB </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P2 Evansith
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <p>⚠️ The PF strat follows a 4-4 LR, with East West puddle and ST/D1 adjust </p>
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102">https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P2.5 Adds
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102"> https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P3 Ultimate Relativity RunY
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <p>⚠️ The PF strat follows prio same as UR (D1234) </p>
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102"> https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P3 Apoc
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <p>⚠️ The PF strat follows a perma swap with safe spots determined by coloured groups </p>
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102"> https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P4 Evansith Darklit
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <p>⚠️ The PF strat follows the D1234 starting position as well as Healers anchor, tank+DPS adjust. <br> Darklit </p>
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1kFM5ggrIj86Mc2EcYS5RfFgF_pawSRk7-vryQmQb2Is/edit#slide=id.g31adfe2f526_0_4">https://docs.google.com/presentation/d/1kFM5ggrIj86Mc2EcYS5RfFgF_pawSRk7-vryQmQb2Is/edit#slide=id.g31adfe2f526_0_4 </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P4 Crystallize Time
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <p>⚠️ The PF strat follows the Early Pop strat with the HTD prio (H1H2MTSTD1D2D3D4)</p>
+                                                <p> Rewind Placements on Waymark</p>
+                                                <div class="ct_1"> </div>
+                                                <div class="ct_2"> </div>
+                                                <div class="ct_3"> </div>
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1dz7IPrYxMPT1Qc81aLi-s8pVQQ3AzD_P6nheLcdhH0o/edit?usp=sharing"> https://docs.google.com/presentation/d/1dz7IPrYxMPT1Qc81aLi-s8pVQQ3AzD_P6nheLcdhH0o/edit?usp=sharing </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P5 Fulgent Blade
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1pACy_iO5NBSR_6QeihdTw46Y3yfmEbcdmqHXWJf6w8I/edit#slide=id.g319de1b9bc2_77_9"> https://docs.google.com/presentation/d/1pACy_iO5NBSR_6QeihdTw46Y3yfmEbcdmqHXWJf6w8I/edit#slide=id.g319de1b9bc2_77_9 </a>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;P5 Paradise Regained
+                                            </button>
+                                            <div class="sub-menu marginLeft">
+                                                <p>⚠️ The PF strat follows first tower for Healers and starting position relative south where the first tower is. </p>
+                                                <a target="_blank" href="https://docs.google.com/presentation/d/1SLQpfdSyldjtzbe7hXUCOufRZ8DeYFEJwSS6C1iRBrI/edit#slide=id.p"> https://docs.google.com/presentation/d/1SLQpfdSyldjtzbe7hXUCOufRZ8DeYFEJwSS6C1iRBrI/edit#slide=id.p </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-list"></div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div title="Google Doc References">
-                <h1 class="bottom_border left" style="font-size: 35px;">Google Doc References </h1>
-                <div class="code_container grey">
-                  <p class="code_baby_title" style="max-width: 587px;"> GDOC references are general guides for how the mechanics are tackled, specific notes about the PF strat has been provided</p>
-                </div>
-                <div class="mechanic_variations_list">
-                    
-                    
-                  <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P1 YesF3</button>
-                    <div class="sub-menu marginLeft">
-                    
-                      <p>⚠️ The PF strat follows a role stack tethers during Bound of Faith instead of what’s indicated in this raid plan. </p>
-                        <a target="_blank" href="https://raidplan.io/plan/yesF3_Lbcf3Gj-hB"> https://raidplan.io/plan/yesF3_Lbcf3Gj-hB </a>
-                    </div>
-                  </div>
-                    
-                    
-                    
-                     <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P2 Evansith</button>
-                    <div class="sub-menu marginLeft">
-                    
-                      <p>⚠️ The PF strat follows a 4-4 LR, with East West puddle and ST/D1 adjust </p>
-                        <a target="_blank"  href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102">https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
-                    </div>
-                  </div>
-                    
-                    
-                    
-                    
-                    
-                     <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P2.5 Adds</button>
-                    <div class="sub-menu marginLeft">
-                    
-                 
-                        <a target="_blank"  href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102"> https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
-                    </div>
-                  </div>
-                    
-                    
-                    
-                    
-                    
-                     <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P3 Ultimate Relativity RunY</button>
-                    <div class="sub-menu marginLeft">
-                    
-                      <p>⚠️ The PF strat follows prio same as UR (D1234) </p>
-                        <a target="_blank"  href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102"> https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
-                    </div>
-                  </div>
-                    
-                    
-                    
-                    
-                     <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P3 Apoc</button>
-                    <div class="sub-menu marginLeft">
-                    
-                      <p>⚠️ The PF strat follows a perma swap with safe spots determined by coloured groups  </p>
-                        <a  target="_blank"  href="https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102"> https://docs.google.com/presentation/d/1VqIifgNf8RzXIWb8EGGVdKvOtKk0HmhPcHIMpizYuig/preview?slide=id.g31adfa693b4_188_102 </a>
-                    </div>
-                  </div>
-                    
-                    
-                    
-                    
-                     <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P4 Evansith Darklit</button>
-                    <div class="sub-menu marginLeft">
-                    
-                      <p>⚠️ The PF strat follows the D1234 starting position as well as Healers anchor, tank+DPS adjust. <br> Darklit </p>
-                        <a target="_blank"   href="https://docs.google.com/presentation/d/1kFM5ggrIj86Mc2EcYS5RfFgF_pawSRk7-vryQmQb2Is/edit#slide=id.g31adfe2f526_0_4">https://docs.google.com/presentation/d/1kFM5ggrIj86Mc2EcYS5RfFgF_pawSRk7-vryQmQb2Is/edit#slide=id.g31adfe2f526_0_4 </a>
-                    </div>
-                  </div>
-                    
-                    
-                    
-                    
-                    
-                     <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P4 Crystallize Time</button>
-                    <div class="sub-menu marginLeft">
-                    
-                      <p>⚠️ The PF strat follows the Early Pop strat with the HTD prio (H1H2MTSTD1D2D3D4)</p>
-                        <p> Rewind Placements on Waymark</p>
-                        <div class="ct_1"> </div>
-                        <div class="ct_2"> </div>
-                        <div class="ct_3"> </div>
-                        
-                        <a target="_blank"  href="https://docs.google.com/presentation/d/1dz7IPrYxMPT1Qc81aLi-s8pVQQ3AzD_P6nheLcdhH0o/edit?usp=sharing"> https://docs.google.com/presentation/d/1dz7IPrYxMPT1Qc81aLi-s8pVQQ3AzD_P6nheLcdhH0o/edit?usp=sharing </a>
-                    </div>
-                  </div>
-                    
-                         <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P5 Fulgent Blade</button>
-                    <div class="sub-menu marginLeft">
-                    
-                    
-                        <a target="_blank"  href="https://docs.google.com/presentation/d/1pACy_iO5NBSR_6QeihdTw46Y3yfmEbcdmqHXWJf6w8I/edit#slide=id.g319de1b9bc2_77_9"> https://docs.google.com/presentation/d/1pACy_iO5NBSR_6QeihdTw46Y3yfmEbcdmqHXWJf6w8I/edit#slide=id.g319de1b9bc2_77_9 </a>
-                    </div>
-                  </div>
-                    
-                    
-                         <div class="main-button left">
-                    <button class="toggle-button">
-                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                    &nbsp;P5 Paradise Regained</button>
-                    <div class="sub-menu marginLeft">
-                    
-                      <p>⚠️ The PF strat follows first tower for Healers and starting position relative south where the first tower is.  </p>
-                        <a target="_blank"  href="https://docs.google.com/presentation/d/1SLQpfdSyldjtzbe7hXUCOufRZ8DeYFEJwSS6C1iRBrI/edit#slide=id.p"> https://docs.google.com/presentation/d/1SLQpfdSyldjtzbe7hXUCOufRZ8DeYFEJwSS6C1iRBrI/edit#slide=id.p </a>
-                    </div>
-                  </div>
-                    
-                    
-
-           
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="title-list"></div>
+            </section>
         </div>
-      </div>
-    </section>
-  </div>
-  <script>
-  // Fetch and insert sidebar
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer_container').innerHTML = data;
-    });
-</script>
-  <div id="footer_container"> </div>
-</div>
+        <script>
+        // Fetch and insert sidebar
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer_container').innerHTML = data;
+            });
+        </script>
+        <div id="footer_container"> </div>
+    </div>
 </body>
 <script src="script.js"></script>
-<script> //load titles
+<script>
+//load titles
 
 // Grab the elements
 const titleList = document.querySelector('.title-list');
@@ -393,7 +386,7 @@ function renderTitleList() {
             const button = document.createElement('button');
             button.textContent = animalTitle;
             button.addEventListener('click', () => {
-            // Scroll to the target div
+                // Scroll to the target div
                 div.scrollIntoView({ behavior: 'smooth', block: 'center' });
             });
             titleList.appendChild(button);
@@ -408,5 +401,24 @@ renderTitleList();
 const observer = new MutationObserver(renderTitleList);
 observer.observe(contentDivs, { childList: true });
 </script>
-<script> </script>
+<script>
+  document.querySelectorAll('.copy-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const textToCopy = button.closest('.copyable_code').querySelector('.color').textContent;
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const span = button.querySelector('span');
+        const originalText = span.textContent;
+        span.textContent = 'Copied!';
+
+        setTimeout(() => {
+          span.textContent = originalText;
+        }, 2000);
+      }).catch(err => {
+        console.error('Clipboard copy failed:', err);
+        alert('Clipboard copy failed. Try running this on localhost or HTTPS.');
+      });
+    });
+  });
+</script>
 </html>

@@ -14,15 +14,15 @@ function highlightHttpsAndSymbols() {
       }
 
       if (isHttps) {
-        highlightedText += `<span style="color: green;">${char}</span>`;
+        highlightedText += `<span style="color: #22c55e;">${char}</span>`;
 
         if (i - 1 >= 3) {
           isHttps = false;
         }
       } else if (char === ':' || char === '/') {
-        highlightedText += `<span style="color: yellow;">${char}</span>`;
+        highlightedText += `<span style="color: #eab308;">${char}</span>`;
       } else if (paragraphText.substring(i, i + 3) === '://') {
-        highlightedText += `<span style="color: yellow;">://</span>`;
+        highlightedText += `<span style="color: #eab308;">://</span>`;
         i += 2; // Skip the rest of "://"
       } else {
         highlightedText += char;
