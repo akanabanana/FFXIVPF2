@@ -274,3 +274,32 @@ document.querySelectorAll('.copy-btn').forEach(button => {
     }
   });
 });
+
+
+function toggleSidebar() {
+    const body = document.body;
+    const sidebar = document.querySelector('.sidebar');
+    
+    body.classList.toggle('sidebar-active');
+    sidebar.classList.toggle('active');
+    
+    // Update CSS variable with sidebar height
+    if (sidebar.classList.contains('active')) {
+        document.documentElement.style.setProperty('--sidebar-height', `${sidebar.offsetHeight}px`);
+    }
+}
+
+// Close when clicking outside (mobile only)
+document.addEventListener('click', (e) => {
+    if (window.innerWidth > 700) return;
+    
+    const sidebar = document.querySelector('.sidebar');
+    const hamburger = document.querySelector('.hamburger');
+    
+    if (sidebar.classList.contains('active') && 
+        !sidebar.contains(e.target) && 
+        e.target !== hamburger && 
+        !hamburger.contains(e.target)) {
+        toggleSidebar();
+    }
+});

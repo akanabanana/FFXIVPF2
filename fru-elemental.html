@@ -19,11 +19,28 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-
-
-
+    <meta name="description" content="Resources created by Kana">
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Kanabin's FFXIV Library">
+    <meta property="og:description" content="Resources created by Kana">
+    <meta property="og:image" content="/Assets/Images/seo_bee_small.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akanabanana.github.io/FFXIVPF2/Assets/Images/seo_bee_small.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kanabin's FFXIV Library">
+    <meta name="twitter:description" content="Resources created by Kana">
+    <meta name="twitter:image" content="https://akanabanana.github.io/FFXIVPF2/Assets/Images/seo_bee_small.png">
 </head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-11QMT7H70Z"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'G-11QMT7H70Z');
+</script>
 
 <body>
     <div id="mainWrapper">
@@ -88,11 +105,11 @@
 
 -->
                                             <div class="main-button left">
-                                                <button class="toggle-button">
+                                                <button class="toggle-button" style="font-size: 14px; opacity: .8;">
                                                     <div class="arrow"> <span style="font-size: 30px;"> ‣ </span> </div>
                                                     FRU Cheatsheet - Elemental
                                                 </button>
-                                                <div class="sub-menu">
+                                                <div class="sub-menu" style="max-width:100%">
                                                     <div class="fru_elemental_cheatsheet" style="min-height: 300px; width:auto" alt="fru-image"> </div>
                                                 </div>
                                             </div>
@@ -137,32 +154,33 @@
                                                     <li> Bound of Faith: Role Stacks with MT/D1 adjust
                                                 </ul>
                                                 </li>
-
-
-
-<div class="no-wrap copyable_code">
-  <pre class="language-javascript color" tabindex="0">
+                                                <div class="no-wrap copyable_code">
+                                                    <pre class="language-javascript color" tabindex="0">
     <code class="language-javascript">
 Adjust: MT > ST > H1 > H2 :Stay
 Adjust: D1 > D2 > D3 > D4 :Stay
     </code>
   </pre>
-  <button class="copy-btn">
-    <i class="fa-regular fa-copy"></i> <span>Copy</span>
-  </button>
-</div>
-
-
-                                           
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
                                                 <ul>
                                                     <li> North South Fall on Faith HTD line up </li>
                                                     <li>Final towers follow the following FIXED/FLEX prio </li>
                                                 </ul>
-                                                <div class="copyable_code">
-                                                    <p class="color">&nbsp;&nbsp;FIXED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FLEX</p>
-                                                    <p class="color">&nbsp;&nbsp;&nbsp;&nbsp;H1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D1</p>
-                                                    <p class="color">&nbsp;&nbsp;&nbsp;&nbsp;D4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D3</p>
-                                                    <p class="color">&nbsp;&nbsp;&nbsp;&nbsp;H2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;D2</p>
+                                                <div class="no-wrap copyable_code">
+                                                    <pre class="language-javascript color" tabindex="0">
+    <code class="language-javascript">
+  FIXED      FLEX
+    H1     |   D1
+    D4     |   D3
+    H2     |   D2
+    </code>
+  </pre>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -213,10 +231,14 @@ Adjust: D1 > D2 > D3 > D4 :Stay
                                             &nbsp;Toggle to view the strats
                                         </button>
                                         <div class="sub-menu">
-                                            <div class="copyable_code" style="padding-top: 10px !important; padding-bottom: 10px !important;">
-                                                <!-- HTML generated using hilite.me -->
-                                                <div style=" overflow:auto;width:auto;">
-                                                    <pre style="margin: 0; line-height: 125%">P1 Yesf3 
+                                            <button class="copy-btn">
+                                                <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                            </button>
+                                        </div>
+                                        <div class="no-wrap copyable_code big_code_mobile">
+                                            <pre class="language-javascript color" tabindex="0">
+    <code class="language-javascript">
+P1 Yesf3 
 + ROLE STACKS tethers (Support N, DPS S - MT/D1 adjust)
  
 P2 Evansith 
@@ -235,11 +257,11 @@ safe spots coloured group
 TH Red purple start W (G1)
 DPS Blue yellow start E (g2)
 swap prio 
-MT &gt; ST &gt; H1 &gt; H2
-D1 &gt; D2 &gt; D3 &gt; D4
+MT > ST > H1 > H2
+D1 > D2 > D3 > D4
 After Darkest Dance
     BOSS (gap close)
-&lt;-G1   G2-&gt;
+<-G1   G2->
  
 P4
 Darklit Dragonsong
@@ -252,19 +274,21 @@ Akh Morn: 4-4 (LP1 N LP2 S)
 Tank on cardinal side, stack middle (avoid crystal you bozo)
  
 Crystallize Time [Early Pop]
-&lt;-W: H1H2MTSTD1D2D3D4 :E-&gt;
+<-W: H1H2MTSTD1D2D3D4 :E->
  
 P5
-Akh morn: &lt;- LP1 LP2 -&gt;
+Akh morn: <- LP1 LP2 ->
 Paradise Regained (fixed towers)
-&lt;- Range    Melee -&gt;
+<- Range    Melee ->
      (1)Healer
 Polarising Strikes
    TMRH
-&lt;-LP1 LP2-&gt;
-</pre>
-                                                </div>
-                                            </div>
+<-LP1 LP2->
+    </code>
+  </pre>
+                                            <button class="copy-btn">
+                                                <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
