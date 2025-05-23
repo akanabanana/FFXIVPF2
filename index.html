@@ -42,40 +42,46 @@
     .then(data => {
       document.getElementById('header_container').innerHTML = data;
     });
+        </script>
+        <script>
+            fetch('sidebar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('sidebar-container').innerHTML = data;
+    initializeSidebar(); // Call this after insertion
+  });
+
+function initializeSidebar() {
+  console.log('Initializing sidebar functionality...');
+
+  // Independent toggle for each menu button
+  document.addEventListener('click', function(e) {
+    const button = e.target.closest('.menu-button');
+    if (button) {
+      button.classList.toggle('collapsed');
+      const submenu = button.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle('show');
+      }
+    }
+  });
+}
+
 </script>
         <div id="header_container"> </div>
-        <script> function toggleMenu(menuId) {
-  const menu = document.getElementById(menuId);
-  const arrow = button.querySelector('.arrow');
-  if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
-    menu.style.maxHeight = menu.scrollHeight + "px"; // Set max-height to content height
-     arrow.style.transform = "rotate(90deg)";
-  } else {
-    menu.style.maxHeight = "0px"; // Collapse the menu
-     arrow.style.transform = "rotate(0deg)";
-  }
-}</script>
         <div id="content">
             <!--   this is where sidebar is-->
-            <script>
-                // Fetch and insert sidebar
-  fetch('sidebar.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('sidebar-container').innerHTML = data;
-    });
-</script>
             <div id="sidebar-container"></div>
             <section class="mainContent">
-                <h1 class="title"> FFXIVPF</h1>
-                <p class="textbold"> PF Resources by Kanabin</p>
-                <p class="text"> This is a curated collection of macros, strategies and resources compiled from various sources including PF, community discussions and player contributions. While I do my best to verify and organize everything, I am not the original creator of all content here. Full credit goes to the amazin FFXIV community for developing these strategies.</p>
-                <H1 class="title"> New Content</H1>
+                <h1 class="title" style="margin-bottom: 25px"> FFXIVPF</h1>
+                <p class="textbold" style="margin-bottom: 25px"> PF Resources by Kanabin</p>
+                <p class="text" style="margin-bottom: 25px"> This is a curated collection of macros, strategies and resources compiled from various sources including PF, community discussions and player contributions. While I do my best to verify and organize everything, I am not the original creator of all content here. Full credit goes to the amazin FFXIV community for developing these strategies.</p>
+                <H1 class="title" style="margin-bottom: 25px"> New Content</H1>
                 <div class="Releases_Box">
                     <div class="release_content">
                         <div class="release_title_date">
                             <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;">Recollection (Extreme)</h4>
-                            <div>
+                            <div class="content_titles">
                                 <p> New content</p>
                                 <p> Extreme</p>
                             </div>
@@ -85,7 +91,7 @@
                     <div class="release_content">
                         <div class="release_title_date">
                             <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;"> Hell's Kier (Unreal)</h4>
-                            <div>
+                            <div class="content_titles">
                                 <p> New Content</p>
                                 <p> Unreal</p>
                             </div>
@@ -95,7 +101,9 @@
                     <div class="release_content">
                         <div class="release_title_date">
                             <h4 style="font-weight: bold; color: white; font-size: 20px; margin-top:0px;">AAC Cruiserweight Cheatsheets</h4>
-                            <p> New Content</p>
+                            <div class="content_titles">
+                                <p> New Content</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,8 +221,8 @@
                         <input type="button" name="button" value="OCE" class="buyButton">
                     </div>
                 </div>
-                <H1 class="title"> Releases</H1>
-                <h3> Editor Notes</h3>
+                <H1 class="title" style="margin-bottom: 25px"> Releases</H1>
+                <h3 style="margin-bottom: 25px"> Editor Notes</h3>
                 <div class="Releases_Box">
                     <div class="release_content">
                         <div class="release_title_date">
@@ -279,7 +287,7 @@
         </div>
         <script>
         // Fetch and insert sidebar
-        fetch('https://akanabanana.github.io/FFXIVPF2/footer.html')
+        fetch('/FFXIVPF2/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer_container').innerHTML = data;
@@ -287,7 +295,6 @@
         </script>
         <div id="footer_container"> </div>
     </div>
-    <script> </script>
 </body>
 <script src="script.js"></script>
 
