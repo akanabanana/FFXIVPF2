@@ -131,7 +131,7 @@ html {
     --sidebar-border-color: #1F1F1F;
     --sidebar-background-color-hover: #1A1A1A;
     --sidebar-text-color-dark: #e1e1e1;
-    --sidebar-cta-background-color-hover #1A1A1A: #1A1A1A;
+
 }
 
 
@@ -1270,6 +1270,7 @@ button {
     /* Firefox */
     -ms-user-select: none;
     /* Internet Explorer/Edge */
+	overflow: scroll
 }
 
 .green {
@@ -1379,10 +1380,14 @@ li {
     /* Smooth transition */
 }
 
-.main-button button {
+/* .main-button button {
+   
+
+
+} */
+.toggle-button{
     background-color: rgba(0, 0, 0, 0) !important;
     color: white;
-
 }
 
 h1 {
@@ -1762,6 +1767,7 @@ body {
     color: #444;
     scale: 0.7;
     cursor: pointer;
+    background-color:#121A20 !important;
 }
 
 .copyable_code:hover .copy-btn {
@@ -1850,5 +1856,64 @@ body {
 
 .flex_column {
     display: flex;
+ 
     flex-direction: column;
+}
+
+.copy-btn {
+
+    background-color:#121A20 !important;
+}
+
+
+
+.token.class-name, .token.function {
+    color: #ec4899 !important;
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.number, .token.operator, .token.url {
+    color: #eab308 !important;
+}
+
+.token.boolean, .token.char, .token.constant, .token.deleted, .token.property, .token.string, .token.symbol, .token.tag {
+    color: #22c55e !important;
+}.header {
+    font-size: 35px;
+    font-weight: bold;
+}
+ol> li{
+	text-align: left;
+}
+
+.row_flex_images{
+	display: flex; 
+	flex-direction: row;
+	gap: 10px
+		
+}
+.row_flex_images img{
+	width:365px;
+
+	border-radius: 12px;
+}
+h2{
+	font-size: 16px;
+	color: white;
+	text-align: left;
+}
+body{
+	line-height: 1.75 !important;
+}
+
+li{
+	color:hsla(0, 0%, 100%, .7);
+	font-color: 16px
+}
+.container{
+	max-width: 600px
+}
+
+.title-list > button{
+	font-size: .875rem !important;
+	font-weight: 400
 }

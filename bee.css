@@ -1005,13 +1005,7 @@ footer a:active {
     min-width: fit-content;
 }
 
-.2col {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
+
 
 .choose_strat_button {
     background-color: #FFF5B4;
