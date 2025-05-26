@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FFXIVPF - FRU Materia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+    var __adobewebfontsappname__ = "dreamweaver"
+    </script>
+    <script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+    <link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="description" content="Resources created by Kana">
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Kanabin's FFXIV Library">
+    <meta property="og:description" content="Resources created by Kana">
+    <meta property="og:image" content="/Assets/Images/seo_bee_small.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akanabanana.github.io/FFXIVPF2/Assets/Images/seo_bee_small.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kanabin's FFXIV Library">
+    <meta name="twitter:description" content="Resources created by Kana">
+    <meta name="twitter:image" content="https://akanabanana.github.io/FFXIVPF2/Assets/Images/seo_bee_small.png">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-11QMT7H70Z"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'G-11QMT7H70Z');
+</script>
+
+<body>
+    <div id="mainWrapper">
+        <script>
+        // Fetch and insert sidebar
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header_container').innerHTML = data;
+            });
+        </script>
+        <script>
+        fetch('sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                initializeSidebar(); // Call this after insertion
+            });
+
+        function initializeSidebar() {
+            console.log('Initializing sidebar functionality...');
+
+            // Independent toggle for each menu button
+            document.addEventListener('click', function(e) {
+                const button = e.target.closest('.menu-button');
+                if (button) {
+                    button.classList.toggle('collapsed');
+                    const submenu = button.nextElementSibling;
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                    }
+                }
+            });
+        }
+        </script>
+        <div id="header_container"> </div>
+        <div id="content">
+            <!--   this is where sidebar is-->
+            <div id="sidebar-container"></div>
+            <section class="mainContent">
+                <div>
+                    <div class="guide_container">
+                        <div class="content">
+                            <div title="FRU resources OCE">
+                                <h1 class="title" style="margin-top: 0px;"> Recollection (Extreme)</h1>
+                            </div>
+                            <div class="container">
+                                <div title="Your Copy pasta">
+                                    <div>
+                                        <p class="left header"> Copy Pasta</p>
+										<p style="text-align: left" class="mobile_text">&nbsp; </p>
+										 <div class="code_container darkpurple">
+                                           <p class="code_baby_title"> Game8 (widely used)</p>
+                                            <div class="copyable_code">
+                                        <p class="color"> https://game8.jp/ff14/678687</p> 
+                                         <button class="copy-btn">
+                                                    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                              </button>
+                                          </div>
+                                        </div>
+                                        <div class="code_container darkblue">
+                                          <p class="code_baby_title"> Reference: Game8</p>
+                                            <!--
+                    <button class="main-button" style="display: flex; flex-direction: row; gap: 10px;">
+                    <div class="arrow" > <span   style="font-size: 30px;">‣ </span> </div>
+                    <div style="margin-top: 7px;"> FRU Elemental Cheatsheet </div>
+            
+          <div id="elemental-cheatsheet" class="sub-menu">
+                      <div class="fru_elemental_cheatsheet" style="height: 300px;"> </div>
+                    </div>
+                    </button>
+
+-->
+											
+                                            <div class="main-button left">
+                                                <button class="toggle-button" style="font-size: 14px; opacity: .8;">
+                                                    <div class="arrow"> <span style="font-size: 30px;"> ‣ </span> </div>
+                                              Recollection cheatsheet </button>
+                                                <div class="sub-menu" style="max-width:100%">
+                                                    <img  style="max-width:100%;" src="Assets/Images/cheatsheet/EX4_JP_EN.png"> 
+                                              </div>
+                                            </div>
+                                            <div class="copyable_code">
+                                                <p class="color">https://tinyurl.com/zeleniaex</p>
+                                                <button class="copy-btn">
+                                                    <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                </button>
+                                            </div>
+                                        </div>
+									  <h1 style="text-align: left;"> Know your position</h1>
+                                        <div class="code_container darkgreen">
+                                            <p class="code_baby_title"> Know your job positions here</p>
+                                            <div class="copyable_code">
+                                              <a href="https://akanabanana.github.io/FFXIVPF2/recollection.html"> <p class="color" style="text-decoration: underline"> Recollection EX KYP →</p></a
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div title="Macross">
+                                    <h1 class="bottom_border left" style="font-size: 35px;">Macros and waymarks </h1>
+                                    <p class="left"> List of mechanic variation for each phase</p>
+                                    <div class="mechanic_variations_list">
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+												
+												
+<!--												first button-->
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                &nbsp;Macros
+                                            </button>
+                                            <div class="sub-menu">
+                                       
+                                                <div class="no-wrap copyable_code">
+                                                    <pre class="language-javascript color" tabindex="0">
+    <code class="language-javascript">
+【Towers】 　 　　|【Escelon's Fall】
+　D3MT　 D4ST 　|　　MT　ST 　　※ T/H start
+　　　　　　　　 　|　H1　　　H2　　inside
+　D1H1　 D2H2　|　D3　　　D4
+　　　　　　　　 　|　　D1　D2
+【Adds】TH→West　DPS→East
+【Roseblood】
+【1st Bloom】Start A ccw / B cw
+【2nd Bloom】Start B【3rd Bloom】Kurapon
+【4th Bloom】
+　■ Rose markers　　■ Tethers
+　　　 (mid) 　　　　Use rose-quadrant as North:
+　D1MT　 D2ST　　 　1. Gather South
+　D3H1　 D4H2　　　2. TH→West　DPS→East
+【5th Bloom】Run【6th Bloom】Skip it
+    </code>
+  </pre>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-button left">
+                                            <button class="toggle-button">
+                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+												
+												
+<!--												second button -->
+                                                &nbsp;Waymarks
+                                            </button>
+                                            <div class="sub-menu">
+                                             <div class="no-wrap copyable_code">
+                                                    <pre class="language-javascript color" tabindex="0">
+    <code class="language-javascript">
+【Towers】 　 　　|【Escelon's Fall】
+　D3MT　 D4ST 　|　　MT　ST 　　※ T/H start
+　　　　　　　　 　|　H1　　　H2　　inside
+　D1H1　 D2H2　|　D3　　　D4
+　　　　　　　　 　|　　D1　D2
+【Adds】TH→West　DPS→East
+【Roseblood】
+【1st Bloom】Start A ccw / B cw
+【2nd Bloom】Start B【3rd Bloom】Kurapon
+【4th Bloom】
+　■ Rose markers　　■ Tethers
+　　　 (mid) 　　　　Use rose-quadrant as North:
+　D1MT　 D2ST　　 　1. Gather South
+　D3H1　 D4H2　　　2. TH→West　DPS→East
+【5th Bloom】Run【6th Bloom】Skip it
+    </code>
+  </pre>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+							
+                                <div title="General Resources ">
+                                    <h1 class="bottom_border left" style="font-size: 35px;">General Resources </h1>
+                              <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
+                                        <p class="code_baby_title" style="margin-bottom: 0px">
+										<p> Macro, waymark etc</p>
+								  <a href="https://akanabanana.github.io/FFXIVPF2/recollection.html"> <p> XIVJP Raids →</p></a>
+										 </div>
+							
+							
+							
+									</div>               
+                  </div>
+                       	 <div class="title-list"></div>
+                    </div>
+									
+                </div>
+            </section>
+        </div>
+        <script>
+        // Fetch and insert sidebar
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer_container').innerHTML = data;
+            });
+        </script>
+        <div id="footer_container"> </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+//load titles
+
+// Grab the elements
+const titleList = document.querySelector('.title-list');
+const contentDivs = document.querySelector('.content');
+
+// Function to render the title list
+function renderTitleList() {
+    // Clear existing buttons
+    titleList.innerHTML = '';
+
+    // Loop through all divs inside content
+    const divs = contentDivs.querySelectorAll('div');
+    divs.forEach(div => {
+        const animalTitle = div.getAttribute('title'); // Read the `title` attribute
+        if (animalTitle) { // Only include divs with a `title` attribute
+            const button = document.createElement('button');
+            button.textContent = animalTitle;
+            button.addEventListener('click', () => {
+                // Scroll to the target div
+                div.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+            titleList.appendChild(button);
+        }
+    });
+}
+
+// Initial rendering
+renderTitleList();
+
+// Observer for changes (automatically updates the list if a new div is added)
+const observer = new MutationObserver(renderTitleList);
+observer.observe(contentDivs, { childList: true });
+</script>
+<script>
+</script>
+
+</html>

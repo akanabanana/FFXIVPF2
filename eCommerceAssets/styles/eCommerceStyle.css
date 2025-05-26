@@ -500,14 +500,16 @@ footer div a {
     /* sidebar */
     #content .sidebar {
         float: none;
-        width: 88% !important;
+        width: 100% !important;
         height: 91%;
         overflow: auto;
-        padding-left: 12%;
+       
         padding-top: 0px;
         z-index: 99999;
     }
-
+.menu-items-container{
+        margin-top: 20px;
+}
     /* horizontal separators in sidebar */
     #content .sidebar hr {
         display: none;
@@ -516,7 +518,7 @@ footer div a {
     /*The sidebar and maincontent of page */
     #content {
         position: relative;
-        top: -22px;
+        top: -86px;
         width: 100%;
         overflow: hidden;
     }
@@ -1227,6 +1229,9 @@ button {
     align-content: left;
     align-items: left;
 }
+.code_container p{
+	text-align: left;
+}
 
 .darkblue {
     background-color: hsl(calc(210 + 16), calc(82% - 27%), 7%);
@@ -1643,6 +1648,7 @@ body {
     text-align: left;
     cursor: pointer;
     transition: background-color 0.2s;
+	font-weight: 200;
 }
 
 .menu-button:hover {
@@ -1673,6 +1679,7 @@ body {
     border-left: 1px solid #1F1F1F;
     cursor: pointer;
     transition: background-color 0.2s;
+	font-weight: 200;
 }
 
 .submenu-item:hover {
