@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FFXIVPF - AAC Cruiserweight Cheatsheets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>
+    var __adobewebfontsappname__ = "dreamweaver"
+    </script>
+    <script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+    <link rel="icon" type="image/png" href="Assets/Images/kanapic.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="description" content="Resources created by Kana">
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Kanabin's FFXIV Library">
+    <meta property="og:description" content="Resources created by Kana">
+    <meta property="og:image" content="/Assets/Images/seo_bee_small.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akanabanana.github.io/FFXIVPF2/Assets/Images/seo_bee_small.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kanabin's FFXIV Library">
+    <meta name="twitter:description" content="Resources created by Kana">
+    <meta name="twitter:image" content="https://akanabanana.github.io/FFXIVPF2/Assets/Images/seo_bee_small.png">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-11QMT7H70Z"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'G-11QMT7H70Z');
+</script>
+
+<body>
+    <div id="mainWrapper">
+        <script>
+        // Fetch and insert sidebar
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header_container').innerHTML = data;
+            });
+        </script>
+        <script>
+        fetch('sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar-container').innerHTML = data;
+                initializeSidebar(); // Call this after insertion
+            });
+
+        function initializeSidebar() {
+            console.log('Initializing sidebar functionality...');
+
+            // Independent toggle for each menu button
+            document.addEventListener('click', function(e) {
+                const button = e.target.closest('.menu-button');
+                if (button) {
+                    button.classList.toggle('collapsed');
+                    const submenu = button.nextElementSibling;
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                    }
+                }
+            });
+        }
+        </script>
+        <div id="header_container"> </div>
+        <div id="content">
+            <!--   this is where sidebar is-->
+            <div id="sidebar-container"></div>
+            <section class="mainContent">
+                <div>
+                    <div class="guide_container">
+                        <div class="content">
+                            <div title="AAC Cruiserweight Cheatsheets">
+                                <h1 class="title" style="margin-top: 0px;"> AAC Cruiserweight Cheatsheets</h1>
+                            </div>
+                            <div class="container" style="max-width: 800px">
+                                <div title="">
+                                    <div title="">
+                                        <div class=" grey code_container">
+                                            <div class="main-button left">
+                                                <button class="toggle-button" style="font-size: 14px; margin-bottom: 0px; color: hsla(0, 0%, 100%, .7);">
+                                                    <p style="font-size: 14px"> Disclaimer: </p>
+                                                    <!--                                                first button-->
+                                                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                    This cheatsheet is useful for:
+                                                </button>
+                                                <div class="sub-menu">
+                                                    <ul style="font-size: 14px; margin-top: 0px; margin-left: 27px;">
+                                                        <li>Finding your spots for reclears </li>
+                                                        <li>Alt job positioning </li>
+                                                        <li> Some mechanic details</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="main-button left">
+                                                <button class="toggle-button" style="font-size: 14px; margin-top: 0px; padding-top: 0px; padding-bottom: 0px; color:hsla(0, 0%, 100%, .7);">
+                                                    <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                    <!--                                                second button -->
+                                                    &nbsp;This cheatsheet is not:
+                                                </button>
+                                                <div class="sub-menu">
+                                                    <p style="font-size: 14px; color:hsla(0, 0%, 100%, .7);    margin-left: 53px;">A guide. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div title="ACC Cruiserweight M1 (M5S)">
+                                            <h1 class=" left" style="font-size: 35px;">ACC Cruiserweight M1 (M5S) </h1>
+                                            <div class="copyable_code darkblue" style="justify-content: flex-start; flex-direction: column; background-color:#0B141F; padding: 10px !important">
+                                                <div class="cheatsheet_container">
+                                                    <img src="cheatsheets/images/m5s.png">
+                                                </div>
+                                                <div class="copyable_code" style="align-self: flex-start; width: 90%;">
+                                                    <p class="color">https://tinyurl.com/m5s-g8</p>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div title="ACC Cruiserweight M2 (M6S)">
+                                            <h1 class=" left" style="font-size: 35px;">ACC Cruiserweight M2 (M6S) </h1>
+                                            <div class="copyable_code darkblue" style="justify-content: flex-start; flex-direction: column; background-color:#0B141F; padding: 10px !important">
+                                                <div class="cheatsheet_container">
+                                                    <img src="cheatsheets/images/m6s.png">
+                                                </div>
+                                                <div class="copyable_code" style="align-self: flex-start; width: 90%;">
+                                                    <p class="color">https://tinyurl.com/m6s-g8</p>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div title="ACC Cruiserweight M3 (M7S)">
+                                            <h1 class=" left" style="font-size: 35px;">ACC Cruiserweight M3 (M7S) </h1>
+                                            <div class="copyable_code darkblue" style="justify-content: flex-start; flex-direction: column; background-color:#0B141F; padding: 10px !important">
+                                                <div class="cheatsheet_container">
+                                                    <img src="cheatsheets/images/m7s.png">
+                                                </div>
+                                                <div class="copyable_code" style="align-self: flex-start; width: 90%;">
+                                                    <p class="color">https://tinyurl.com/m7s-g8</p>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div title="ACC Cruiserweight M4 (M8S) - Game8">
+                                            <h1 class=" left" style="font-size: 35px;">ACC Cruiserweight M4 (M8S) - Game8 </h1>
+                                            <div class="copyable_code darkblue" style="justify-content: flex-start; flex-direction: column; background-color:#0B141F; padding: 10px !important">
+                                                <div class="cheatsheet_container">
+                                                    <img src="cheatsheets/images/m8sp1Games8.png">
+                                                </div>
+                                                <div class="copyable_code" style="align-self: flex-start; width: 90%;">
+                                                    <p class="color">https://tinyurl.com/m8s-p1</p>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                                <p style="align-self: flex-start;"> p2</p>
+                                                <div class="cheatsheet_container">
+                                                    <img src="cheatsheets/images/m8sp2.png">
+                                                </div>
+                                                <div class="copyable_code" style="align-self: flex-start; width: 90%;">
+                                                    <p class="color">https://tinyurl.com/m8s-p2-g8</p>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div title="ACC Cruiserweight M4 (M8S) - Elemental">
+                                            <h1 class=" left" style="font-size: 35px;">ACC Cruiserweight M4 (M8S) - Elemental </h1>
+                                            <div class="copyable_code darkblue" style="justify-content: flex-start; flex-direction: column; background-color:#0B141F; padding: 10px !important">
+                                                <div class="cheatsheet_container">
+                                                    <img src="cheatsheets/images/m8sp1elemental.png">
+                                                </div>
+                                                <div class="copyable_code" style="align-self: flex-start; width: 90%;">
+                                                    <p class="color">https://tinyurl.com/m8s-p1-elem</p>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                                <p style="align-self: flex-start;"> p2</p>
+                                                <div class="cheatsheet_container">
+                                                    <img src="cheatsheets/images/m8sp2.png">
+                                                </div>
+                                                <div class="copyable_code" style="align-self: flex-start; width: 90%;">
+                                                    <p class="color">https://tinyurl.com/m8s-p2-g8</p>
+                                                    <button class="copy-btn">
+                                                        <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-list"></div>
+                    </div>
+            </section>
+        </div>
+        <script>
+        // Fetch and insert sidebar
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer_container').innerHTML = data;
+            });
+        </script>
+        <div id="footer_container"> </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+//load titles
+
+// Grab the elements
+const titleList = document.querySelector('.title-list');
+const contentDivs = document.querySelector('.content');
+
+// Function to render the title list
+function renderTitleList() {
+    // Clear existing buttons
+    titleList.innerHTML = '';
+
+    // Loop through all divs inside content
+    const divs = contentDivs.querySelectorAll('div');
+    divs.forEach(div => {
+        const animalTitle = div.getAttribute('title'); // Read the `title` attribute
+        if (animalTitle) { // Only include divs with a `title` attribute
+            const button = document.createElement('button');
+            button.textContent = animalTitle;
+            button.addEventListener('click', () => {
+                // Scroll to the target div
+                div.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+            titleList.appendChild(button);
+        }
+    });
+}
+
+// Initial rendering
+renderTitleList();
+
+// Observer for changes (automatically updates the list if a new div is added)
+const observer = new MutationObserver(renderTitleList);
+observer.observe(contentDivs, { childList: true });
+</script>
+<script>
+</script>
+
+</html>
