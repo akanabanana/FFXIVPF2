@@ -1,0 +1,123 @@
+/* Empty CSS Code */
+.FRU_1 {
+    mask-image: radial-gradient(circle at 88.8% 72%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.FRU_2 {
+        mask-image: radial-gradient(circle at 63.8% 88%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.FRU_3 {
+        mask-image: radial-gradient(circle at 28.8% 41%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
+        radial-gradient(circle at 79.8% 60%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.FRU_4 {
+}
+
+.FRU_5 {
+    mask-image: radial-gradient(circle at 89.8% 38%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.FRU_6 {
+        mask-image: radial-gradient(circle at 91.8% 35%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.FRU_7 {
+    mask-image: radial-gradient(circle at 87.8% 74%, black 9%, rgba(0, 0, 0, 0.2) 9%), 
+    radial-gradient(circle at 77.8% 57%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+.FRU_8 {
+    mask-image: radial-gradient(circle at 75.8% 72%, black 37%, rgba(0, 0, 0, 0.2) 37%);
+}
+
+.FRU_9 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_9 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_10 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_11 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_12 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_13 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_14 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_15 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_16 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_17 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_18 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_19 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_20 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_21 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+.FRU_22 {
+    mask-image: radial-gradient(circle at 73.8% 61%, black 27%, rgba(0, 0, 0, 0.2) 26%), 
+    radial-gradient(circle at 65.8% 91%, black 9%, rgba(0, 0, 0, 0.2) 9%);
+}
+
+
+
+
+.selected_CLASS{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #FFF5B4;
+  border-radius: 12px;
+  border: 4px #A99261 solid;
+  font-size: 26px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 100ms ease-out;
+  background-color: #803B3C;
+}
+.selected_CLASS:before{
+  content: "D2";
+}
+
+
+.ST, .D1, .MT, .D3, .D4, .H1, .H2{
+    filter: grayscale(1);
+}
