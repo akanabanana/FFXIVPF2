@@ -46,14 +46,14 @@ gtag('config', 'G-11QMT7H70Z');
     <div id="mainWrapper">
         <script>
         // Fetch and insert sidebar
-        fetch('https://akanabanana.github.io/header.html')
+        fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header_container').innerHTML = data;
             });
         </script>
         <script>
-        fetch('https://akanabanana.github.io/sidebar.html')
+        fetch('sidebar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('sidebar-container').innerHTML = data;
@@ -217,7 +217,7 @@ gtag('config', 'G-11QMT7H70Z');
         </div>
         <script>
         // Fetch and insert sidebar
-        fetch('https://akanabanana.github.io/footer.html')
+        fetch('footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer_container').innerHTML = data;
