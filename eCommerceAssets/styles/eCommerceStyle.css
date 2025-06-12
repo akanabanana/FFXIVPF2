@@ -1031,7 +1031,7 @@ hr {
 /* Import a cute font */
 @font-face {
     font-family: 'Moontime';
-    src: url('https://akanabanana.github.io/Assets/fonts/moontime.ttf') format('truetype');
+    src: url('/Assets/fonts/moontime.ttf') format('truetype');
 }
 
 .site-logo {
