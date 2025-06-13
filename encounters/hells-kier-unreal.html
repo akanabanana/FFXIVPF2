@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>FFXIVPF - Hell's Kier (Unreal)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+    <link href="../eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
     <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
     <script>
     var __adobewebfontsappname__ = "dreamweaver"
@@ -46,14 +46,14 @@ gtag('config', 'G-11QMT7H70Z');
     <div id="mainWrapper">
         <script>
         // Fetch and insert sidebar
-        fetch('header.html')
+        fetch('../header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header_container').innerHTML = data;
             });
         </script>
         <script>
-        fetch('sidebar.html')
+        fetch('../sidebar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('sidebar-container').innerHTML = data;
@@ -190,7 +190,7 @@ H1/D1　●　H2/D4 | 　　　 ●
         </div>
         <script>
         // Fetch and insert sidebar
-        fetch('footer.html')
+        fetch('../footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer_container').innerHTML = data;
@@ -199,7 +199,7 @@ H1/D1　●　H2/D4 | 　　　 ●
         <div id="footer_container"> </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 <script>
 //load titles
 
