@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
- <meta name="description" content="Resources created by Kana">
+    <meta name="description" content="Resources created by Kana">
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Kanabin's FFXIV Library">
     <meta property="og:description" content="Resources created by Kana">
@@ -80,6 +80,10 @@ gtag('config', 'G-11QMT7H70Z');
         <div id="content">
             <!--   this is where sidebar is-->
             <div id="sidebar-container"></div>
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img id="lightbox-img" class="lightbox-content" src="">
+            </div>
             <section class="mainContent">
                 <div>
                     <div class="guide_container">
@@ -91,16 +95,17 @@ gtag('config', 'G-11QMT7H70Z');
                                 <div title="Your Copy pasta">
                                     <div>
                                         <p class="left header"> Copy Pasta and links</p>
-										<p style="text-align: left" class="mobile_text"> A more comprehensive guide has been created already and I’m only including notes here that will help someone new to the DC in tackling the OCE strats</p>
-										 <div class="code_container darkpurple">
+                                        <p style="text-align: left" class="mobile_text"> A more comprehensive guide has been created already and I’m only including notes here that will help someone new to the DC in tackling the OCE strats</p>
+                                        <div class="code_container darkpurple">
                                             <p class="code_baby_title"> All Strats, Macros and Explanations</p>
                                             <div class="copyable_code">
-                                            <a href="https://materiaraiding.com/ultimate/fru" target="_blank">   <p class="color" style=" text-decoration: underline;font-size: 16px;">OCE FRU page →</p></a>
-                                        
-                                          </div>
+                                                <a href="https://materiaraiding.com/ultimate/fru" target="_blank">
+                                                    <p class="color" style=" text-decoration: underline;font-size: 16px;">OCE FRU page →</p>
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="code_container darkblue">
-                                          <p class="code_baby_title"> Cheatsheet</p>
+                                            <p class="code_baby_title"> Cheatsheet</p>
                                             <!--
                     <button class="main-button" style="display: flex; flex-direction: row; gap: 10px;">
                     <div class="arrow" > <span   style="font-size: 30px;">‣ </span> </div>
@@ -112,14 +117,13 @@ gtag('config', 'G-11QMT7H70Z');
                     </button>
 
 -->
-											
                                             <div class="main-button left">
                                                 <button class="toggle-button" style="font-size: 14px; opacity: .8;">
                                                     <div class="arrow"> <span style="font-size: 30px;"> ‣ </span> </div>
-                                                FRU Cheatsheet OCE
-                                            </button>
+                                                    FRU Cheatsheet OCE
+                                                </button>
                                                 <div class="sub-menu" style="max-width:100%">
-                                                    <div class="fru_elemental_cheatsheet" style="min-height: 300px; width:auto" alt="fru-image"> </div>
+                                                    <img style="width:100%" src="/Assets/Images/Elemental.png">
                                                 </div>
                                             </div>
                                             <div class="copyable_code">
@@ -132,13 +136,12 @@ gtag('config', 'G-11QMT7H70Z');
                                         <div class="code_container darkgreen">
                                             <p class="code_baby_title"> Mitigations used: Materia FRU Mitty</p>
                                             <div class="copyable_code">
-                                              <p class="color">https://docs.google.com/spreadsheets/d/10ZSxFpqJxcbaswpU_JR9L6nU3PjouNz_GONghM6lw2A/edit?gid=2034625866#gid=2034625866</p>
+                                                <p class="color">https://docs.google.com/spreadsheets/d/10ZSxFpqJxcbaswpU_JR9L6nU3PjouNz_GONghM6lw2A/edit?gid=2034625866#gid=2034625866</p>
                                                 <button class="copy-btn">
                                                     <i class="fa-regular fa-copy"></i> <span>Copy</span>
                                                 </button>
                                             </div>
                                         </div>
-                                       
                                     </div>
                                 </div>
                                 <div title="⚠️ Points of Differences">
@@ -147,19 +150,15 @@ gtag('config', 'G-11QMT7H70Z');
                                     <div class="mechanic_variations_list">
                                         <div class="main-button left">
                                             <button class="toggle-button">
-												
-												
-<!--												first button-->
+                                                <!--                                                first button-->
                                                 <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
                                                 &nbsp;P1 Fatebreaker
                                             </button>
                                             <div class="sub-menu">
-                                         
-                                        
                                                 <ul>
                                                     <li> LP stack with TMRH swap prio </li>
                                                     <li>East West Fall on Faith with H1D3D1MTSTD2D4H2 prio </li>
-													<li>Final towers follow the following FIXED/FLEX prio</li>
+                                                    <li>Final towers follow the following FIXED/FLEX prio</li>
                                                 </ul>
                                                 <div class="no-wrap copyable_code">
                                                     <pre class="language-javascript color" tabindex="0">
@@ -179,30 +178,24 @@ gtag('config', 'G-11QMT7H70Z');
                                         <div class="main-button left">
                                             <button class="toggle-button">
                                                 <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-												
-												
-<!--												second button -->
+                                                <!--                                                second button -->
                                                 &nbsp;P2 Usurper of Frost
                                             </button>
                                             <div class="sub-menu">
                                                 <ul>
                                                     <li>Relative North A12B</li>
                                                     <li>Sinbound direction (group is always clockwise unless the clone is 45 degrees to the group)</li>
-                                         
                                                 </ul>
-													<img style="width:100%" src="Assets/Images/fru-materia-images/w=3840,quality=90,fit=scale-down.png">
-												
-												   <ul>
+                                                <img style="width:100%" src="Assets/Images/fru-materia-images/w=3840,quality=90,fit=scale-down.png">
+                                                <ul>
                                                     <li>Mirror Mirror position</li>
                                                     <li>Light Rampant is D3412 with North South puddles</li>
-													  <img  src="Assets/Images/fru-materia-images/LR puddles.png">
-                                         
+                                                    <img src="Assets/Images/fru-materia-images/LR puddles.png">
                                                 </ul>
                                             </div>
                                         </div>
-										
-<!--										third button-->
-										  <div class="main-button left">
+                                        <!--                                        third button-->
+                                        <div class="main-button left">
                                             <button class="toggle-button">
                                                 <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
                                                 &nbsp;P3 Oracle of Darkness
@@ -211,14 +204,13 @@ gtag('config', 'G-11QMT7H70Z');
                                                 <ul>
                                                     <li>Range anchor for each role groups (photo attached)</li>
                                                 </ul>
-												<img src="Assets/Images/fru-materia-images/UR full image.png">
-												 <ul>
+                                                <img src="Assets/Images/fru-materia-images/UR full image.png">
+                                                <ul>
                                                     <li>APOC is OCE TOP Panto prio (LP TMRH swap prio)</li>
                                                 </ul>
                                             </div>
                                         </div>
-										
-<!--										fourth button-->
+                                        <!--                                        fourth button-->
                                         <div class="main-button left">
                                             <button class="toggle-button">
                                                 <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
@@ -227,85 +219,75 @@ gtag('config', 'G-11QMT7H70Z');
                                             <div class="sub-menu">
                                                 <ul>
                                                     <li>Party starts west side of the marker the boss comes out (ie Stack in 1 if at A or Stack in 3 if C) to bait Akh Rhai</li>
-													   <li>Darklit follows D3412 just like Light Rampant positions for DPS</li>
-													   <li>CT prio follows FoF line up: H1D3D1MTSTD2D4H2</li>
-													   <li>Red aero plants from the edge of the circle </li>
+                                                    <li>Darklit follows D3412 just like Light Rampant positions for DPS</li>
+                                                    <li>CT prio follows FoF line up: H1D3D1MTSTD2D4H2</li>
+                                                    <li>Red aero plants from the edge of the circle </li>
                                                 </ul>
-												<img src="Assets/Images/fru-materia-images/UR south image.png"
+                                                <img src="Assets/Images/fru-materia-images/UR south image.png" </div> </div> <!-- fifth button-->
+                                                <div class="main-button left">
+                                                    <button class="toggle-button">
+                                                        <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
+                                                        &nbsp;P5 Pandora
+                                                    </button>
+                                                    <div class="sub-menu">
+                                                        <ul>
+                                                            <li>Paradise Regained: Fixed tower position <br> ←D1D3&nbsp;&nbsp;&nbsp;&nbsp;D2D4→</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-											
-											
-<!--											fifth button-->
-                                        <div class="main-button left">
-                                            <button class="toggle-button">
-                                                <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
-                                                &nbsp;P5 Pandora
-                                            </button>
-                                            <div class="sub-menu">
-                                                <ul>
-                                                    <li>Paradise Regained: Fixed tower position <br> ←D1D3&nbsp;&nbsp;&nbsp;&nbsp;D2D4→</li>
-                                                </ul>
-                                               
+                                        <!--                                    strats and notes section -->
+                                        <div title="📋 Strat notes and resources">
+                                            <h1 class="bottom_border left" style="font-size: 35px;">📋 Strat notes and resources </h1>
+                                            <p style="text-align: left" class="mobile_text"> In depth information on Materia strats can be found in Materia Raiding website. The notes below are short encounter notes for Materia specific strats. </p>
+                                            <h2> Materia Strat Bird’s eye view </h2>
+                                            <div class="iframe_container" style="width: 65%">
+                                                <!--                                    youtube embed-->
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aFREZRu3kY0?si=WpMCoTGESc5cU-6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                        </div>
+                                        <h2> Relative North Strat</h2>
+                                        <p class="mobile_text" style="text-align: left;">Although the provided cheatsheet includes the coloured DD, majority of Materia DC pf follows the Relative North strat for Diamond Dust. </p>
+                                        <a style="display: block" href="https://raidplan.io/plan/h521rrvlPhF-ajjp" target="_blank">
+                                            <p style="text-align: left; text-decoration: underline"> View raidplan </p>
+                                        </a>
+                                        <!--                                    tldr and images axe and scythe-->
+                                        <div>
+                                            <h1 class="bottom_border left" style="font-size: 35px;">Google Doc References </h1>
+                                            <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
+                                                <p class="code_baby_title" style="margin-bottom: 0px">
+                                                    <span> <b> TLDR</b> </span>
+                                                    <ol>
+                                                        <li>Your position is dependent on the first icicle that appears within waymark <span style="color: white"> <b>1A2B. </b> </span> </li>
+                                                        <li>Each player is assigned a quadrant position relative to this first icicle. You are only changing position in that quadrant (ie, if your quadrant is the West to North quadrant, you’re only moving positions around this quadrant) </li>
+                                                        <li> Once Axe kick/Scythe kick cast appears, go to your positions to bait/place puddle</li>
+                                                        <li> Your assigned KB groups is <span style="color: white"> <b> also relative to the first icicle.</b> </span> LP1 (MTH1D1D3) is relative north and LP2 (STH2D2D4) is relative South </li>
+                                                    </ol>
                                             </div>
+                                            <h2> <b> Axe kick positions</b></h2>
+                                            <div class="row_flex_images">
+                                                <img src="Assets/Images/fru-materia-images/Support Bait.png">
+                                                <img src="Assets/Images/fru-materia-images/DPS Bait axe kick.png">
+                                            </div>
+                                            <h2> <b>Scythe Kick positions</b></h2>
+                                            <div class="row_flex_images">
+                                                <img src="Assets/Images/fru-materia-images/support bait scythe.png">
+                                                <img src="Assets/Images/fru-materia-images/dps bait scythe.png">
+                                            </div>
+                                            <b>Scythe Kick position in motion (Support Bait)</b>
+                                            <div class="gif_container">
+                                                <img src="Assets/Images/fru-materia-images/ezgif-63598c9b74ba28.gif">
+                                            </div>
+                                            </p>
+                                            <h2>P4 CT Red Aero placement</h2>
+                                            <p class="mobile_text" style="text-align: left;"> Materia strat requires Red Aero players to plant with the party adjusting their angles. </p>
                                         </div>
                                     </div>
                                 </div>
-									
-<!--									strats and notes section -->
-                                <div title="📋 Strat notes and resources">
-                                    <h1 class="bottom_border left" style="font-size: 35px;">📋 Strat notes and resources </h1>
-                               <p style="text-align: left" class="mobile_text"> In depth information on Materia strats can be found in Materia Raiding website. The notes below are short encounter notes for Materia specific strats. </p>
-									<h2> Materia Strat Bird’s eye view </h2>
-									<div class="iframe_container" style="width: 65%"> 
-<!--									youtube embed-->
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/aFREZRu3kY0?si=WpMCoTGESc5cU-6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                                </div>
-									<h2> Relative North Strat</h2> 
-									<p class="mobile_text" style="text-align: left;">Although the provided cheatsheet includes the coloured DD, majority of Materia DC pf follows the Relative North strat for Diamond Dust.  </p>
-									<a style="display: block"  href="https://raidplan.io/plan/h521rrvlPhF-ajjp" target="_blank"> <p style="text-align: left; text-decoration: underline"> View raidplan  </p></a>
-									
-									
-									
-<!--									tldr and images axe and scythe-->
-                                <div>
-                                    <h1 class="bottom_border left" style="font-size: 35px;">Google Doc References </h1>
-                                    <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
-                                        <p class="code_baby_title" style="margin-bottom: 0px">
-										<span> <b> TLDR</b> </span>			
-										<ol> 
-											<li>Your position is dependent on the first icicle that appears within waymark <span style="color: white"> <b>1A2B. </b> </span> </li>
-											<li>Each player is assigned a quadrant position relative to this first icicle. You are only changing position in that quadrant (ie, if your quadrant is the West to North quadrant, you’re only moving positions around this quadrant) </li>
-											<li> Once Axe kick/Scythe kick cast appears, go to your positions to bait/place puddle</li>
-											<li> Your assigned KB groups is  <span style="color: white"> <b> also relative to the first icicle.</b> </span>  LP1 (MTH1D1D3) is relative north and LP2 (STH2D2D4) is relative South </li>
-										</ol>
-										 </div>
-										<h2> <b> Axe kick positions</b></h2> 
-										<div class="row_flex_images">  
-											<img src="Assets/Images/fru-materia-images/Support Bait.png">
-											<img src="Assets/Images/fru-materia-images/DPS Bait axe kick.png">
-										</div>
-										<h2>	<b>Scythe Kick positions</b></h2> 
-										<div class="row_flex_images">  
-											<img src="Assets/Images/fru-materia-images/support bait scythe.png">
-											<img src="Assets/Images/fru-materia-images/dps bait scythe.png">
-										</div>
-									<b>Scythe Kick position in motion (Support Bait)</b>
-									<div class="gif_container"> 
-										<img src="Assets/Images/fru-materia-images/ezgif-63598c9b74ba28.gif">
-										</div>
-										</p>
-                                   
-									<h2>P4 CT Red Aero placement</h2>
-									<p class="mobile_text" style="text-align: left;"> Materia strat requires Red Aero players to plant with the party adjusting their angles. </p>
-									
-                                </div>
                             </div>
+                            <div class="title-list"></div>
                         </div>
-					</div>
-                        <div class="title-list"></div>
                     </div>
-                </div>
             </section>
         </div>
         <script>
@@ -357,5 +339,63 @@ observer.observe(contentDivs, { childList: true });
 </script>
 <script>
 </script>
+<style>     img {
+   
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
 
+
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .lightbox .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }</style>
+
+<script>   // Get all images on the page
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('click', function () {
+        document.getElementById('lightbox-img').src = this.src;
+        document.getElementById('lightbox').style.display = 'flex';
+      });
+    });
+
+    // Close button
+    document.querySelector('.close').addEventListener('click', function () {
+      document.getElementById('lightbox').style.display = 'none';
+    });
+
+    // Close when clicking outside the image
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this) {
+        this.style.display = 'none';
+      }
+    });
+ </script>
 </html>
