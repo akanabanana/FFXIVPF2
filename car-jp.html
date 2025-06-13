@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
- <meta name="description" content="Resources created by Kana">
+    <meta name="description" content="Resources created by Kana">
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Kanabin's FFXIV Library">
     <meta property="og:description" content="Resources created by Kana">
@@ -80,6 +80,10 @@ gtag('config', 'G-11QMT7H70Z');
         <div id="content">
             <!--   this is where sidebar is-->
             <div id="sidebar-container"></div>
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img id="lightbox-img" class="lightbox-content" src="">
+            </div>
             <section class="mainContent">
                 <div>
                     <div class="guide_container">
@@ -91,21 +95,23 @@ gtag('config', 'G-11QMT7H70Z');
                                 <div title="Your Copy pasta">
                                     <div>
                                         <p class="left header"> Your Copy Pasta</p>
-									  <p style="text-align: left"> Copy pastas for your sharing convenience 💁‍♀️</p>
-<div class="code_container darkpurple">
-                  <p class="code_baby_title"> Raidplan by Itoito</p>
-	<a href="https://raidplan.io/plan/BBhK6qoMdxoGX_0C" target="_blank"> <p style="text-align: left"> Raidplan embedded</p></a>
-                                            <div class="copyable_code">
-                                            <a href="https://materiaraiding.com/ultimate/fru" target="_blank">   <p class="color" style=" font-size: 16px;">https://raidplan.io/plan/BBhK6qoMdxoGX_0C</p>
+                                        <p style="text-align: left"> Copy pastas for your sharing convenience 💁‍♀️</p>
+                                        <div class="code_container darkpurple">
+                                            <p class="code_baby_title"> Raidplan by Itoito</p>
+                                            <a href="https://raidplan.io/plan/BBhK6qoMdxoGX_0C" target="_blank">
+                                                <p style="text-align: left"> Raidplan embedded</p>
                                             </a>
-												   <button class="copy-btn">
+                                            <div class="copyable_code">
+                                                <a href="https://materiaraiding.com/ultimate/fru" target="_blank">
+                                                    <p class="color" style=" font-size: 16px;">https://raidplan.io/plan/BBhK6qoMdxoGX_0C</p>
+                                                </a>
+                                                <button class="copy-btn">
                                                     <i class="fa-regular fa-copy"></i> <span>Copy</span>
                                                 </button>
-                                        
-                                          </div>
+                                            </div>
                                         </div>
                                         <div class="code_container darkblue">
-                                          <p class="code_baby_title"> Cheatsheet</p>
+                                            <p class="code_baby_title"> Cheatsheet</p>
                                             <!--
                     <button class="main-button" style="display: flex; flex-direction: row; gap: 10px;">
                     <div class="arrow" > <span   style="font-size: 30px;">‣ </span> </div>
@@ -117,13 +123,13 @@ gtag('config', 'G-11QMT7H70Z');
                     </button>
 
 -->
-											
                                             <div class="main-button left">
                                                 <button class="toggle-button" style="font-size: 14px; opacity: .8;">
                                                     <div class="arrow"> <span style="font-size: 30px;"> ‣ </span> </div>
-                                              CAR Cheatsheet&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </button>
+                                                    CAR Cheatsheet&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                </button>
                                                 <div class="sub-menu" style="max-width:100%">
-                                                    <img src="Assets/Images/cheatsheet/CAR_JP_EN.png">
+                                                    <img style="width: 100%" src="Assets/Images/cheatsheet/CAR_JP_EN.png">
                                                 </div>
                                             </div>
                                             <div class="copyable_code">
@@ -135,27 +141,21 @@ gtag('config', 'G-11QMT7H70Z');
                                         </div>
                                         <div class="code_container darkgreen">
                                             <p class="code_baby_title"> Elemental discord for runs and bonus notifs</p>
-                                          <a href="http://kanatan.info/archives/38822195.html" target="_blank"> </a> <p  style="text-align: left;"> Join discord -></p>
+                                            <a href="http://kanatan.info/archives/38822195.html" target="_blank"> </a>
+                                            <p style="text-align: left;"> Join discord -></p>
                                         </div>
-                                       
                                     </div>
                                 </div>
                                 <div title="⚠️ Points of Differences">
                                     <h1 class="bottom_border left" style="font-size: 35px;">Macro </h1>
-                                   
                                     <div class="mechanic_variations_list">
                                         <div class="main-button left">
                                             <button class="toggle-button">
-												
-												
-<!--												first button-->
+                                                <!--                                                first button-->
                                                 <div class="arrow"> <span style="font-size: 30px;"> ‣</span></div>
                                                 &nbsp;Toggle to view the strats (Translated by Kes)
                                             </button>
                                             <div class="sub-menu">
-                                         
-                                        
-                                             
                                                 <div class="no-wrap copyable_code">
                                                     <pre class="language-javascript color" tabindex="0">
     <code class="language-javascript">
@@ -210,54 +210,45 @@ JP Mana PF Macro (Translated)
                                                 </div>
                                             </div>
                                         </div>
-                                   
-<!--								
-									
-<!--								
+                                        <!--                                
+                                    
+<!--                                
                                     </div>
                                 </div>
-									
-<!--					
-											
-								
-<!--									tldr and images axe and scythe-->
-                                <div>
-                                    <h1 class="bottom_border left" style="font-size: 35px;" title="References">References </h1>
-                                    <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
-                                        <p class="code_baby_title" style="margin-bottom: 0px">
-										<span> <b> Guides and Diagrams</b> </span>			
-										
-									  <a href="https://docs.google.com/presentation/d/e/2PACX-1vRiWwL2OOx1xyFKsKUJoOQ2KPrwcFTWprIfoklLYP1g1Xiq4dM_zyjX9Av1jWc7zfLbaac8sn0HV9vM/pub?start=false&loop=false&delayms=3000&slide=id.g3263ef12756_134_95" target="_blank">  <p style="text-align: left; text-decoration: underline">View Document </p></a>
-										
-										
-								  </div>
-									
-									
-									
-									    <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
-                                        <p class="code_baby_title" style="margin-bottom: 0px">
-										<span> <b> Jp Guide</b> </span>			
-<a href="http://kanatan.info/archives/38822195.html"  target="_blank"> <p style="text-decoration: underline; text-align: left;">   Access link -></p> </a>
-								  </div>
-									
-									
-									
-									
-									
-									    <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
-                                        <p class="code_baby_title" style="margin-bottom: 0px">
-										<span> <b> CAR Visual Guide by Kobe</b> </span>			
-										<p style="text-align: left;"> View Guide</p>
-											<div class="iframe_container"> 
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/GoZuj9g8N-Q?si=CN-md0eDiEwzOmr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-												</div>
-								  </div>
-									  </div>
-									
+                                    
+<!--                    
+                                            
+                                
+<!--                                    tldr and images axe and scythe-->
+                                        <div>
+                                            <h1 class="bottom_border left" style="font-size: 35px;" title="References">References </h1>
+                                            <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
+                                                <p class="code_baby_title" style="margin-bottom: 0px">
+                                                    <span> <b> Guides and Diagrams</b> </span>
+                                                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vRiWwL2OOx1xyFKsKUJoOQ2KPrwcFTWprIfoklLYP1g1Xiq4dM_zyjX9Av1jWc7zfLbaac8sn0HV9vM/pub?start=false&loop=false&delayms=3000&slide=id.g3263ef12756_134_95" target="_blank">
+                                                        <p style="text-align: left; text-decoration: underline">View Document </p>
+                                                    </a>
+                                            </div>
+                                            <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
+                                                <p class="code_baby_title" style="margin-bottom: 0px">
+                                                    <span> <b> Jp Guide</b> </span>
+                                                    <a href="http://kanatan.info/archives/38822195.html" target="_blank">
+                                                        <p style="text-decoration: underline; text-align: left;"> Access link -></p>
+                                                    </a>
+                                            </div>
+                                            <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
+                                                <p class="code_baby_title" style="margin-bottom: 0px">
+                                                    <span> <b> CAR Visual Guide by Kobe</b> </span>
+                                                    <p style="text-align: left;"> View Guide</p>
+                                                    <div class="iframe_container">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GoZuj9g8N-Q?si=CN-md0eDiEwzOmr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-					</div>
                         <div class="title-list"></div>
                     </div>
                 </div>
@@ -311,6 +302,67 @@ const observer = new MutationObserver(renderTitleList);
 observer.observe(contentDivs, { childList: true });
 </script>
 <script>
+</script>
+<style>
+img {
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+</style>
+<script>
+// Get all images on the page
+document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('click', function() {
+        document.getElementById('lightbox-img').src = this.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
+
+// Close button
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('lightbox').style.display = 'none';
+});
+
+// Close when clicking outside the image
+document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+    }
+});
 </script>
 
 </html>

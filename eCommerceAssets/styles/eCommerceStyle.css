@@ -1997,7 +1997,7 @@ li {
     height: 100%;
     object-fit: cover;
     /* Fills the div, but may crop parts of the image */
-    border-radius:  12px;
+    border-radius: 12px;
 }
 
 .darkblue {
@@ -2010,4 +2010,8 @@ li {
 
 .darkpurple {
     background-color: hsl(calc(262 + 5), calc(81% - 40%), 9%);
+}
+
+.language-javascript {
+    line-height: 15px !important;
 }
