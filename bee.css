@@ -514,6 +514,7 @@ footer {
     gap: 15px;
     cursor: pointer;
     transition: all 100ms ease-out;
+    height:  130px;
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;
@@ -528,7 +529,9 @@ footer {
     /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
-
+.kofi_dev h1{
+    height:  100px;
+}
 
 
 .kofi_bee_kana {

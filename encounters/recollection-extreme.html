@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>FFXIVPF - FRU Materia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+    <link href="../eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
     <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
     <script>
     var __adobewebfontsappname__ = "dreamweaver"
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
- <meta name="description" content="Resources created by Kana">
+    <meta name="description" content="Resources created by Kana">
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Kanabin's FFXIV Library">
     <meta property="og:description" content="Resources created by Kana">
@@ -46,14 +46,14 @@ gtag('config', 'G-11QMT7H70Z');
     <div id="mainWrapper">
         <script>
         // Fetch and insert sidebar
-        fetch('header.html')
+        fetch('../header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header_container').innerHTML = data;
             });
         </script>
         <script>
-        fetch('sidebar.html')
+        fetch('../sidebar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('sidebar-container').innerHTML = data;
@@ -80,6 +80,10 @@ gtag('config', 'G-11QMT7H70Z');
         <div id="content">
             <!--   this is where sidebar is-->
             <div id="sidebar-container"></div>
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img id="lightbox-img" class="lightbox-content" src="">
+            </div>
             <section class="mainContent">
                 <div>
                     <div class="guide_container">
@@ -120,7 +124,7 @@ gtag('config', 'G-11QMT7H70Z');
                                                     Recollection cheatsheet
                                                 </button>
                                                 <div class="sub-menu" style="max-width:100%">
-                                                    <img style="max-width:100%;" src="Assets/Images/cheatsheet/EX4_JP_EN.png">
+                                                    <img style="max-width:100%;" src="../Assets/Images/cheatsheet/EX4_JP_EN.png">
                                                 </div>
                                             </div>
                                             <div class="copyable_code">
@@ -134,7 +138,7 @@ gtag('config', 'G-11QMT7H70Z');
                                         <div class="code_container darkgreen">
                                             <p class="code_baby_title"> Know your job positions here</p>
                                             <div class="copyable_code">
-                                                <a href="https://akanabanana.github.io/FFXIVPF2/recollection.html">
+                                                <a href="https://ffxivpf.com/recollection.html">
                                                     <p class="color" style="text-decoration: underline"> Recollection EX KYP →</p>
                                                 </a> </div>
                                         </div>
@@ -215,7 +219,7 @@ gtag('config', 'G-11QMT7H70Z');
                                             <div class="code_container " style="background-color: hsl( 175, calc(84% - 20%), 7% );">
                                                 <p class="code_baby_title" style="margin-bottom: 0px">
                                                     <p> Macro, waymark etc</p>
-                                                    <a href="https://akanabanana.github.io/FFXIVPF2/recollection.html">
+                                                    <a href="https://ffxivpf.com/recollection.html">
                                                         <p> XIVJP Raids →</p>
                                                     </a>
                                             </div>
@@ -230,7 +234,7 @@ gtag('config', 'G-11QMT7H70Z');
             </section>
             <script>
             // Fetch and insert sidebar
-            fetch('footer.html')
+            fetch('../footer.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('footer_container').innerHTML = data;
@@ -239,7 +243,7 @@ gtag('config', 'G-11QMT7H70Z');
             <div id="footer_container"> </div>
         </div>
 </body>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 <script>
 //load titles
 
@@ -276,6 +280,67 @@ const observer = new MutationObserver(renderTitleList);
 observer.observe(contentDivs, { childList: true });
 </script>
 <script>
+</script>
+<style>
+img {
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+</style>
+<script>
+// Get all images on the page
+document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('click', function() {
+        document.getElementById('lightbox-img').src = this.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    });
+});
+
+// Close button
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('lightbox').style.display = 'none';
+});
+
+// Close when clicking outside the image
+document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+    }
+});
 </script>
 
 </html>
