@@ -828,8 +828,16 @@ footer div a {
     /* Prevents the image from repeating */
 }
 
-
-
+.FTPIC {
+    background-image: url('/cheatsheets/images/FT-wegotforked.png');
+    /* Replace with your image's URL */
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image inside the div */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
 
 
 .m8sp2PIC {
